@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chính sách quyền riêng tư – Japanese Memory Master</title>
+  <meta name="description" content="Chính sách quyền riêng tư cho tiện ích Japanese Memory Master." />
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.6; margin: 0; }
+    header { padding: 28px 18px; border-bottom: 1px solid rgba(127,127,127,.25); }
+    main { max-width: 960px; margin: 0 auto; padding: 18px; }
+    h1 { margin: 0 0 8px; font-size: 24px; }
+    .meta { opacity: .85; font-size: 14px; }
+    h2 { margin-top: 26px; font-size: 18px; }
+    ul { padding-left: 20px; }
+    code { background: rgba(127,127,127,.16); padding: 2px 6px; border-radius: 6px; }
+    .card { border: 1px solid rgba(127,127,127,.25); border-radius: 12px; padding: 14px; margin: 12px 0; }
+    footer { margin-top: 30px; padding: 18px; border-top: 1px solid rgba(127,127,127,.25); opacity: .85; font-size: 14px; }
+    a { color: inherit; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Chính sách quyền riêng tư – Japanese Memory Master</h1>
+    <div class="meta">
+      Cập nhật lần cuối: <strong>2026-02-03</strong><br/>
+      Liên hệ: <a href="mailto:nvb.works.nissei@gmail.com">nvb.works.nissei@gmail.com</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="card">
+      <p>
+        <strong>Japanese Memory Master</strong> là tiện ích mở rộng giúp bạn học tiếng Nhật qua các quiz định kỳ và quản lý từ vựng.
+        Chính sách này mô tả dữ liệu nào được xử lý và cách chúng tôi bảo vệ dữ liệu đó.
+      </p>
+    </div>
+
+    <h2>1) Dữ liệu chúng tôi thu thập và xử lý</h2>
+    <ul>
+      <li>
+        <strong>Dữ liệu tài khoản Google (khi bạn đăng nhập):</strong>
+        mã định danh người dùng (UID), tên hiển thị và ảnh đại diện (nếu có), và email (nếu bạn cấp quyền).
+        Extension sử dụng phạm vi quyền <code>openid</code>, <code>email</code>, <code>profile</code> để đăng nhập và nhận diện tài khoản.
+      </li>
+      <li>
+        <strong>Dữ liệu học tập:</strong>
+        danh sách từ vựng/nhóm từ, câu hỏi quiz, lựa chọn đáp án, điểm/kết quả, lịch sử học, và các cài đặt (ví dụ: chu kỳ quiz, tuỳ chọn hiển thị).
+      </li>
+      <li>
+        <strong>Dữ liệu kỹ thuật tối thiểu:</strong>
+        mốc thời gian cập nhật gần nhất (phục vụ đồng bộ), trạng thái đăng nhập, và các khoá nhận dạng nội bộ để lưu/đọc dữ liệu của bạn.
+      </li>
+    </ul>
+
+    <h2>2) Dữ liệu chúng tôi KHÔNG thu thập</h2>
+    <ul>
+      <li><strong>Không</strong> thu thập nội dung duyệt web của bạn để lưu lên máy chủ.</li>
+      <li><strong>Không</strong> bán dữ liệu cá nhân.</li>
+      <li><strong>Không</strong> thu thập mật khẩu Google của bạn (đăng nhập được thực hiện thông qua cơ chế OAuth/Chrome Identity).</li>
+    </ul>
+
+    <h2>3) Cách extension tương tác với trang web bạn đang mở</h2>
+    <div class="card">
+      <p>
+        Extension có thể chạy mã trên trang bạn đang mở để phục vụ tính năng học tập (ví dụ: hiển thị UI/quiz, hỗ trợ thao tác theo ngữ cảnh, hoặc xử lý tương tác mà bạn chủ động kích hoạt).
+      </p>
+      <p>
+        <strong>Chúng tôi không chủ đích đọc/thu thập và gửi nội dung trang web (HTML, form, mật khẩu, nội dung cá nhân)</strong> lên máy chủ.
+        Nếu có xử lý trên trang, mục tiêu là để hiển thị/chạy tính năng ngay trên trình duyệt của bạn.
+      </p>
+      <p class="meta">
+        Lưu ý: Extension có cấu hình chạy trên <code>&lt;all_urls&gt;</code>. Nếu bạn không cần phạm vi này, bạn nên giới hạn lại để tăng độ tin cậy khi duyệt Chrome Web Store.
+      </p>
+    </div>
+
+    <h2>4) Mục đích sử dụng dữ liệu</h2>
+    <ul>
+      <li>Đăng nhập và đồng bộ dữ liệu học tập giữa các thiết bị.</li>
+      <li>Lưu tiến độ, từ vựng và cài đặt để tránh mất dữ liệu khi gỡ/cài lại extension.</li>
+      <li>Thiết lập quiz định kỳ theo lịch (nhắc/hiển thị quiz theo chu kỳ bạn chọn).</li>
+    </ul>
+
+    <h2>5) Nơi dữ liệu được lưu trữ</h2>
+    <div class="card">
+      <p>
+        Dữ liệu được lưu trữ trên dịch vụ của Google thông qua <strong>Firebase</strong>:
+        <code>Firebase Authentication</code> (đăng nhập) và <code>Cloud Firestore</code> (lưu dữ liệu học tập).
+      </p>
+      <p>
+        Các miền dịch vụ có thể được gọi bao gồm:
+        <code>identitytoolkit.googleapis.com</code>, <code>securetoken.googleapis.com</code>, <code>firestore.googleapis.com</code>,
+        cùng các endpoint OAuth của Google như <code>accounts.google.com</code> và <code>oauth2.googleapis.com</code>.
+      </p>
+      <p class="meta">
+        Dự án Firebase: <strong>Vocabulary Pulse Learning</strong>
+      </p>
+    </div>
+
+    <h2>6) Chia sẻ dữ liệu</h2>
+    <ul>
+      <li>Dữ liệu chỉ được chia sẻ với <strong>Google/Firebase</strong> nhằm mục đích xác thực và lưu trữ/đồng bộ.</li>
+      <li>Không chia sẻ cho bên thứ ba phục vụ quảng cáo.</li>
+    </ul>
+
+    <h2>7) Quyền (permissions) extension yêu cầu và lý do</h2>
+    <div class="card">
+      <ul>
+        <li><code>identity</code>: đăng nhập Google thông qua Chrome Identity API.</li>
+        <li><code>storage</code>: lưu cài đặt và dữ liệu học tập trên trình duyệt.</li>
+        <li><code>alarms</code>: lên lịch quiz định kỳ.</li>
+        <li><code>contextMenus</code>: hiển thị menu chuột phải để thao tác nhanh (nếu bạn bật/tính năng có dùng).</li>
+        <li><code>activeTab</code>, <code>tabs</code>, <code>scripting</code>: hỗ trợ chạy/hiển thị tính năng trên tab hiện tại khi người dùng tương tác.</li>
+      </ul>
+      <p class="meta">
+        Chúng tôi cam kết chỉ dùng các quyền này đúng mục đích nêu trên.
+      </p>
+    </div>
+
+    <h2>8) Bảo mật</h2>
+    <ul>
+      <li>Sử dụng cơ chế xác thực của Firebase và quy tắc bảo mật Firestore để hạn chế truy cập trái phép.</li>
+      <li>Dữ liệu được gắn theo UID tài khoản, nhằm giới hạn truy cập vào dữ liệu của chính bạn (tuỳ theo cấu hình rules).</li>
+    </ul>
+
+    <h2>9) Thời hạn lưu trữ</h2>
+    <ul>
+      <li>Dữ liệu học tập được lưu cho đến khi bạn xóa dữ liệu trong extension hoặc yêu cầu xóa.</li>
+      <li>Khi bạn gỡ extension, dữ liệu đã đồng bộ trên cloud có thể vẫn còn cho đến khi bạn xóa trong extension hoặc gửi yêu cầu xóa.</li>
+    </ul>
+
+    <h2>10) Cách xóa dữ liệu / yêu cầu hỗ trợ</h2>
+    <div class="card">
+      <p>
+        Bạn có thể xóa dữ liệu bằng cách:
+      </p>
+      <ul>
+        <li>Trong extension: mở trang <strong>Options/Cài đặt</strong> và chọn <strong>Xóa dữ liệu</strong> (nếu có).</li>
+        <li>Hoặc email đến: <a href="mailto:nvb.works.nissei@gmail.com">nvb.works.nissei@gmail.com</a> với tiêu đề “Yêu cầu xóa dữ liệu – Japanese Memory Master”.</li>
+      </ul>
+    </div>
+
+    <h2>11) Trẻ em</h2>
+    <p>
+      Extension không được thiết kế dành riêng cho trẻ em dưới 13 tuổi và chúng tôi không chủ ý thu thập dữ liệu của trẻ em.
+      Nếu bạn tin rằng dữ liệu của trẻ em đã được cung cấp, vui lòng liên hệ để chúng tôi xử lý.
+    </p>
+
+    <h2>12) Thay đổi chính sách</h2>
+    <p>
+      Chúng tôi có thể cập nhật chính sách này theo thời gian. Phiên bản mới sẽ được đăng tại trang này với ngày “Cập nhật lần cuối”.
+    </p>
+
+    <h2>13) Liên hệ</h2>
+    <p>
+      Email: <a href="mailto:nvb.works.nissei@gmail.com">nvb.works.nissei@gmail.com</a>
+    </p>
+  </main>
+
+  <footer>
+    © 2026 Japanese Memory Master
+  </footer>
+</body>
+</html>
