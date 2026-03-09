@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 300px;
+      font-family: sans-serif;
+      padding: 10px;
+    }
+
+    h3 {
+      margin-top: 0;
+      color: #2196F3;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 5px;
+    }
+
+    .mini-list {
+      max-height: 200px;
+      overflow-y: auto;
+    }
+
+    .mini-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 0;
+      border-bottom: 1px dotted #ccc;
+      font-size: 13px;
+    }
+
+    .mini-score {
+      font-weight: bold;
+      color: green;
+    }
+
+    .btn-full {
+      width: 100%;
+      margin-top: 10px;
+      padding: 8px;
+      background: #f1f1f1;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .btn-full:hover {
+      background: #e0e0e0;
+    }
+
+    .empty {
+      text-align: center;
+      color: #888;
+      font-style: italic;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+    <h3 style="margin: 0; font-size: 18px;">JP Study</h3>
+    <button id="open-options" title="Cài đặt chi tiết"
+      style="background:none; border:none; cursor:pointer; padding:4px;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="#666">
+        <path
+          d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Quick Settings -->
+  <div style="background: #f0f7ff; border-radius: 10px; padding: 12px; margin-bottom: 15px; border: 1px solid #d0e1fd;">
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+      <div style="display: flex; gap: 10px; align-items: center;">
+        <div style="flex: 1;">
+          <label style="font-size: 11px; font-weight: bold; color: #5c6bc0; display: block; margin-bottom: 3px;">CHẾ ĐỘ
+            HỌC</label>
+          <select id="pop-quiz-mode"
+            style="width: 100%; font-size: 12px; padding: 4px; border-radius: 6px; border: 1px solid #c5cae9; background: white;">
+            <option value="vocab_to_meaning">Học Nghĩa</option>
+            <option value="meaning_to_vocab">Tìm Từ</option>
+            <option value="kanji_to_reading">Học Đọc</option>
+            <option value="shuffled">Ngẫu nhiên</option>
+          </select>
+        </div>
+        <div style="width: 80px;">
+          <label style="font-size: 11px; font-weight: bold; color: #5c6bc0; display: block; margin-bottom: 3px;">NHẮC
+            BÀI</label>
+          <div style="display: flex; align-items: center; gap: 4px;">
+            <input type="number" id="pop-quiz-interval" min="1" step="1"
+              style="width: 100%; font-size: 12px; padding: 4px; border: 1px solid #c5cae9; border-radius: 6px;">
+            <span style="font-size: 10px; color: #666;">m</span>
+          </div>
+        </div>
+      </div>
+      <button id="pop-save-settings"
+        style="background: #3f51b5; color: white; border: none; border-radius: 6px; padding: 8px; font-size: 12px; font-weight: bold; cursor: pointer; transition: background 0.2s;">Lưu
+        thay đổi</button>
+    </div>
+  </div>
+
+  <div
+    style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; padding-bottom: 4px; border-bottom: 2px solid #f0f0f0;">
+    <b style="font-size: 14px; color: #333;">Từ vựng đang học</b>
+    <span id="pop-count"
+      style="font-size: 11px; font-weight: bold; background: #e8f5e9; padding: 2px 8px; border-radius: 12px; color: #2e7d32;">0
+      từ</span>
+  </div>
+
+  <div id="mini-container" class="mini-list" style="margin-bottom: 5px;">
+    <div class="empty">Đang tải dữ liệu...</div>
+  </div>
+
+  <script type="module" src="popup.ts"></script>
+</body>
+
+</html>

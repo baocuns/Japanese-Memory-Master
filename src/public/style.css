@@ -1,0 +1,59 @@
+#jp-add-modal, #jp-quiz-modal {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jp-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 320px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    font-family: sans-serif;
+}
+
+.jp-box h3 { margin-top: 0; color: #2196F3; }
+
+.jp-box input {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    box-sizing: border-box;
+}
+
+.jp-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.jp-buttons button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.quiz-box .jp-question {
+    font-size: 22px;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.jp-options button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+}
+.jp-options button:hover { background: #e0e0e0; }

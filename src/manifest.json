@@ -1,0 +1,72 @@
+{
+  "manifest_version": 3,
+  "name": "Japanese Memory Master",
+  "version": "1.2.1.1",
+  "description": "Học tiếng Nhật qua quiz định kỳ",
+  "permissions": [
+    "storage",
+    "contextMenus",
+    "alarms",
+    "activeTab",
+    "identity"
+  ],
+  "host_permissions": [
+    "https://identitytoolkit.googleapis.com/*",
+    "https://securetoken.googleapis.com/*",
+    "https://firestore.googleapis.com/*",
+    "https://accounts.google.com/*",
+    "https://oauth2.googleapis.com/*"
+  ],
+  "oauth2": {
+    "client_id": "209267074091-cequ99vd3s2t6mgj97717j5iu41o69p9.apps.googleusercontent.com",
+    "scopes": [
+      "openid",
+      "email",
+      "profile"
+    ]
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Xem từ vựng nhanh"
+  },
+  "background": {
+    "service_worker": "./background.ts",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "./content.ts"
+      ],
+      "css": [
+        "style.css"
+      ]
+    }
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "icons": {
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "n1_vocabulary.json",
+        "n2_vocabulary.json",
+        "n3_vocabulary.json",
+        "n4_vocabulary.json",
+        "n5_vocabulary.json"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}

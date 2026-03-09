@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Quản lý từ vựng</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .row {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      border: none;
+      padding: 10px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: #2196F3;
+      color: #fff;
+    }
+
+    .btn-danger {
+      background: #ff4444;
+      color: #fff;
+    }
+
+    .btn-ghost {
+      background: #eee;
+    }
+
+    .muted {
+      color: #666;
+      font-size: 12px;
+    }
+
+    .word-item {
+      border-bottom: 1px solid #eee;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .delete-btn {
+      background: #ff4444;
+      color: #fff;
+      border: none;
+      padding: 6px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+
+    input {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    #word-list {
+      margin-top: 10px;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+
+    /* Tab Styles */
+    .tabs {
+      display: flex;
+      gap: 5px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .tab-btn {
+      padding: 8px 16px;
+      border: 1px solid transparent;
+      border-bottom: none;
+      background: none;
+      cursor: pointer;
+      color: #666;
+      border-radius: 6px 6px 0 0;
+      font-weight: 500;
+    }
+
+    .tab-btn:hover {
+      background: #f0f0f0;
+    }
+
+    .tab-btn.active {
+      color: #2196F3;
+      border-color: #ddd;
+      border-bottom-color: #fff;
+      background: #fff;
+      margin-bottom: -1px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Cài đặt hệ thống</h1>
+
+  <div class="card">
+    <div class="row" style="justify-content:space-between; margin-bottom: 15px;">
+      <div>
+        <div><b>Trạng thái đăng nhập:</b> <span id="auth-status">...</span></div>
+        <div class="muted" id="auth-detail"></div>
+      </div>
+      <div>
+        <button id="btn-logout" class="btn btn-danger" style="display:none;">Đăng xuất</button>
+      </div>
+    </div>
+
+    <!-- Login Container -->
+    <div id="login-container">
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <button id="btn-login-google" class="btn btn-primary" style="background: #4285F4;">
+          Đăng nhập với Google
+        </button>
+
+        <div style="text-align: center; color: #888; font-size: 12px; margin: 5px 0;">HOẶC</div>
+
+        <div id="email-login-box"
+          style="display: flex; flex-direction: column; gap: 8px; border-top: 1px solid #eee; padding-top: 10px;">
+          <input type="email" id="login-email" placeholder="Email" />
+          <input type="password" id="login-password" placeholder="Mật khẩu" />
+          <div class="row">
+            <button id="btn-login-email" class="btn btn-ghost" style="flex: 1;">Đăng nhập</button>
+            <button id="btn-signup-email" class="btn btn-ghost" style="flex: 1;">Đăng ký</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="muted" style="margin-top:12px;">
+      Dữ liệu được đồng bộ hóa với tài khoản giúp bạn không mất dữ liệu khi gỡ/cài lại extension.
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="row">
+      <div style="flex:1;">
+        <div><b>Chế độ Quiz mặc định</b></div>
+        <div class="muted">Cách bạn muốn ôn tập từ vựng.</div>
+      </div>
+      <select id="quiz-mode" style="padding:8px; border-radius:6px; border:1px solid #ccc;">
+        <option value="vocab_to_meaning">Từ vựng -> Nghĩa</option>
+        <option value="meaning_to_vocab">Nghĩa -> Từ vựng</option>
+        <option value="kanji_to_reading">Hán tự -> Cách đọc</option>
+        <option value="reading_to_kanji">Cách đọc -> Hán tự</option>
+        <option value="shuffled">Ngẫu nhiên giữa các chế độ</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="row">
+      <div style="flex:1;">
+        <div><b>Số từ mới tối đa đang học</b></div>
+        <div class="muted">Giới hạn số lượng từ mới (điểm 0) được nạp vào Quiz.</div>
+      </div>
+      <input type="number" id="active-limit" min="1" step="1" value="10" style="width: 60px;" />
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="row">
+      <div style="flex:1;">
+        <div><b>Thời gian nhắc bài (phút)</b></div>
+        <div class="muted">Quiz sẽ chỉ chạy sau khi bạn đăng nhập.</div>
+      </div>
+      <input type="number" id="quiz-interval" min="0.1" step="0.1" value="10" style="width: 60px;" />
+    </div>
+  </div>
+
+  <button id="save-config" class="btn btn-primary">Lưu cài đặt</button>
+
+  <h2>🔑 Kích hoạt Premium</h2>
+  <div class="card">
+    <div style="margin-bottom: 15px;">
+      <div><b>Nhập License Key</b></div>
+      <div class="muted">Nhập key để kích hoạt các tính năng premium (N4, N3, N2, N1...)</div>
+    </div>
+    <div class="row">
+      <input type="text" id="license-key-input" placeholder="Nhập license key..." style="flex:1;" />
+      <button id="btn-redeem-key" class="btn btn-primary">Kích hoạt</button>
+    </div>
+    <div id="redeem-msg" class="muted" style="margin-top:8px;"></div>
+
+    <div style="margin-top: 20px;">
+      <div><b>Quyền lợi hiện tại</b></div>
+      <div id="entitlement-timeline" style="margin-top: 10px;">
+        <div class="muted">Đang tải...</div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Chính sách và quyền riêng tư</h2>
+  <div>
+    <a href="privacy.html">Xem tại đây</a>
+  </div>
+
+  <h2>Thêm từ vựng mới</h2>
+  <div class="card">
+    <div class="row">
+      <input type="text" id="new-word" placeholder="Từ tiếng Nhật..." style="flex:1;" />
+      <input type="text" id="new-meaning" placeholder="Nghĩa tiếng Việt..." style="flex:1;" />
+      <button id="btn-add-word" class="btn btn-primary">Thêm từ</button>
+    </div>
+    <div id="add-word-msg" class="muted" style="margin-top:8px;"></div>
+  </div>
+
+  <h2>Kho từ vựng hệ thống</h2>
+  <div class="card">
+    <div id="subscription-list" style="display: flex; flex-direction: column; gap: 10px;">
+      <!-- Dynamic list loaded by JS -->
+      <div class="muted">Đang tải danh sách...</div>
+    </div>
+    <div id="import-msg" class="muted" style="margin-top:8px;"></div>
+  </div>
+
+  <div class="row" style="align-items: center; margin-bottom: 5px;">
+    <h2 style="flex:1; margin:0;">Danh sách từ vựng đang học</h2>
+    <button id="refresh" class="btn btn-ghost">Làm mới danh sách</button>
+  </div>
+
+  <div class="tabs" id="tabs-container">
+    <!-- Tab buttons will be injected here -->
+  </div>
+
+  <div style="height: 400px;">
+    <div id="word-list"></div>
+  </div>
+
+
+  <script type="module" src="options.ts"></script>
+</body>
+
+</html>

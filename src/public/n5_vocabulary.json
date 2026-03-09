@@ -1,0 +1,7091 @@
+﻿{
+    "level": "N5",
+    "totalWords": 644,
+    "description": "JLPT N5 Complete Vocabulary List - Basic Japanese",
+    "vocabulary": [
+        {
+            "id": "n5_001",
+            "front": "浴びる",
+            "back": "あびる",
+            "meta": {
+                "romaji": "abiru",
+                "meaning": "tắm, tắm vòi sen",
+                "meaningEn": "to take a shower, to bathe",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_002",
+            "front": "危ない",
+            "back": "あぶない",
+            "meta": {
+                "romaji": "abunai",
+                "meaning": "nguy hiểm",
+                "meaningEn": "dangerous",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_003",
+            "front": "あっち",
+            "back": "あっち",
+            "meta": {
+                "romaji": "acchi",
+                "meaning": "bên kia (thân mật)",
+                "meaningEn": "over there (casual)",
+                "type": "pronoun"
+            }
+        },
+        {
+            "id": "n5_004",
+            "front": "あちら",
+            "back": "あちら",
+            "meta": {
+                "romaji": "achira",
+                "meaning": "bên kia (lịch sự)",
+                "meaningEn": "over there (polite)",
+                "type": "pronoun"
+            }
+        },
+        {
+            "id": "n5_005",
+            "front": "上げる",
+            "back": "あげる",
+            "meta": {
+                "romaji": "ageru",
+                "meaning": "nâng lên, cho",
+                "meaningEn": "to raise, to give",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_006",
+            "front": "赤",
+            "back": "あか",
+            "meta": {
+                "romaji": "aka",
+                "meaning": "màu đỏ",
+                "meaningEn": "red (noun)",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_007",
+            "front": "赤い",
+            "back": "あかい",
+            "meta": {
+                "romaji": "akai",
+                "meaning": "đỏ",
+                "meaningEn": "red",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_008",
+            "front": "明るい",
+            "back": "あかるい",
+            "meta": {
+                "romaji": "akarui",
+                "meaning": "sáng, vui vẻ",
+                "meaningEn": "bright, cheerful",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_009",
+            "front": "開ける",
+            "back": "あける",
+            "meta": {
+                "romaji": "akeru",
+                "meaning": "mở (ngoại động từ)",
+                "meaningEn": "to open (transitive)",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_010",
+            "front": "秋",
+            "back": "あき",
+            "meta": {
+                "romaji": "aki",
+                "meaning": "mùa thu",
+                "meaningEn": "autumn, fall",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_011",
+            "front": "開く",
+            "back": "あく",
+            "meta": {
+                "romaji": "aku",
+                "meaning": "mở (tự động từ)",
+                "meaningEn": "to open (intransitive)",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_012",
+            "front": "甘い",
+            "back": "あまい",
+            "meta": {
+                "romaji": "amai",
+                "meaning": "ngọt",
+                "meaningEn": "sweet",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_013",
+            "front": "雨",
+            "back": "あめ",
+            "meta": {
+                "romaji": "ame",
+                "meaning": "mưa",
+                "meaningEn": "rain",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_014",
+            "front": "飴",
+            "back": "あめ",
+            "meta": {
+                "romaji": "ame",
+                "meaning": "kẹo",
+                "meaningEn": "candy",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_015",
+            "front": "あなた",
+            "back": "あなた",
+            "meta": {
+                "romaji": "anata",
+                "meaning": "bạn, anh, chị",
+                "meaningEn": "you",
+                "type": "pronoun"
+            }
+        },
+        {
+            "id": "n5_016",
+            "front": "姉",
+            "back": "あね",
+            "meta": {
+                "romaji": "ane",
+                "meaning": "chị gái",
+                "meaningEn": "older sister",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_017",
+            "front": "兄",
+            "back": "あに",
+            "meta": {
+                "romaji": "ani",
+                "meaning": "anh trai",
+                "meaningEn": "older brother",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_018",
+            "front": "あの",
+            "back": "あの",
+            "meta": {
+                "romaji": "ano",
+                "meaning": "cái đó (ở đằng kia)",
+                "meaningEn": "that (over there)",
+                "type": "pre-noun adjectival"
+            }
+        },
+        {
+            "id": "n5_019",
+            "front": "青",
+            "back": "あお",
+            "meta": {
+                "romaji": "ao",
+                "meaning": "màu xanh",
+                "meaningEn": "blue (noun)",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_020",
+            "front": "青い",
+            "back": "あおい",
+            "meta": {
+                "romaji": "aoi",
+                "meaning": "xanh",
+                "meaningEn": "blue",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_021",
+            "front": "アパート",
+            "back": "アパート",
+            "meta": {
+                "romaji": "apaato",
+                "meaning": "căn hộ",
+                "meaningEn": "apartment",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_022",
+            "front": "洗う",
+            "back": "あらう",
+            "meta": {
+                "romaji": "arau",
+                "meaning": "rửa, giặt",
+                "meaningEn": "to wash",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_023",
+            "front": "あれ",
+            "back": "あれ",
+            "meta": {
+                "romaji": "are",
+                "meaning": "cái đó (ở đằng kia)",
+                "meaningEn": "that (over there)",
+                "type": "pronoun"
+            }
+        },
+        {
+            "id": "n5_024",
+            "front": "ある",
+            "back": "ある",
+            "meta": {
+                "romaji": "aru",
+                "meaning": "có, tồn tại (đồ vật)",
+                "meaningEn": "to exist (inanimate)",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_025",
+            "front": "歩く",
+            "back": "あるく",
+            "meta": {
+                "romaji": "aruku",
+                "meaning": "đi bộ",
+                "meaningEn": "to walk",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_026",
+            "front": "朝",
+            "back": "あさ",
+            "meta": {
+                "romaji": "asa",
+                "meaning": "buổi sáng",
+                "meaningEn": "morning",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_027",
+            "front": "朝ご飯",
+            "back": "あさごはん",
+            "meta": {
+                "romaji": "asagohan",
+                "meaning": "bữa sáng",
+                "meaningEn": "breakfast",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_028",
+            "front": "明後日",
+            "back": "あさって",
+            "meta": {
+                "romaji": "asatte",
+                "meaning": "ngày mốt",
+                "meaningEn": "day after tomorrow",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_029",
+            "front": "足",
+            "back": "あし",
+            "meta": {
+                "romaji": "ashi",
+                "meaning": "chân",
+                "meaningEn": "foot, leg",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_030",
+            "front": "明日",
+            "back": "あした",
+            "meta": {
+                "romaji": "ashita",
+                "meaning": "ngày mai",
+                "meaningEn": "tomorrow",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_031",
+            "front": "遊ぶ",
+            "back": "あそぶ",
+            "meta": {
+                "romaji": "asobu",
+                "meaning": "chơi",
+                "meaningEn": "to play",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_032",
+            "front": "あそこ",
+            "back": "あそこ",
+            "meta": {
+                "romaji": "asoko",
+                "meaning": "ở đằng kia",
+                "meaningEn": "over there",
+                "type": "pronoun"
+            }
+        },
+        {
+            "id": "n5_033",
+            "front": "頭",
+            "back": "あたま",
+            "meta": {
+                "romaji": "atama",
+                "meaning": "đầu",
+                "meaningEn": "head",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_034",
+            "front": "新しい",
+            "back": "あたらしい",
+            "meta": {
+                "romaji": "atarashii",
+                "meaning": "mới",
+                "meaningEn": "new",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_035",
+            "front": "暖かい",
+            "back": "あたたかい",
+            "meta": {
+                "romaji": "atatakai",
+                "meaning": "ấm áp",
+                "meaningEn": "warm",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_036",
+            "front": "後",
+            "back": "あと",
+            "meta": {
+                "romaji": "ato",
+                "meaning": "sau, phía sau",
+                "meaningEn": "after, behind",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_037",
+            "front": "暑い",
+            "back": "あつい",
+            "meta": {
+                "romaji": "atsui",
+                "meaning": "nóng (thời tiết)",
+                "meaningEn": "hot (weather)",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_038",
+            "front": "厚い",
+            "back": "あつい",
+            "meta": {
+                "romaji": "atsui",
+                "meaning": "dày",
+                "meaningEn": "thick",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_039",
+            "front": "熱い",
+            "back": "あつい",
+            "meta": {
+                "romaji": "atsui",
+                "meaning": "nóng (chạm vào)",
+                "meaningEn": "hot (to touch)",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_040",
+            "front": "会う",
+            "back": "あう",
+            "meta": {
+                "romaji": "au",
+                "meaning": "gặp",
+                "meaningEn": "to meet",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_041",
+            "front": "晩ご飯",
+            "back": "ばんごはん",
+            "meta": {
+                "romaji": "bangohan",
+                "meaning": "bữa tối",
+                "meaningEn": "dinner",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_042",
+            "front": "番号",
+            "back": "ばんごう",
+            "meta": {
+                "romaji": "bangou",
+                "meaning": "số",
+                "meaningEn": "number",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_043",
+            "front": "バス",
+            "back": "バス",
+            "meta": {
+                "romaji": "basu",
+                "meaning": "xe buýt",
+                "meaningEn": "bus",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_044",
+            "front": "バター",
+            "back": "バター",
+            "meta": {
+                "romaji": "bataa",
+                "meaning": "bơ",
+                "meaningEn": "butter",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_045",
+            "front": "ベッド",
+            "back": "ベッド",
+            "meta": {
+                "romaji": "beddo",
+                "meaning": "giường",
+                "meaningEn": "bed",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_046",
+            "front": "勉強",
+            "back": "べんきょう",
+            "meta": {
+                "romaji": "benkyou",
+                "meaning": "học tập",
+                "meaningEn": "study",
+                "type": "noun/verb"
+            }
+        },
+        {
+            "id": "n5_047",
+            "front": "便利",
+            "back": "べんり",
+            "meta": {
+                "romaji": "benri",
+                "meaning": "tiện lợi",
+                "meaningEn": "convenient",
+                "type": "na-adjective"
+            }
+        },
+        {
+            "id": "n5_048",
+            "front": "ボールペン",
+            "back": "ボールペン",
+            "meta": {
+                "romaji": "boorupen",
+                "meaning": "bút bi",
+                "meaningEn": "ballpoint pen",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_049",
+            "front": "ボタン",
+            "back": "ボタン",
+            "meta": {
+                "romaji": "botan",
+                "meaning": "nút, cúc áo",
+                "meaningEn": "button",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_050",
+            "front": "帽子",
+            "back": "ぼうし",
+            "meta": {
+                "romaji": "boushi",
+                "meaning": "mũ, nón",
+                "meaningEn": "hat, cap",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_051",
+            "front": "文章",
+            "back": "ぶんしょう",
+            "meta": {
+                "romaji": "bunshou",
+                "meaning": "câu văn, văn bản",
+                "meaningEn": "sentence, text",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_052",
+            "front": "豚肉",
+            "back": "ぶたにく",
+            "meta": {
+                "romaji": "butaniku",
+                "meaning": "thịt lợn",
+                "meaningEn": "pork",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_053",
+            "front": "病院",
+            "back": "びょういん",
+            "meta": {
+                "romaji": "byouin",
+                "meaning": "bệnh viện",
+                "meaningEn": "hospital",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_054",
+            "front": "病気",
+            "back": "びょうき",
+            "meta": {
+                "romaji": "byouki",
+                "meaning": "bệnh, ốm",
+                "meaningEn": "illness, sickness",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_055",
+            "front": "茶色",
+            "back": "ちゃいろ",
+            "meta": {
+                "romaji": "chairo",
+                "meaning": "màu nâu",
+                "meaningEn": "brown",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_056",
+            "front": "茶碗",
+            "back": "ちゃわん",
+            "meta": {
+                "romaji": "chawan",
+                "meaning": "bát cơm, chén trà",
+                "meaningEn": "rice bowl, tea cup",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_057",
+            "front": "父",
+            "back": "ちち",
+            "meta": {
+                "romaji": "chichi",
+                "meaning": "bố (khiêm tốn)",
+                "meaningEn": "father (humble)",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_058",
+            "front": "違う",
+            "back": "ちがう",
+            "meta": {
+                "romaji": "chigau",
+                "meaning": "khác",
+                "meaningEn": "to be different",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_059",
+            "front": "小さい",
+            "back": "ちいさい",
+            "meta": {
+                "romaji": "chiisai",
+                "meaning": "nhỏ",
+                "meaningEn": "small",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_060",
+            "front": "近い",
+            "back": "ちかい",
+            "meta": {
+                "romaji": "chikai",
+                "meaning": "gần",
+                "meaningEn": "near, close",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_061",
+            "front": "地下鉄",
+            "back": "ちかてつ",
+            "meta": {
+                "romaji": "chikatetsu",
+                "meaning": "tàu điện ngầm",
+                "meaningEn": "subway",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_062",
+            "front": "地図",
+            "back": "ちず",
+            "meta": {
+                "romaji": "chizu",
+                "meaning": "bản đồ",
+                "meaningEn": "map",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_063",
+            "front": "ちょっと",
+            "back": "ちょっと",
+            "meta": {
+                "romaji": "chotto",
+                "meaning": "một chút",
+                "meaningEn": "a little, a bit",
+                "type": "adverb"
+            }
+        },
+        {
+            "id": "n5_064",
+            "front": "丁度",
+            "back": "ちょうど",
+            "meta": {
+                "romaji": "choudo",
+                "meaning": "đúng, chính xác",
+                "meaningEn": "exactly, just",
+                "type": "adverb"
+            }
+        },
+        {
+            "id": "n5_065",
+            "front": "台所",
+            "back": "だいどころ",
+            "meta": {
+                "romaji": "daidokoro",
+                "meaning": "nhà bếp",
+                "meaningEn": "kitchen",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_066",
+            "front": "大学",
+            "back": "だいがく",
+            "meta": {
+                "romaji": "daigaku",
+                "meaning": "đại học",
+                "meaningEn": "university",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_067",
+            "front": "大丈夫",
+            "back": "だいじょうぶ",
+            "meta": {
+                "romaji": "daijoubu",
+                "meaning": "không sao, ổn",
+                "meaningEn": "okay, all right",
+                "type": "na-adjective"
+            }
+        },
+        {
+            "id": "n5_068",
+            "front": "大好き",
+            "back": "だいすき",
+            "meta": {
+                "romaji": "daisuki",
+                "meaning": "rất thích, yêu thích",
+                "meaningEn": "love, like very much",
+                "type": "na-adjective"
+            }
+        },
+        {
+            "id": "n5_069",
+            "front": "だんだん",
+            "back": "だんだん",
+            "meta": {
+                "romaji": "dandan",
+                "meaning": "dần dần",
+                "meaningEn": "gradually",
+                "type": "adverb"
+            }
+        },
+        {
+            "id": "n5_070",
+            "front": "誰",
+            "back": "だれ",
+            "meta": {
+                "romaji": "dare",
+                "meaning": "ai",
+                "meaningEn": "who",
+                "type": "pronoun"
+            }
+        },
+        {
+            "id": "n5_071",
+            "front": "出す",
+            "back": "だす",
+            "meta": {
+                "romaji": "dasu",
+                "meaning": "lấy ra, đưa ra",
+                "meaningEn": "to take out",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_072",
+            "front": "出口",
+            "back": "でぐち",
+            "meta": {
+                "romaji": "deguchi",
+                "meaning": "lối ra",
+                "meaningEn": "exit",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_073",
+            "front": "出かける",
+            "back": "でかける",
+            "meta": {
+                "romaji": "dekakeru",
+                "meaning": "đi ra ngoài",
+                "meaningEn": "to go out",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_074",
+            "front": "電気",
+            "back": "でんき",
+            "meta": {
+                "romaji": "denki",
+                "meaning": "điện, đèn",
+                "meaningEn": "electricity, light",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_075",
+            "front": "電車",
+            "back": "でんしゃ",
+            "meta": {
+                "romaji": "densha",
+                "meaning": "tàu điện",
+                "meaningEn": "train",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_076",
+            "front": "電話",
+            "back": "でんわ",
+            "meta": {
+                "romaji": "denwa",
+                "meaning": "điện thoại",
+                "meaningEn": "telephone",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_077",
+            "front": "デパート",
+            "back": "デパート",
+            "meta": {
+                "romaji": "depaato",
+                "meaning": "trung tâm thương mại",
+                "meaningEn": "department store",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_078",
+            "front": "出る",
+            "back": "でる",
+            "meta": {
+                "romaji": "deru",
+                "meaning": "ra, đi ra",
+                "meaningEn": "to leave, to go out",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_079",
+            "front": "ドア",
+            "back": "ドア",
+            "meta": {
+                "romaji": "doa",
+                "meaning": "cửa",
+                "meaningEn": "door",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_080",
+            "front": "どこ",
+            "back": "どこ",
+            "meta": {
+                "romaji": "doko",
+                "meaning": "ở đâu",
+                "meaningEn": "where",
+                "type": "pronoun"
+            }
+        },
+        {
+            "id": "n5_081",
+            "front": "どの",
+            "back": "どの",
+            "meta": {
+                "romaji": "dono",
+                "meaning": "cái nào",
+                "meaningEn": "which",
+                "type": "pre-noun adjectival"
+            }
+        },
+        {
+            "id": "n5_082",
+            "front": "どれ",
+            "back": "どれ",
+            "meta": {
+                "romaji": "dore",
+                "meaning": "cái nào",
+                "meaningEn": "which one",
+                "type": "pronoun"
+            }
+        },
+        {
+            "id": "n5_083",
+            "front": "どう",
+            "back": "どう",
+            "meta": {
+                "romaji": "dou",
+                "meaning": "như thế nào",
+                "meaningEn": "how",
+                "type": "adverb"
+            }
+        },
+        {
+            "id": "n5_084",
+            "front": "動物",
+            "back": "どうぶつ",
+            "meta": {
+                "romaji": "doubutsu",
+                "meaning": "động vật",
+                "meaningEn": "animal",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_085",
+            "front": "どうぞ",
+            "back": "どうぞ",
+            "meta": {
+                "romaji": "douzo",
+                "meaning": "xin mời",
+                "meaningEn": "please, go ahead",
+                "type": "adverb"
+            }
+        },
+        {
+            "id": "n5_086",
+            "front": "土曜日",
+            "back": "どようび",
+            "meta": {
+                "romaji": "doyoubi",
+                "meaning": "thứ Bảy",
+                "meaningEn": "Saturday",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_087",
+            "front": "絵",
+            "back": "え",
+            "meta": {
+                "romaji": "e",
+                "meaning": "tranh, hình vẽ",
+                "meaningEn": "picture, painting",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_088",
+            "front": "映画",
+            "back": "えいが",
+            "meta": {
+                "romaji": "eiga",
+                "meaning": "phim",
+                "meaningEn": "movie",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_089",
+            "front": "映画館",
+            "back": "えいがかん",
+            "meta": {
+                "romaji": "eigakan",
+                "meaning": "rạp chiếu phim",
+                "meaningEn": "movie theater",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_090",
+            "front": "英語",
+            "back": "えいご",
+            "meta": {
+                "romaji": "eigo",
+                "meaning": "tiếng Anh",
+                "meaningEn": "English",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_091",
+            "front": "駅",
+            "back": "えき",
+            "meta": {
+                "romaji": "eki",
+                "meaning": "ga, trạm",
+                "meaningEn": "station",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_092",
+            "front": "鉛筆",
+            "back": "えんぴつ",
+            "meta": {
+                "romaji": "enpitsu",
+                "meaning": "bút chì",
+                "meaningEn": "pencil",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_093",
+            "front": "エレベーター",
+            "back": "エレベーター",
+            "meta": {
+                "romaji": "erebeetaa",
+                "meaning": "thang máy",
+                "meaningEn": "elevator",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_094",
+            "front": "フィルム",
+            "back": "フィルム",
+            "meta": {
+                "romaji": "firumu",
+                "meaning": "phim (cuộn)",
+                "meaningEn": "film",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_095",
+            "front": "フォーク",
+            "back": "フォーク",
+            "meta": {
+                "romaji": "fooku",
+                "meaning": "nĩa",
+                "meaningEn": "fork",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_096",
+            "front": "服",
+            "back": "ふく",
+            "meta": {
+                "romaji": "fuku",
+                "meaning": "quần áo",
+                "meaningEn": "clothes",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_097",
+            "front": "降る",
+            "back": "ふる",
+            "meta": {
+                "romaji": "furu",
+                "meaning": "rơi (mưa, tuyết)",
+                "meaningEn": "to fall (rain, snow)",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_098",
+            "front": "古い",
+            "back": "ふるい",
+            "meta": {
+                "romaji": "furui",
+                "meaning": "cũ",
+                "meaningEn": "old",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_099",
+            "front": "二人",
+            "back": "ふたり",
+            "meta": {
+                "romaji": "futari",
+                "meaning": "hai người",
+                "meaningEn": "two people",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_100",
+            "front": "二つ",
+            "back": "ふたつ",
+            "meta": {
+                "romaji": "futatsu",
+                "meaning": "hai cái",
+                "meaningEn": "two (counter)",
+                "type": "counter"
+            }
+        },
+        {
+            "id": "n5_101",
+            "front": "太い",
+            "back": "ふとい",
+            "meta": {
+                "romaji": "futoi",
+                "meaning": "to, béo",
+                "meaningEn": "thick, fat",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_102",
+            "front": "冬",
+            "back": "ふゆ",
+            "meta": {
+                "romaji": "fuyu",
+                "meaning": "mùa đông",
+                "meaningEn": "winter",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_103",
+            "front": "外国",
+            "back": "がいこく",
+            "meta": {
+                "romaji": "gaikoku",
+                "meaning": "nước ngoài",
+                "meaningEn": "foreign country",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_104",
+            "front": "外国人",
+            "back": "がいこくじん",
+            "meta": {
+                "romaji": "gaikokujin",
+                "meaning": "người nước ngoài",
+                "meaningEn": "foreigner",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_105",
+            "front": "学校",
+            "back": "がっこう",
+            "meta": {
+                "romaji": "gakkou",
+                "meaning": "trường học",
+                "meaningEn": "school",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_106",
+            "front": "学生",
+            "back": "がくせい",
+            "meta": {
+                "romaji": "gakusei",
+                "meaning": "học sinh, sinh viên",
+                "meaningEn": "student",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_107",
+            "front": "玄関",
+            "back": "げんかん",
+            "meta": {
+                "romaji": "genkan",
+                "meaning": "lối vào",
+                "meaningEn": "entrance",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_108",
+            "front": "元気",
+            "back": "げんき",
+            "meta": {
+                "romaji": "genki",
+                "meaning": "khỏe mạnh, năng động",
+                "meaningEn": "healthy, energetic",
+                "type": "na-adjective"
+            }
+        },
+        {
+            "id": "n5_109",
+            "front": "月曜日",
+            "back": "げつようび",
+            "meta": {
+                "romaji": "getsuyoubi",
+                "meaning": "thứ Hai",
+                "meaningEn": "Monday",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_110",
+            "front": "銀行",
+            "back": "ぎんこう",
+            "meta": {
+                "romaji": "ginkou",
+                "meaning": "ngân hàng",
+                "meaningEn": "bank",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_111",
+            "front": "ギター",
+            "back": "ギター",
+            "meta": {
+                "romaji": "gitaa",
+                "meaning": "đàn ghi-ta",
+                "meaningEn": "guitar",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_112",
+            "front": "五",
+            "back": "ご",
+            "meta": {
+                "romaji": "go",
+                "meaning": "năm",
+                "meaningEn": "five",
+                "type": "number"
+            }
+        },
+        {
+            "id": "n5_113",
+            "front": "午後",
+            "back": "ごご",
+            "meta": {
+                "romaji": "gogo",
+                "meaning": "buổi chiều",
+                "meaningEn": "afternoon, PM",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_114",
+            "front": "ご飯",
+            "back": "ごはん",
+            "meta": {
+                "romaji": "gohan",
+                "meaning": "cơm, bữa ăn",
+                "meaningEn": "rice, meal",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_115",
+            "front": "午前",
+            "back": "ごぜん",
+            "meta": {
+                "romaji": "gozen",
+                "meaning": "buổi sáng",
+                "meaningEn": "morning, AM",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_116",
+            "front": "牛肉",
+            "back": "ぎゅうにく",
+            "meta": {
+                "romaji": "gyuuniku",
+                "meaning": "thịt bò",
+                "meaningEn": "beef",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_117",
+            "front": "牛乳",
+            "back": "ぎゅうにゅう",
+            "meta": {
+                "romaji": "gyuunyuu",
+                "meaning": "sữa bò",
+                "meaningEn": "milk",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_118",
+            "front": "歯",
+            "back": "は",
+            "meta": {
+                "romaji": "ha",
+                "meaning": "răng",
+                "meaningEn": "tooth",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_119",
+            "front": "八",
+            "back": "はち",
+            "meta": {
+                "romaji": "hachi",
+                "meaning": "tám",
+                "meaningEn": "eight",
+                "type": "number"
+            }
+        },
+        {
+            "id": "n5_120",
+            "front": "葉書",
+            "back": "はがき",
+            "meta": {
+                "romaji": "hagaki",
+                "meaning": "bưu thiếp",
+                "meaningEn": "postcard",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_121",
+            "front": "母",
+            "back": "はは",
+            "meta": {
+                "romaji": "haha",
+                "meaning": "mẹ (khiêm tốn)",
+                "meaningEn": "mother (humble)",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_122",
+            "front": "はい",
+            "back": "はい",
+            "meta": {
+                "romaji": "hai",
+                "meaning": "vâng, dạ",
+                "meaningEn": "yes",
+                "type": "interjection"
+            }
+        },
+        {
+            "id": "n5_123",
+            "front": "入る",
+            "back": "はいる",
+            "meta": {
+                "romaji": "hairu",
+                "meaning": "vào",
+                "meaningEn": "to enter",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_124",
+            "front": "始まる",
+            "back": "はじまる",
+            "meta": {
+                "romaji": "hajimaru",
+                "meaning": "bắt đầu",
+                "meaningEn": "to begin",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_125",
+            "front": "初めて",
+            "back": "はじめて",
+            "meta": {
+                "romaji": "hajimete",
+                "meaning": "lần đầu tiên",
+                "meaningEn": "for the first time",
+                "type": "adverb"
+            }
+        },
+        {
+            "id": "n5_126",
+            "front": "箱",
+            "back": "はこ",
+            "meta": {
+                "romaji": "hako",
+                "meaning": "hộp",
+                "meaningEn": "box",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_127",
+            "front": "履く",
+            "back": "はく",
+            "meta": {
+                "romaji": "haku",
+                "meaning": "mặc (quần), đi (giày)",
+                "meaningEn": "to wear (shoes, pants)",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_128",
+            "front": "半",
+            "back": "はん",
+            "meta": {
+                "romaji": "han",
+                "meaning": "nửa, rưỡi",
+                "meaningEn": "half",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_129",
+            "front": "花",
+            "back": "はな",
+            "meta": {
+                "romaji": "hana",
+                "meaning": "hoa",
+                "meaningEn": "flower",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_130",
+            "front": "鼻",
+            "back": "はな",
+            "meta": {
+                "romaji": "hana",
+                "meaning": "mũi",
+                "meaningEn": "nose",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_131",
+            "front": "話",
+            "back": "はなし",
+            "meta": {
+                "romaji": "hanashi",
+                "meaning": "câu chuyện, cuộc nói chuyện",
+                "meaningEn": "story, talk",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_132",
+            "front": "話す",
+            "back": "はなす",
+            "meta": {
+                "romaji": "hanasu",
+                "meaning": "nói, nói chuyện",
+                "meaningEn": "to speak, to talk",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_133",
+            "front": "半分",
+            "back": "はんぶん",
+            "meta": {
+                "romaji": "hanbun",
+                "meaning": "một nửa",
+                "meaningEn": "half",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_134",
+            "front": "晴れ",
+            "back": "はれ",
+            "meta": {
+                "romaji": "hare",
+                "meaning": "trời nắng",
+                "meaningEn": "sunny weather",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_135",
+            "front": "晴れる",
+            "back": "はれる",
+            "meta": {
+                "romaji": "hareru",
+                "meaning": "nắng lên",
+                "meaningEn": "to clear up",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_136",
+            "front": "春",
+            "back": "はる",
+            "meta": {
+                "romaji": "haru",
+                "meaning": "mùa xuân",
+                "meaningEn": "spring",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_137",
+            "front": "箸",
+            "back": "はし",
+            "meta": {
+                "romaji": "hashi",
+                "meaning": "đũa",
+                "meaningEn": "chopsticks",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_138",
+            "front": "橋",
+            "back": "はし",
+            "meta": {
+                "romaji": "hashi",
+                "meaning": "cầu",
+                "meaningEn": "bridge",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_139",
+            "front": "走る",
+            "back": "はしる",
+            "meta": {
+                "romaji": "hashiru",
+                "meaning": "chạy",
+                "meaningEn": "to run",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_140",
+            "front": "働く",
+            "back": "はたらく",
+            "meta": {
+                "romaji": "hataraku",
+                "meaning": "làm việc",
+                "meaningEn": "to work",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_141",
+            "front": "速い",
+            "back": "はやい",
+            "meta": {
+                "romaji": "hayai",
+                "meaning": "nhanh",
+                "meaningEn": "fast, quick",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_142",
+            "front": "早い",
+            "back": "はやい",
+            "meta": {
+                "romaji": "hayai",
+                "meaning": "sớm",
+                "meaningEn": "early",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_143",
+            "front": "下手",
+            "back": "へた",
+            "meta": {
+                "romaji": "heta",
+                "meaning": "kém, dở",
+                "meaningEn": "unskillful, bad at",
+                "type": "na-adjective"
+            }
+        },
+        {
+            "id": "n5_144",
+            "front": "部屋",
+            "back": "へや",
+            "meta": {
+                "romaji": "heya",
+                "meaning": "phòng",
+                "meaningEn": "room",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_145",
+            "front": "左",
+            "back": "ひだり",
+            "meta": {
+                "romaji": "hidari",
+                "meaning": "bên trái",
+                "meaningEn": "left",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_146",
+            "front": "東",
+            "back": "ひがし",
+            "meta": {
+                "romaji": "higashi",
+                "meaning": "phía đông",
+                "meaningEn": "east",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_147",
+            "front": "飛行機",
+            "back": "ひこうき",
+            "meta": {
+                "romaji": "hikouki",
+                "meaning": "máy bay",
+                "meaningEn": "airplane",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_148",
+            "front": "引く",
+            "back": "ひく",
+            "meta": {
+                "romaji": "hiku",
+                "meaning": "kéo",
+                "meaningEn": "to pull",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_149",
+            "front": "弾く",
+            "back": "ひく",
+            "meta": {
+                "romaji": "hiku",
+                "meaning": "chơi (nhạc cụ)",
+                "meaningEn": "to play (instrument)",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_150",
+            "front": "低い",
+            "back": "ひくい",
+            "meta": {
+                "romaji": "hikui",
+                "meaning": "thấp",
+                "meaningEn": "low, short",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_151",
+            "front": "暇",
+            "back": "ひま",
+            "meta": {
+                "romaji": "hima",
+                "meaning": "rảnh rỗi",
+                "meaningEn": "free time",
+                "type": "na-adjective"
+            }
+        },
+        {
+            "id": "n5_152",
+            "front": "広い",
+            "back": "ひろい",
+            "meta": {
+                "romaji": "hiroi",
+                "meaning": "rộng",
+                "meaningEn": "wide, spacious",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_153",
+            "front": "昼",
+            "back": "ひる",
+            "meta": {
+                "romaji": "hiru",
+                "meaning": "buổi trưa",
+                "meaningEn": "noon, daytime",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_154",
+            "front": "昼ご飯",
+            "back": "ひるごはん",
+            "meta": {
+                "romaji": "hirugohan",
+                "meaning": "bữa trưa",
+                "meaningEn": "lunch",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_155",
+            "front": "人",
+            "back": "ひと",
+            "meta": {
+                "romaji": "hito",
+                "meaning": "người",
+                "meaningEn": "person, people",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_156",
+            "front": "一人",
+            "back": "ひとり",
+            "meta": {
+                "romaji": "hitori",
+                "meaning": "một người, một mình",
+                "meaningEn": "one person, alone",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_157",
+            "front": "一つ",
+            "back": "ひとつ",
+            "meta": {
+                "romaji": "hitotsu",
+                "meaning": "một cái",
+                "meaningEn": "one (counter)",
+                "type": "counter"
+            }
+        },
+        {
+            "id": "n5_158",
+            "front": "本",
+            "back": "ほん",
+            "meta": {
+                "romaji": "hon",
+                "meaning": "sách",
+                "meaningEn": "book",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_159",
+            "front": "本棚",
+            "back": "ほんだな",
+            "meta": {
+                "romaji": "hondana",
+                "meaning": "kệ sách",
+                "meaningEn": "bookshelf",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_160",
+            "front": "本当",
+            "back": "ほんとう",
+            "meta": {
+                "romaji": "hontou",
+                "meaning": "thật sự, thật",
+                "meaningEn": "truth, really",
+                "type": "noun/adverb"
+            }
+        },
+        {
+            "id": "n5_161",
+            "front": "欲しい",
+            "back": "ほしい",
+            "meta": {
+                "romaji": "hoshii",
+                "meaning": "muốn",
+                "meaningEn": "want",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_162",
+            "front": "細い",
+            "back": "ほそい",
+            "meta": {
+                "romaji": "hosoi",
+                "meaning": "mảnh, hẹp",
+                "meaningEn": "thin, narrow",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_163",
+            "front": "ホテル",
+            "back": "ホテル",
+            "meta": {
+                "romaji": "hoteru",
+                "meaning": "khách sạn",
+                "meaningEn": "hotel",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_164",
+            "front": "百",
+            "back": "ひゃく",
+            "meta": {
+                "romaji": "hyaku",
+                "meaning": "trăm",
+                "meaningEn": "hundred",
+                "type": "number"
+            }
+        },
+        {
+            "id": "n5_165",
+            "front": "一",
+            "back": "いち",
+            "meta": {
+                "romaji": "ichi",
+                "meaning": "một",
+                "meaningEn": "one",
+                "type": "number"
+            }
+        },
+        {
+            "id": "n5_166",
+            "front": "一番",
+            "back": "いちばん",
+            "meta": {
+                "romaji": "ichiban",
+                "meaning": "số một, nhất",
+                "meaningEn": "number one, best",
+                "type": "noun/adverb"
+            }
+        },
+        {
+            "id": "n5_167",
+            "front": "一日",
+            "back": "いちにち",
+            "meta": {
+                "romaji": "ichinichi",
+                "meaning": "một ngày, cả ngày",
+                "meaningEn": "one day, all day",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_168",
+            "front": "家",
+            "back": "いえ",
+            "meta": {
+                "romaji": "ie",
+                "meaning": "nhà",
+                "meaningEn": "house, home",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_169",
+            "front": "いかが",
+            "back": "いかが",
+            "meta": {
+                "romaji": "ikaga",
+                "meaning": "như thế nào (lịch sự)",
+                "meaningEn": "how (polite)",
+                "type": "adverb"
+            }
+        },
+        {
+            "id": "n5_170",
+            "front": "池",
+            "back": "いけ",
+            "meta": {
+                "romaji": "ike",
+                "meaning": "ao",
+                "meaningEn": "pond",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_171",
+            "front": "行く",
+            "back": "いく",
+            "meta": {
+                "romaji": "iku",
+                "meaning": "đi",
+                "meaningEn": "to go",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_172",
+            "front": "いくら",
+            "back": "いくら",
+            "meta": {
+                "romaji": "ikura",
+                "meaning": "bao nhiêu tiền",
+                "meaningEn": "how much",
+                "type": "adverb"
+            }
+        },
+        {
+            "id": "n5_173",
+            "front": "いくつ",
+            "back": "いくつ",
+            "meta": {
+                "romaji": "ikutsu",
+                "meaning": "bao nhiêu cái, mấy tuổi",
+                "meaningEn": "how many, how old",
+                "type": "adverb"
+            }
+        },
+        {
+            "id": "n5_174",
+            "front": "今",
+            "back": "いま",
+            "meta": {
+                "romaji": "ima",
+                "meaning": "bây giờ",
+                "meaningEn": "now",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_175",
+            "front": "意味",
+            "back": "いみ",
+            "meta": {
+                "romaji": "imi",
+                "meaning": "ý nghĩa",
+                "meaningEn": "meaning",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_176",
+            "front": "妹",
+            "back": "いもうと",
+            "meta": {
+                "romaji": "imouto",
+                "meaning": "em gái",
+                "meaningEn": "younger sister",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_177",
+            "front": "犬",
+            "back": "いぬ",
+            "meta": {
+                "romaji": "inu",
+                "meaning": "chó",
+                "meaningEn": "dog",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_178",
+            "front": "入れる",
+            "back": "いれる",
+            "meta": {
+                "romaji": "ireru",
+                "meaning": "cho vào, bỏ vào",
+                "meaningEn": "to put in",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_179",
+            "front": "入口",
+            "back": "いりぐち",
+            "meta": {
+                "romaji": "iriguchi",
+                "meaning": "lối vào",
+                "meaningEn": "entrance",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_180",
+            "front": "色",
+            "back": "いろ",
+            "meta": {
+                "romaji": "iro",
+                "meaning": "màu sắc",
+                "meaningEn": "color",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_181",
+            "front": "色々",
+            "back": "いろいろ",
+            "meta": {
+                "romaji": "iroiro",
+                "meaning": "nhiều loại",
+                "meaningEn": "various",
+                "type": "na-adjective"
+            }
+        },
+        {
+            "id": "n5_182",
+            "front": "居る",
+            "back": "いる",
+            "meta": {
+                "romaji": "iru",
+                "meaning": "có, ở (người, động vật)",
+                "meaningEn": "to exist (animate)",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_183",
+            "front": "医者",
+            "back": "いしゃ",
+            "meta": {
+                "romaji": "isha",
+                "meaning": "bác sĩ",
+                "meaningEn": "doctor",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_184",
+            "front": "忙しい",
+            "back": "いそがしい",
+            "meta": {
+                "romaji": "isogashii",
+                "meaning": "bận rộn",
+                "meaningEn": "busy",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_185",
+            "front": "一緒",
+            "back": "いっしょ",
+            "meta": {
+                "romaji": "issho",
+                "meaning": "cùng nhau",
+                "meaningEn": "together",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_186",
+            "front": "椅子",
+            "back": "いす",
+            "meta": {
+                "romaji": "isu",
+                "meaning": "ghế",
+                "meaningEn": "chair",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_187",
+            "front": "痛い",
+            "back": "いたい",
+            "meta": {
+                "romaji": "itai",
+                "meaning": "đau",
+                "meaningEn": "painful",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_188",
+            "front": "いつ",
+            "back": "いつ",
+            "meta": {
+                "romaji": "itsu",
+                "meaning": "khi nào",
+                "meaningEn": "when",
+                "type": "adverb"
+            }
+        },
+        {
+            "id": "n5_189",
+            "front": "五日",
+            "back": "いつか",
+            "meta": {
+                "romaji": "itsuka",
+                "meaning": "ngày 5",
+                "meaningEn": "5th day of month",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_190",
+            "front": "五つ",
+            "back": "いつつ",
+            "meta": {
+                "romaji": "itsutsu",
+                "meaning": "năm cái",
+                "meaningEn": "five (counter)",
+                "type": "counter"
+            }
+        },
+        {
+            "id": "n5_191",
+            "front": "言う",
+            "back": "いう",
+            "meta": {
+                "romaji": "iu",
+                "meaning": "nói",
+                "meaningEn": "to say",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_192",
+            "front": "嫌",
+            "back": "いや",
+            "meta": {
+                "romaji": "iya",
+                "meaning": "không thích, không",
+                "meaningEn": "dislike, no",
+                "type": "na-adjective"
+            }
+        },
+        {
+            "id": "n5_193",
+            "front": "自分",
+            "back": "じぶん",
+            "meta": {
+                "romaji": "jibun",
+                "meaning": "bản thân, tự mình",
+                "meaningEn": "oneself",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_194",
+            "front": "自動車",
+            "back": "じどうしゃ",
+            "meta": {
+                "romaji": "jidousha",
+                "meaning": "ô tô",
+                "meaningEn": "automobile, car",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_195",
+            "front": "時間",
+            "back": "じかん",
+            "meta": {
+                "romaji": "jikan",
+                "meaning": "thời gian, giờ",
+                "meaningEn": "time, hour",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_196",
+            "front": "辞書",
+            "back": "じしょ",
+            "meta": {
+                "romaji": "jisho",
+                "meaning": "từ điển",
+                "meaningEn": "dictionary",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_197",
+            "front": "自転車",
+            "back": "じてんしゃ",
+            "meta": {
+                "romaji": "jitensha",
+                "meaning": "xe đạp",
+                "meaningEn": "bicycle",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_198",
+            "front": "上手",
+            "back": "じょうず",
+            "meta": {
+                "romaji": "jouzu",
+                "meaning": "giỏi, khéo",
+                "meaningEn": "skillful, good at",
+                "type": "na-adjective"
+            }
+        },
+        {
+            "id": "n5_199",
+            "front": "授業",
+            "back": "じゅぎょう",
+            "meta": {
+                "romaji": "jugyou",
+                "meaning": "tiết học, lớp học",
+                "meaningEn": "class, lesson",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_200",
+            "front": "十",
+            "back": "じゅう",
+            "meta": {
+                "romaji": "juu",
+                "meaning": "mười",
+                "meaningEn": "ten",
+                "type": "number"
+            }
+        },
+        {
+            "id": "n5_201",
+            "front": "かばん",
+            "back": "かばん",
+            "meta": {
+                "romaji": "kaban",
+                "meaning": "túi xách",
+                "meaningEn": "bag",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_202",
+            "front": "花瓶",
+            "back": "かびん",
+            "meta": {
+                "romaji": "kabin",
+                "meaning": "bình hoa",
+                "meaningEn": "vase",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_203",
+            "front": "角",
+            "back": "かど",
+            "meta": {
+                "romaji": "kado",
+                "meaning": "góc",
+                "meaningEn": "corner",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_204",
+            "front": "帰る",
+            "back": "かえる",
+            "meta": {
+                "romaji": "kaeru",
+                "meaning": "về",
+                "meaningEn": "to return",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_205",
+            "front": "返す",
+            "back": "かえす",
+            "meta": {
+                "romaji": "kaesu",
+                "meaning": "trả lại",
+                "meaningEn": "to return (something)",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_206",
+            "front": "鍵",
+            "back": "かぎ",
+            "meta": {
+                "romaji": "kagi",
+                "meaning": "chìa khóa",
+                "meaningEn": "key",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_207",
+            "front": "階段",
+            "back": "かいだん",
+            "meta": {
+                "romaji": "kaidan",
+                "meaning": "cầu thang",
+                "meaningEn": "stairs",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_208",
+            "front": "買い物",
+            "back": "かいもの",
+            "meta": {
+                "romaji": "kaimono",
+                "meaning": "mua sắm",
+                "meaningEn": "shopping",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_209",
+            "front": "会社",
+            "back": "かいしゃ",
+            "meta": {
+                "romaji": "kaisha",
+                "meaning": "công ty",
+                "meaningEn": "company",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_210",
+            "front": "掛かる",
+            "back": "かかる",
+            "meta": {
+                "romaji": "kakaru",
+                "meaning": "tốn, mất",
+                "meaningEn": "to take (time, money)",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_211",
+            "front": "掛ける",
+            "back": "かける",
+            "meta": {
+                "romaji": "kakeru",
+                "meaning": "treo, gọi điện",
+                "meaningEn": "to hang, to make a call",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_212",
+            "front": "書く",
+            "back": "かく",
+            "meta": {
+                "romaji": "kaku",
+                "meaning": "viết",
+                "meaningEn": "to write",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_213",
+            "front": "カメラ",
+            "back": "カメラ",
+            "meta": {
+                "romaji": "kamera",
+                "meaning": "máy ảnh",
+                "meaningEn": "camera",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_214",
+            "front": "紙",
+            "back": "かみ",
+            "meta": {
+                "romaji": "kami",
+                "meaning": "giấy",
+                "meaningEn": "paper",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_215",
+            "front": "漢字",
+            "back": "かんじ",
+            "meta": {
+                "romaji": "kanji",
+                "meaning": "chữ Hán",
+                "meaningEn": "kanji",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_216",
+            "front": "カップ",
+            "back": "カップ",
+            "meta": {
+                "romaji": "kappu",
+                "meaning": "cốc",
+                "meaningEn": "cup",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_217",
+            "front": "体",
+            "back": "からだ",
+            "meta": {
+                "romaji": "karada",
+                "meaning": "cơ thể",
+                "meaningEn": "body",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_218",
+            "front": "辛い",
+            "back": "からい",
+            "meta": {
+                "romaji": "karai",
+                "meaning": "cay",
+                "meaningEn": "spicy",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_219",
+            "front": "カレー",
+            "back": "カレー",
+            "meta": {
+                "romaji": "karee",
+                "meaning": "cà ri",
+                "meaningEn": "curry",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_220",
+            "front": "カレンダー",
+            "back": "カレンダー",
+            "meta": {
+                "romaji": "karendaa",
+                "meaning": "lịch",
+                "meaningEn": "calendar",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_221",
+            "front": "借りる",
+            "back": "かりる",
+            "meta": {
+                "romaji": "kariru",
+                "meaning": "mượn",
+                "meaningEn": "to borrow",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_222",
+            "front": "軽い",
+            "back": "かるい",
+            "meta": {
+                "romaji": "karui",
+                "meaning": "nhẹ",
+                "meaningEn": "light (weight)",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_223",
+            "front": "傘",
+            "back": "かさ",
+            "meta": {
+                "romaji": "kasa",
+                "meaning": "ô, dù",
+                "meaningEn": "umbrella",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_224",
+            "front": "貸す",
+            "back": "かす",
+            "meta": {
+                "romaji": "kasu",
+                "meaning": "cho mượn",
+                "meaningEn": "to lend",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_225",
+            "front": "方",
+            "back": "かた",
+            "meta": {
+                "romaji": "kata",
+                "meaning": "người (lịch sự)",
+                "meaningEn": "person (polite)",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_226",
+            "front": "買う",
+            "back": "かう",
+            "meta": {
+                "romaji": "kau",
+                "meaning": "mua",
+                "meaningEn": "to buy",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_227",
+            "front": "川",
+            "back": "かわ",
+            "meta": {
+                "romaji": "kawa",
+                "meaning": "sông",
+                "meaningEn": "river",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_228",
+            "front": "可愛い",
+            "back": "かわいい",
+            "meta": {
+                "romaji": "kawaii",
+                "meaning": "dễ thương",
+                "meaningEn": "cute",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_229",
+            "front": "火曜日",
+            "back": "かようび",
+            "meta": {
+                "romaji": "kayoubi",
+                "meaning": "thứ Ba",
+                "meaningEn": "Tuesday",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_230",
+            "front": "風",
+            "back": "かぜ",
+            "meta": {
+                "romaji": "kaze",
+                "meaning": "gió",
+                "meaningEn": "wind",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_231",
+            "front": "風邪",
+            "back": "かぜ",
+            "meta": {
+                "romaji": "kaze",
+                "meaning": "cảm lạnh",
+                "meaningEn": "cold (illness)",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_232",
+            "front": "家族",
+            "back": "かぞく",
+            "meta": {
+                "romaji": "kazoku",
+                "meaning": "gia đình",
+                "meaningEn": "family",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_233",
+            "front": "結婚",
+            "back": "けっこん",
+            "meta": {
+                "romaji": "kekkon",
+                "meaning": "kết hôn",
+                "meaningEn": "marriage",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_234",
+            "front": "結構",
+            "back": "けっこう",
+            "meta": {
+                "romaji": "kekkou",
+                "meaning": "khá, được",
+                "meaningEn": "quite, fine",
+                "type": "adverb"
+            }
+        },
+        {
+            "id": "n5_235",
+            "front": "今朝",
+            "back": "けさ",
+            "meta": {
+                "romaji": "kesa",
+                "meaning": "sáng nay",
+                "meaningEn": "this morning",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_236",
+            "front": "消す",
+            "back": "けす",
+            "meta": {
+                "romaji": "kesu",
+                "meaning": "tắt, xóa",
+                "meaningEn": "to turn off, to erase",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_237",
+            "front": "木",
+            "back": "き",
+            "meta": {
+                "romaji": "ki",
+                "meaning": "cây",
+                "meaningEn": "tree",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_238",
+            "front": "消える",
+            "back": "きえる",
+            "meta": {
+                "romaji": "kieru",
+                "meaning": "biến mất, tắt",
+                "meaningEn": "to disappear, to go out",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_239",
+            "front": "黄色い",
+            "back": "きいろい",
+            "meta": {
+                "romaji": "kiiroi",
+                "meaning": "vàng",
+                "meaningEn": "yellow",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_240",
+            "front": "聞く",
+            "back": "きく",
+            "meta": {
+                "romaji": "kiku",
+                "meaning": "nghe, hỏi",
+                "meaningEn": "to hear, to listen, to ask",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_241",
+            "front": "昨日",
+            "back": "きのう",
+            "meta": {
+                "romaji": "kinou",
+                "meaning": "hôm qua",
+                "meaningEn": "yesterday",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_242",
+            "front": "金曜日",
+            "back": "きんようび",
+            "meta": {
+                "romaji": "kinyoubi",
+                "meaning": "thứ Sáu",
+                "meaningEn": "Friday",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_243",
+            "front": "切符",
+            "back": "きっぷ",
+            "meta": {
+                "romaji": "kippu",
+                "meaning": "vé",
+                "meaningEn": "ticket",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_244",
+            "front": "嫌い",
+            "back": "きらい",
+            "meta": {
+                "romaji": "kirai",
+                "meaning": "ghét",
+                "meaningEn": "dislike",
+                "type": "na-adjective"
+            }
+        },
+        {
+            "id": "n5_245",
+            "front": "綺麗",
+            "back": "きれい",
+            "meta": {
+                "romaji": "kirei",
+                "meaning": "đẹp, sạch",
+                "meaningEn": "beautiful, clean",
+                "type": "na-adjective"
+            }
+        },
+        {
+            "id": "n5_246",
+            "front": "切る",
+            "back": "きる",
+            "meta": {
+                "romaji": "kiru",
+                "meaning": "cắt",
+                "meaningEn": "to cut",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_247",
+            "front": "着る",
+            "back": "きる",
+            "meta": {
+                "romaji": "kiru",
+                "meaning": "mặc (phần trên)",
+                "meaningEn": "to wear (upper body)",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_248",
+            "front": "喫茶店",
+            "back": "きっさてん",
+            "meta": {
+                "romaji": "kissaten",
+                "meaning": "quán cà phê",
+                "meaningEn": "coffee shop",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_249",
+            "front": "北",
+            "back": "きた",
+            "meta": {
+                "romaji": "kita",
+                "meaning": "phía bắc",
+                "meaningEn": "north",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_250",
+            "front": "汚い",
+            "back": "きたない",
+            "meta": {
+                "romaji": "kitanai",
+                "meaning": "bẩn",
+                "meaningEn": "dirty",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_251",
+            "front": "切手",
+            "back": "きって",
+            "meta": {
+                "romaji": "kitte",
+                "meaning": "tem",
+                "meaningEn": "stamp",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_252",
+            "front": "こっち",
+            "back": "こっち",
+            "meta": {
+                "romaji": "kocchi",
+                "meaning": "bên này (thân mật)",
+                "meaningEn": "this way (casual)",
+                "type": "pronoun"
+            }
+        },
+        {
+            "id": "n5_253",
+            "front": "こちら",
+            "back": "こちら",
+            "meta": {
+                "romaji": "kochira",
+                "meaning": "bên này (lịch sự)",
+                "meaningEn": "this way (polite)",
+                "type": "pronoun"
+            }
+        },
+        {
+            "id": "n5_254",
+            "front": "子供",
+            "back": "こども",
+            "meta": {
+                "romaji": "kodomo",
+                "meaning": "trẻ em",
+                "meaningEn": "child",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_255",
+            "front": "声",
+            "back": "こえ",
+            "meta": {
+                "romaji": "koe",
+                "meaning": "giọng nói",
+                "meaningEn": "voice",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_256",
+            "front": "ここ",
+            "back": "ここ",
+            "meta": {
+                "romaji": "koko",
+                "meaning": "ở đây",
+                "meaningEn": "here",
+                "type": "pronoun"
+            }
+        },
+        {
+            "id": "n5_257",
+            "front": "九日",
+            "back": "ここのか",
+            "meta": {
+                "romaji": "kokonoka",
+                "meaning": "ngày 9",
+                "meaningEn": "9th day of month",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_258",
+            "front": "九つ",
+            "back": "ここのつ",
+            "meta": {
+                "romaji": "kokonotsu",
+                "meaning": "chín cái",
+                "meaningEn": "nine (counter)",
+                "type": "counter"
+            }
+        },
+        {
+            "id": "n5_259",
+            "front": "困る",
+            "back": "こまる",
+            "meta": {
+                "romaji": "komaru",
+                "meaning": "khó khăn, rắc rối",
+                "meaningEn": "to be troubled",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_260",
+            "front": "今晩",
+            "back": "こんばん",
+            "meta": {
+                "romaji": "konban",
+                "meaning": "tối nay",
+                "meaningEn": "this evening",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_261",
+            "front": "今月",
+            "back": "こんげつ",
+            "meta": {
+                "romaji": "kongetsu",
+                "meaning": "tháng này",
+                "meaningEn": "this month",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_262",
+            "front": "こんな",
+            "back": "こんな",
+            "meta": {
+                "romaji": "konna",
+                "meaning": "loại này",
+                "meaningEn": "this kind of",
+                "type": "pre-noun adjectival"
+            }
+        },
+        {
+            "id": "n5_263",
+            "front": "この",
+            "back": "この",
+            "meta": {
+                "romaji": "kono",
+                "meaning": "cái này",
+                "meaningEn": "this",
+                "type": "pre-noun adjectival"
+            }
+        },
+        {
+            "id": "n5_264",
+            "front": "今週",
+            "back": "こんしゅう",
+            "meta": {
+                "romaji": "konshuu",
+                "meaning": "tuần này",
+                "meaningEn": "this week",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_265",
+            "front": "コーヒー",
+            "back": "コーヒー",
+            "meta": {
+                "romaji": "koohii",
+                "meaning": "cà phê",
+                "meaningEn": "coffee",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_266",
+            "front": "コート",
+            "back": "コート",
+            "meta": {
+                "romaji": "kooto",
+                "meaning": "áo khoác",
+                "meaningEn": "coat",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_267",
+            "front": "コピー",
+            "back": "コピー",
+            "meta": {
+                "romaji": "kopii",
+                "meaning": "bản sao",
+                "meaningEn": "copy",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_268",
+            "front": "コップ",
+            "back": "コップ",
+            "meta": {
+                "romaji": "koppu",
+                "meaning": "cốc",
+                "meaningEn": "glass, cup",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_269",
+            "front": "これ",
+            "back": "これ",
+            "meta": {
+                "romaji": "kore",
+                "meaning": "cái này",
+                "meaningEn": "this",
+                "type": "pronoun"
+            }
+        },
+        {
+            "id": "n5_270",
+            "front": "答える",
+            "back": "こたえる",
+            "meta": {
+                "romaji": "kotaeru",
+                "meaning": "trả lời",
+                "meaningEn": "to answer",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_271",
+            "front": "言葉",
+            "back": "ことば",
+            "meta": {
+                "romaji": "kotoba",
+                "meaning": "từ, ngôn ngữ",
+                "meaningEn": "word, language",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_272",
+            "front": "今年",
+            "back": "ことし",
+            "meta": {
+                "romaji": "kotoshi",
+                "meaning": "năm nay",
+                "meaningEn": "this year",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_273",
+            "front": "交番",
+            "back": "こうばん",
+            "meta": {
+                "romaji": "kouban",
+                "meaning": "trạm cảnh sát",
+                "meaningEn": "police box",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_274",
+            "front": "紅茶",
+            "back": "こうちゃ",
+            "meta": {
+                "romaji": "koucha",
+                "meaning": "trà đen",
+                "meaningEn": "black tea",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_275",
+            "front": "公園",
+            "back": "こうえん",
+            "meta": {
+                "romaji": "kouen",
+                "meaning": "công viên",
+                "meaningEn": "park",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_276",
+            "front": "交差点",
+            "back": "こうさてん",
+            "meta": {
+                "romaji": "kousaten",
+                "meaning": "ngã tư",
+                "meaningEn": "intersection",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_277",
+            "front": "口",
+            "back": "くち",
+            "meta": {
+                "romaji": "kuchi",
+                "meaning": "miệng",
+                "meaningEn": "mouth",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_278",
+            "front": "果物",
+            "back": "くだもの",
+            "meta": {
+                "romaji": "kudamono",
+                "meaning": "trái cây",
+                "meaningEn": "fruit",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_279",
+            "front": "下さい",
+            "back": "ください",
+            "meta": {
+                "romaji": "kudasai",
+                "meaning": "làm ơn cho tôi",
+                "meaningEn": "please give me",
+                "type": "expression"
+            }
+        },
+        {
+            "id": "n5_280",
+            "front": "曇り",
+            "back": "くもり",
+            "meta": {
+                "romaji": "kumori",
+                "meaning": "trời u ám",
+                "meaningEn": "cloudy",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_281",
+            "front": "曇る",
+            "back": "くもる",
+            "meta": {
+                "romaji": "kumoru",
+                "meaning": "trở nên u ám",
+                "meaningEn": "to become cloudy",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_282",
+            "front": "国",
+            "back": "くに",
+            "meta": {
+                "romaji": "kuni",
+                "meaning": "quốc gia",
+                "meaningEn": "country",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_283",
+            "front": "暗い",
+            "back": "くらい",
+            "meta": {
+                "romaji": "kurai",
+                "meaning": "tối",
+                "meaningEn": "dark",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_284",
+            "front": "クラス",
+            "back": "クラス",
+            "meta": {
+                "romaji": "kurasu",
+                "meaning": "lớp học",
+                "meaningEn": "class",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_285",
+            "front": "黒",
+            "back": "くろ",
+            "meta": {
+                "romaji": "kuro",
+                "meaning": "màu đen",
+                "meaningEn": "black (noun)",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_286",
+            "front": "黒い",
+            "back": "くろい",
+            "meta": {
+                "romaji": "kuroi",
+                "meaning": "đen",
+                "meaningEn": "black",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_287",
+            "front": "来る",
+            "back": "くる",
+            "meta": {
+                "romaji": "kuru",
+                "meaning": "đến",
+                "meaningEn": "to come",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_288",
+            "front": "車",
+            "back": "くるま",
+            "meta": {
+                "romaji": "kuruma",
+                "meaning": "xe hơi",
+                "meaningEn": "car",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_289",
+            "front": "薬",
+            "back": "くすり",
+            "meta": {
+                "romaji": "kusuri",
+                "meaning": "thuốc",
+                "meaningEn": "medicine",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_290",
+            "front": "靴",
+            "back": "くつ",
+            "meta": {
+                "romaji": "kutsu",
+                "meaning": "giày",
+                "meaningEn": "shoes",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_291",
+            "front": "靴下",
+            "back": "くつした",
+            "meta": {
+                "romaji": "kutsushita",
+                "meaning": "tất",
+                "meaningEn": "socks",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_292",
+            "front": "去年",
+            "back": "きょねん",
+            "meta": {
+                "romaji": "kyonen",
+                "meaning": "năm ngoái",
+                "meaningEn": "last year",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_293",
+            "front": "今日",
+            "back": "きょう",
+            "meta": {
+                "romaji": "kyou",
+                "meaning": "hôm nay",
+                "meaningEn": "today",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_294",
+            "front": "兄弟",
+            "back": "きょうだい",
+            "meta": {
+                "romaji": "kyoudai",
+                "meaning": "anh chị em",
+                "meaningEn": "siblings",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_295",
+            "front": "教室",
+            "back": "きょうしつ",
+            "meta": {
+                "romaji": "kyoushitsu",
+                "meaning": "phòng học",
+                "meaningEn": "classroom",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_296",
+            "front": "九",
+            "back": "きゅう",
+            "meta": {
+                "romaji": "kyuu",
+                "meaning": "chín",
+                "meaningEn": "nine",
+                "type": "number"
+            }
+        },
+        {
+            "id": "n5_297",
+            "front": "町",
+            "back": "まち",
+            "meta": {
+                "romaji": "machi",
+                "meaning": "thị trấn",
+                "meaningEn": "town",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_298",
+            "front": "窓",
+            "back": "まど",
+            "meta": {
+                "romaji": "mado",
+                "meaning": "cửa sổ",
+                "meaningEn": "window",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_299",
+            "front": "前",
+            "back": "まえ",
+            "meta": {
+                "romaji": "mae",
+                "meaning": "trước, phía trước",
+                "meaningEn": "before, front",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_300",
+            "front": "曲がる",
+            "back": "まがる",
+            "meta": {
+                "romaji": "magaru",
+                "meaning": "rẽ",
+                "meaningEn": "to turn",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_301",
+            "front": "毎朝",
+            "back": "まいあさ",
+            "meta": {
+                "romaji": "maiasa",
+                "meaning": "mỗi sáng",
+                "meaningEn": "every morning",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_302",
+            "front": "毎晩",
+            "back": "まいばん",
+            "meta": {
+                "romaji": "maiban",
+                "meaning": "mỗi tối",
+                "meaningEn": "every night",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_303",
+            "front": "毎日",
+            "back": "まいにち",
+            "meta": {
+                "romaji": "mainichi",
+                "meaning": "mỗi ngày",
+                "meaningEn": "every day",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_304",
+            "front": "毎週",
+            "back": "まいしゅう",
+            "meta": {
+                "romaji": "maishuu",
+                "meaning": "mỗi tuần",
+                "meaningEn": "every week",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_305",
+            "front": "毎年",
+            "back": "まいとし",
+            "meta": {
+                "romaji": "maitoshi",
+                "meaning": "mỗi năm",
+                "meaningEn": "every year",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_306",
+            "front": "毎月",
+            "back": "まいつき",
+            "meta": {
+                "romaji": "maitsuki",
+                "meaning": "mỗi tháng",
+                "meaningEn": "every month",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_307",
+            "front": "万",
+            "back": "まん",
+            "meta": {
+                "romaji": "man",
+                "meaning": "mười nghìn",
+                "meaningEn": "ten thousand",
+                "type": "number"
+            }
+        },
+        {
+            "id": "n5_308",
+            "front": "丸い",
+            "back": "まるい",
+            "meta": {
+                "romaji": "marui",
+                "meaning": "tròn",
+                "meaningEn": "round",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_309",
+            "front": "真っ直ぐ",
+            "back": "まっすぐ",
+            "meta": {
+                "romaji": "massugu",
+                "meaning": "thẳng",
+                "meaningEn": "straight",
+                "type": "adverb"
+            }
+        },
+        {
+            "id": "n5_310",
+            "front": "待つ",
+            "back": "まつ",
+            "meta": {
+                "romaji": "matsu",
+                "meaning": "đợi",
+                "meaningEn": "to wait",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_311",
+            "front": "不味い",
+            "back": "まずい",
+            "meta": {
+                "romaji": "mazui",
+                "meaning": "dở, không ngon",
+                "meaningEn": "bad tasting",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_312",
+            "front": "目",
+            "back": "め",
+            "meta": {
+                "romaji": "me",
+                "meaning": "mắt",
+                "meaningEn": "eye",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_313",
+            "front": "眼鏡",
+            "back": "めがね",
+            "meta": {
+                "romaji": "megane",
+                "meaning": "kính mắt",
+                "meaningEn": "glasses",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_314",
+            "front": "道",
+            "back": "みち",
+            "meta": {
+                "romaji": "michi",
+                "meaning": "đường",
+                "meaningEn": "road, way",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_315",
+            "front": "緑",
+            "back": "みどり",
+            "meta": {
+                "romaji": "midori",
+                "meaning": "màu xanh lá",
+                "meaningEn": "green",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_316",
+            "front": "磨く",
+            "back": "みがく",
+            "meta": {
+                "romaji": "migaku",
+                "meaning": "đánh (răng), chải",
+                "meaningEn": "to brush, polish",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_317",
+            "front": "右",
+            "back": "みぎ",
+            "meta": {
+                "romaji": "migi",
+                "meaning": "bên phải",
+                "meaningEn": "right",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_318",
+            "front": "短い",
+            "back": "みじかい",
+            "meta": {
+                "romaji": "mijikai",
+                "meaning": "ngắn",
+                "meaningEn": "short",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_319",
+            "front": "三日",
+            "back": "みっか",
+            "meta": {
+                "romaji": "mikka",
+                "meaning": "ngày 3",
+                "meaningEn": "3rd day",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_320",
+            "front": "耳",
+            "back": "みみ",
+            "meta": {
+                "romaji": "mimi",
+                "meaning": "tai",
+                "meaningEn": "ear",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_321",
+            "front": "南",
+            "back": "みなみ",
+            "meta": {
+                "romaji": "minami",
+                "meaning": "phía nam",
+                "meaningEn": "south",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_322",
+            "front": "皆さん",
+            "back": "みなさん",
+            "meta": {
+                "romaji": "minasan",
+                "meaning": "mọi người",
+                "meaningEn": "everyone",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_323",
+            "front": "みんな",
+            "back": "みんな",
+            "meta": {
+                "romaji": "minna",
+                "meaning": "mọi người",
+                "meaningEn": "everyone",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_324",
+            "front": "見る",
+            "back": "みる",
+            "meta": {
+                "romaji": "miru",
+                "meaning": "xem, nhìn",
+                "meaningEn": "to see, watch",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_325",
+            "front": "店",
+            "back": "みせ",
+            "meta": {
+                "romaji": "mise",
+                "meaning": "cửa hàng",
+                "meaningEn": "store, shop",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_326",
+            "front": "見せる",
+            "back": "みせる",
+            "meta": {
+                "romaji": "miseru",
+                "meaning": "cho xem",
+                "meaningEn": "to show",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_327",
+            "front": "三つ",
+            "back": "みっつ",
+            "meta": {
+                "romaji": "mittsu",
+                "meaning": "ba cái",
+                "meaningEn": "three",
+                "type": "counter"
+            }
+        },
+        {
+            "id": "n5_328",
+            "front": "水",
+            "back": "みず",
+            "meta": {
+                "romaji": "mizu",
+                "meaning": "nước",
+                "meaningEn": "water",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_329",
+            "front": "木曜日",
+            "back": "もくようび",
+            "meta": {
+                "romaji": "mokuyoubi",
+                "meaning": "thứ Năm",
+                "meaningEn": "Thursday",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_330",
+            "front": "門",
+            "back": "もん",
+            "meta": {
+                "romaji": "mon",
+                "meaning": "cổng",
+                "meaningEn": "gate",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_331",
+            "front": "問題",
+            "back": "もんだい",
+            "meta": {
+                "romaji": "mondai",
+                "meaning": "vấn đề, câu hỏi",
+                "meaningEn": "problem, question",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_332",
+            "front": "物",
+            "back": "もの",
+            "meta": {
+                "romaji": "mono",
+                "meaning": "đồ vật",
+                "meaningEn": "thing",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_333",
+            "front": "持つ",
+            "back": "もつ",
+            "meta": {
+                "romaji": "motsu",
+                "meaning": "cầm, có",
+                "meaningEn": "to hold, have",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_334",
+            "front": "もっと",
+            "back": "もっと",
+            "meta": {
+                "romaji": "motto",
+                "meaning": "hơn nữa",
+                "meaningEn": "more",
+                "type": "adverb"
+            }
+        },
+        {
+            "id": "n5_335",
+            "front": "もう一度",
+            "back": "もういちど",
+            "meta": {
+                "romaji": "mouichido",
+                "meaning": "một lần nữa",
+                "meaningEn": "once more",
+                "type": "adverb"
+            }
+        },
+        {
+            "id": "n5_336",
+            "front": "六日",
+            "back": "むいか",
+            "meta": {
+                "romaji": "muika",
+                "meaning": "ngày 6",
+                "meaningEn": "6th day",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_337",
+            "front": "向こう",
+            "back": "むこう",
+            "meta": {
+                "romaji": "mukou",
+                "meaning": "bên kia",
+                "meaningEn": "over there",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_338",
+            "front": "六つ",
+            "back": "むっつ",
+            "meta": {
+                "romaji": "muttsu",
+                "meaning": "sáu cái",
+                "meaningEn": "six",
+                "type": "counter"
+            }
+        },
+        {
+            "id": "n5_339",
+            "front": "難しい",
+            "back": "むずかしい",
+            "meta": {
+                "romaji": "muzukashii",
+                "meaning": "khó",
+                "meaningEn": "difficult",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_340",
+            "front": "長い",
+            "back": "ながい",
+            "meta": {
+                "romaji": "nagai",
+                "meaning": "dài",
+                "meaningEn": "long",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_341",
+            "front": "中",
+            "back": "なか",
+            "meta": {
+                "romaji": "naka",
+                "meaning": "bên trong",
+                "meaningEn": "inside",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_342",
+            "front": "無くす",
+            "back": "なくす",
+            "meta": {
+                "romaji": "nakusu",
+                "meaning": "làm mất",
+                "meaningEn": "to lose",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_343",
+            "front": "名前",
+            "back": "なまえ",
+            "meta": {
+                "romaji": "namae",
+                "meaning": "tên",
+                "meaningEn": "name",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_344",
+            "front": "七つ",
+            "back": "ななつ",
+            "meta": {
+                "romaji": "nanatsu",
+                "meaning": "bảy cái",
+                "meaningEn": "seven",
+                "type": "counter"
+            }
+        },
+        {
+            "id": "n5_345",
+            "front": "何",
+            "back": "なに",
+            "meta": {
+                "romaji": "nani",
+                "meaning": "cái gì",
+                "meaningEn": "what",
+                "type": "pronoun"
+            }
+        },
+        {
+            "id": "n5_346",
+            "front": "七日",
+            "back": "なのか",
+            "meta": {
+                "romaji": "nanoka",
+                "meaning": "ngày 7",
+                "meaningEn": "7th day",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_347",
+            "front": "並べる",
+            "back": "ならべる",
+            "meta": {
+                "romaji": "naraberu",
+                "meaning": "xếp hàng",
+                "meaningEn": "to line up",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_348",
+            "front": "習う",
+            "back": "ならう",
+            "meta": {
+                "romaji": "narau",
+                "meaning": "học",
+                "meaningEn": "to learn",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_349",
+            "front": "夏",
+            "back": "なつ",
+            "meta": {
+                "romaji": "natsu",
+                "meaning": "mùa hè",
+                "meaningEn": "summer",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_350",
+            "front": "夏休み",
+            "back": "なつやすみ",
+            "meta": {
+                "romaji": "natsuyasumi",
+                "meaning": "nghỉ hè",
+                "meaningEn": "summer vacation",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_351",
+            "front": "何故",
+            "back": "なぜ",
+            "meta": {
+                "romaji": "naze",
+                "meaning": "tại sao",
+                "meaningEn": "why",
+                "type": "adverb"
+            }
+        },
+        {
+            "id": "n5_352",
+            "front": "猫",
+            "back": "ねこ",
+            "meta": {
+                "romaji": "neko",
+                "meaning": "con mèo",
+                "meaningEn": "cat",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_353",
+            "front": "寝る",
+            "back": "ねる",
+            "meta": {
+                "romaji": "neru",
+                "meaning": "ngủ",
+                "meaningEn": "to sleep",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_354",
+            "front": "二",
+            "back": "に",
+            "meta": {
+                "romaji": "ni",
+                "meaning": "hai",
+                "meaningEn": "two",
+                "type": "number"
+            }
+        },
+        {
+            "id": "n5_355",
+            "front": "日曜日",
+            "back": "にちようび",
+            "meta": {
+                "romaji": "nichiyoubi",
+                "meaning": "Chủ nhật",
+                "meaningEn": "Sunday",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_356",
+            "front": "賑やか",
+            "back": "にぎやか",
+            "meta": {
+                "romaji": "nigiyaka",
+                "meaning": "nhộn nhịp",
+                "meaningEn": "lively",
+                "type": "na-adjective"
+            }
+        },
+        {
+            "id": "n5_357",
+            "front": "肉",
+            "back": "にく",
+            "meta": {
+                "romaji": "niku",
+                "meaning": "thịt",
+                "meaningEn": "meat",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_358",
+            "front": "荷物",
+            "back": "にもつ",
+            "meta": {
+                "romaji": "nimotsu",
+                "meaning": "hành lý",
+                "meaningEn": "luggage",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_359",
+            "front": "西",
+            "back": "にし",
+            "meta": {
+                "romaji": "nishi",
+                "meaning": "phía tây",
+                "meaningEn": "west",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_360",
+            "front": "庭",
+            "back": "にわ",
+            "meta": {
+                "romaji": "niwa",
+                "meaning": "vườn",
+                "meaningEn": "garden",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_361",
+            "front": "登る",
+            "back": "のぼる",
+            "meta": {
+                "romaji": "noboru",
+                "meaning": "leo",
+                "meaningEn": "to climb",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_362",
+            "front": "飲み物",
+            "back": "のみもの",
+            "meta": {
+                "romaji": "nomimono",
+                "meaning": "đồ uống",
+                "meaningEn": "drink",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_363",
+            "front": "飲む",
+            "back": "のむ",
+            "meta": {
+                "romaji": "nomu",
+                "meaning": "uống",
+                "meaningEn": "to drink",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_364",
+            "front": "ノート",
+            "back": "ノート",
+            "meta": {
+                "romaji": "nooto",
+                "meaning": "vở",
+                "meaningEn": "notebook",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_365",
+            "front": "乗る",
+            "back": "のる",
+            "meta": {
+                "romaji": "noru",
+                "meaning": "lên xe",
+                "meaningEn": "to ride",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_366",
+            "front": "脱ぐ",
+            "back": "ぬぐ",
+            "meta": {
+                "romaji": "nugu",
+                "meaning": "cởi",
+                "meaningEn": "to take off clothes",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_367",
+            "front": "温い",
+            "back": "ぬるい",
+            "meta": {
+                "romaji": "nurui",
+                "meaning": "ấm",
+                "meaningEn": "lukewarm",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_368",
+            "front": "おばあさん",
+            "back": "おばあさん",
+            "meta": {
+                "romaji": "obaasan",
+                "meaning": "bà",
+                "meaningEn": "grandmother",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_369",
+            "front": "お弁当",
+            "back": "おべんとう",
+            "meta": {
+                "romaji": "obentou",
+                "meaning": "cơm hộp",
+                "meaningEn": "lunch box",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_370",
+            "front": "覚える",
+            "back": "おぼえる",
+            "meta": {
+                "romaji": "oboeru",
+                "meaning": "nhớ",
+                "meaningEn": "to remember",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_371",
+            "front": "お茶",
+            "back": "おちゃ",
+            "meta": {
+                "romaji": "ocha",
+                "meaning": "trà",
+                "meaningEn": "tea",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_372",
+            "front": "お風呂",
+            "back": "おふろ",
+            "meta": {
+                "romaji": "ofuro",
+                "meaning": "bồn tắm",
+                "meaningEn": "bath",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_373",
+            "front": "美味しい",
+            "back": "おいしい",
+            "meta": {
+                "romaji": "oishii",
+                "meaning": "ngon",
+                "meaningEn": "delicious",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_374",
+            "front": "お母さん",
+            "back": "おかあさん",
+            "meta": {
+                "romaji": "okaasan",
+                "meaning": "mẹ",
+                "meaningEn": "mother",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_375",
+            "front": "お金",
+            "back": "おかね",
+            "meta": {
+                "romaji": "okane",
+                "meaning": "tiền",
+                "meaningEn": "money",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_376",
+            "front": "お菓子",
+            "back": "おかし",
+            "meta": {
+                "romaji": "okashi",
+                "meaning": "bánh kẹo",
+                "meaningEn": "candy, sweets",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_377",
+            "front": "起きる",
+            "back": "おきる",
+            "meta": {
+                "romaji": "okiru",
+                "meaning": "thức dậy",
+                "meaningEn": "to wake up",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_378",
+            "front": "置く",
+            "back": "おく",
+            "meta": {
+                "romaji": "oku",
+                "meaning": "đặt",
+                "meaningEn": "to put",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_379",
+            "front": "奥さん",
+            "back": "おくさん",
+            "meta": {
+                "romaji": "okusan",
+                "meaning": "vợ (lịch sự)",
+                "meaningEn": "wife (polite)",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_380",
+            "front": "重い",
+            "back": "おもい",
+            "meta": {
+                "romaji": "omoi",
+                "meaning": "nặng",
+                "meaningEn": "heavy",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_381",
+            "front": "面白い",
+            "back": "おもしろい",
+            "meta": {
+                "romaji": "omoshiroi",
+                "meaning": "thú vị",
+                "meaningEn": "interesting",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_382",
+            "front": "同じ",
+            "back": "おなじ",
+            "meta": {
+                "romaji": "onaji",
+                "meaning": "giống nhau",
+                "meaningEn": "same",
+                "type": "na-adjective"
+            }
+        },
+        {
+            "id": "n5_383",
+            "front": "お腹",
+            "back": "おなか",
+            "meta": {
+                "romaji": "onaka",
+                "meaning": "bụng",
+                "meaningEn": "stomach",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_384",
+            "front": "お姉さん",
+            "back": "おねえさん",
+            "meta": {
+                "romaji": "oneesan",
+                "meaning": "chị gái",
+                "meaningEn": "older sister",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_385",
+            "front": "音楽",
+            "back": "おんがく",
+            "meta": {
+                "romaji": "ongaku",
+                "meaning": "âm nhạc",
+                "meaningEn": "music",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_386",
+            "front": "お兄さん",
+            "back": "おにいさん",
+            "meta": {
+                "romaji": "oniisan",
+                "meaning": "anh trai",
+                "meaningEn": "older brother",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_387",
+            "front": "女",
+            "back": "おんな",
+            "meta": {
+                "romaji": "onna",
+                "meaning": "phụ nữ",
+                "meaningEn": "woman",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_388",
+            "front": "女の子",
+            "back": "おんなのこ",
+            "meta": {
+                "romaji": "onnanoko",
+                "meaning": "con gái",
+                "meaningEn": "girl",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_389",
+            "front": "多い",
+            "back": "おおい",
+            "meta": {
+                "romaji": "ooi",
+                "meaning": "nhiều",
+                "meaningEn": "many",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_390",
+            "front": "大きい",
+            "back": "おおきい",
+            "meta": {
+                "romaji": "ookii",
+                "meaning": "to, lớn",
+                "meaningEn": "big",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_391",
+            "front": "降りる",
+            "back": "おりる",
+            "meta": {
+                "romaji": "oriru",
+                "meaning": "xuống xe",
+                "meaningEn": "to get off",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_392",
+            "front": "お酒",
+            "back": "おさけ",
+            "meta": {
+                "romaji": "osake",
+                "meaning": "rượu",
+                "meaningEn": "alcohol",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_393",
+            "front": "教える",
+            "back": "おしえる",
+            "meta": {
+                "romaji": "oshieru",
+                "meaning": "dạy",
+                "meaningEn": "to teach",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_394",
+            "front": "遅い",
+            "back": "おそい",
+            "meta": {
+                "romaji": "osoi",
+                "meaning": "chậm, muộn",
+                "meaningEn": "slow, late",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_395",
+            "front": "押す",
+            "back": "おす",
+            "meta": {
+                "romaji": "osu",
+                "meaning": "đẩy",
+                "meaningEn": "to push",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_396",
+            "front": "お手洗い",
+            "back": "おてあらい",
+            "meta": {
+                "romaji": "otearai",
+                "meaning": "nhà vệ sinh",
+                "meaningEn": "restroom",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_397",
+            "front": "男",
+            "back": "おとこ",
+            "meta": {
+                "romaji": "otoko",
+                "meaning": "đàn ông",
+                "meaningEn": "man",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_398",
+            "front": "男の子",
+            "back": "おとこのこ",
+            "meta": {
+                "romaji": "otokonoko",
+                "meaning": "con trai",
+                "meaningEn": "boy",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_399",
+            "front": "大人",
+            "back": "おとな",
+            "meta": {
+                "romaji": "otona",
+                "meaning": "người lớn",
+                "meaningEn": "adult",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_400",
+            "front": "一昨日",
+            "back": "おととい",
+            "meta": {
+                "romaji": "ototoi",
+                "meaning": "hôm kia",
+                "meaningEn": "day before yesterday",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_401",
+            "front": "お父さん",
+            "back": "おとうさん",
+            "meta": {
+                "romaji": "otousan",
+                "meaning": "bố",
+                "meaningEn": "father",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_402",
+            "front": "弟",
+            "back": "おとうと",
+            "meta": {
+                "romaji": "otouto",
+                "meaning": "em trai",
+                "meaningEn": "younger brother",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_403",
+            "front": "終わる",
+            "back": "おわる",
+            "meta": {
+                "romaji": "owaru",
+                "meaning": "kết thúc",
+                "meaningEn": "to end",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_404",
+            "front": "泳ぐ",
+            "back": "およぐ",
+            "meta": {
+                "romaji": "oyogu",
+                "meaning": "bơi",
+                "meaningEn": "to swim",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_405",
+            "front": "パン",
+            "back": "パン",
+            "meta": {
+                "romaji": "pan",
+                "meaning": "bánh mì",
+                "meaningEn": "bread",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_406",
+            "front": "ペン",
+            "back": "ペン",
+            "meta": {
+                "romaji": "pen",
+                "meaning": "bút",
+                "meaningEn": "pen",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_407",
+            "front": "ページ",
+            "back": "ページ",
+            "meta": {
+                "romaji": "peeji",
+                "meaning": "trang",
+                "meaningEn": "page",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_408",
+            "front": "プール",
+            "back": "プール",
+            "meta": {
+                "romaji": "puuru",
+                "meaning": "hồ bơi",
+                "meaningEn": "pool",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_409",
+            "front": "来月",
+            "back": "らいげつ",
+            "meta": {
+                "romaji": "raigetsu",
+                "meaning": "tháng tới",
+                "meaningEn": "next month",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_410",
+            "front": "来年",
+            "back": "らいねん",
+            "meta": {
+                "romaji": "rainen",
+                "meaning": "năm tới",
+                "meaningEn": "next year",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_411",
+            "front": "来週",
+            "back": "らいしゅう",
+            "meta": {
+                "romaji": "raishuu",
+                "meaning": "tuần tới",
+                "meaningEn": "next week",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_412",
+            "front": "ラジオ",
+            "back": "ラジオ",
+            "meta": {
+                "romaji": "rajio",
+                "meaning": "đài phát thanh",
+                "meaningEn": "radio",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_413",
+            "front": "零",
+            "back": "れい",
+            "meta": {
+                "romaji": "rei",
+                "meaning": "số không",
+                "meaningEn": "zero",
+                "type": "number"
+            }
+        },
+        {
+            "id": "n5_414",
+            "front": "冷蔵庫",
+            "back": "れいぞうこ",
+            "meta": {
+                "romaji": "reizouko",
+                "meaning": "tủ lạnh",
+                "meaningEn": "refrigerator",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_415",
+            "front": "練習",
+            "back": "れんしゅう",
+            "meta": {
+                "romaji": "renshuu",
+                "meaning": "luyện tập",
+                "meaningEn": "practice",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_416",
+            "front": "レストラン",
+            "back": "レストラン",
+            "meta": {
+                "romaji": "resutoran",
+                "meaning": "nhà hàng",
+                "meaningEn": "restaurant",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_417",
+            "front": "立派",
+            "back": "りっぱ",
+            "meta": {
+                "romaji": "rippa",
+                "meaning": "tuyệt vời",
+                "meaningEn": "splendid",
+                "type": "na-adjective"
+            }
+        },
+        {
+            "id": "n5_418",
+            "front": "六",
+            "back": "ろく",
+            "meta": {
+                "romaji": "roku",
+                "meaning": "sáu",
+                "meaningEn": "six",
+                "type": "number"
+            }
+        },
+        {
+            "id": "n5_419",
+            "front": "廊下",
+            "back": "ろうか",
+            "meta": {
+                "romaji": "rouka",
+                "meaning": "hành lang",
+                "meaningEn": "hallway",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_420",
+            "front": "旅行",
+            "back": "りょこう",
+            "meta": {
+                "romaji": "ryokou",
+                "meaning": "du lịch",
+                "meaningEn": "travel",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_421",
+            "front": "料理",
+            "back": "りょうり",
+            "meta": {
+                "romaji": "ryouri",
+                "meaning": "nấu ăn",
+                "meaningEn": "cooking",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_422",
+            "front": "両親",
+            "back": "りょうしん",
+            "meta": {
+                "romaji": "ryoushin",
+                "meaning": "bố mẹ",
+                "meaningEn": "parents",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_423",
+            "front": "財布",
+            "back": "さいふ",
+            "meta": {
+                "romaji": "saifu",
+                "meaning": "ví",
+                "meaningEn": "wallet",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_424",
+            "front": "魚",
+            "back": "さかな",
+            "meta": {
+                "romaji": "sakana",
+                "meaning": "cá",
+                "meaningEn": "fish",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_425",
+            "front": "咲く",
+            "back": "さく",
+            "meta": {
+                "romaji": "saku",
+                "meaning": "nở hoa",
+                "meaningEn": "to bloom",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_426",
+            "front": "作文",
+            "back": "さくぶん",
+            "meta": {
+                "romaji": "sakubun",
+                "meaning": "bài văn",
+                "meaningEn": "composition",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_427",
+            "front": "寒い",
+            "back": "さむい",
+            "meta": {
+                "romaji": "samui",
+                "meaning": "lạnh",
+                "meaningEn": "cold",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_428",
+            "front": "三",
+            "back": "さん",
+            "meta": {
+                "romaji": "san",
+                "meaning": "ba",
+                "meaningEn": "three",
+                "type": "number"
+            }
+        },
+        {
+            "id": "n5_429",
+            "front": "散歩",
+            "back": "さんぽ",
+            "meta": {
+                "romaji": "sanpo",
+                "meaning": "đi dạo",
+                "meaningEn": "walk",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_430",
+            "front": "砂糖",
+            "back": "さとう",
+            "meta": {
+                "romaji": "satou",
+                "meaning": "đường",
+                "meaningEn": "sugar",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_431",
+            "front": "セーター",
+            "back": "セーター",
+            "meta": {
+                "romaji": "seetaa",
+                "meaning": "áo len",
+                "meaningEn": "sweater",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_432",
+            "front": "生徒",
+            "back": "せいと",
+            "meta": {
+                "romaji": "seito",
+                "meaning": "học sinh",
+                "meaningEn": "student",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_433",
+            "front": "狭い",
+            "back": "せまい",
+            "meta": {
+                "romaji": "semai",
+                "meaning": "hẹp",
+                "meaningEn": "narrow",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_434",
+            "front": "千",
+            "back": "せん",
+            "meta": {
+                "romaji": "sen",
+                "meaning": "nghìn",
+                "meaningEn": "thousand",
+                "type": "number"
+            }
+        },
+        {
+            "id": "n5_435",
+            "front": "先月",
+            "back": "せんげつ",
+            "meta": {
+                "romaji": "sengetsu",
+                "meaning": "tháng trước",
+                "meaningEn": "last month",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_436",
+            "front": "先生",
+            "back": "せんせい",
+            "meta": {
+                "romaji": "sensei",
+                "meaning": "giáo viên",
+                "meaningEn": "teacher",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_437",
+            "front": "先週",
+            "back": "せんしゅう",
+            "meta": {
+                "romaji": "senshuu",
+                "meaning": "tuần trước",
+                "meaningEn": "last week",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_438",
+            "front": "洗濯",
+            "back": "せんたく",
+            "meta": {
+                "romaji": "sentaku",
+                "meaning": "giặt giũ",
+                "meaningEn": "laundry",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_439",
+            "front": "写真",
+            "back": "しゃしん",
+            "meta": {
+                "romaji": "shashin",
+                "meaning": "ảnh",
+                "meaningEn": "photo",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_440",
+            "front": "シャツ",
+            "back": "シャツ",
+            "meta": {
+                "romaji": "shatsu",
+                "meaning": "áo sơ mi",
+                "meaningEn": "shirt",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_441",
+            "front": "シャワー",
+            "back": "シャワー",
+            "meta": {
+                "romaji": "shawaa",
+                "meaning": "vòi sen",
+                "meaningEn": "shower",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_442",
+            "front": "四",
+            "back": "し",
+            "meta": {
+                "romaji": "shi",
+                "meaning": "bốn",
+                "meaningEn": "four",
+                "type": "number"
+            }
+        },
+        {
+            "id": "n5_443",
+            "front": "七",
+            "back": "しち",
+            "meta": {
+                "romaji": "shichi",
+                "meaning": "bảy",
+                "meaningEn": "seven",
+                "type": "number"
+            }
+        },
+        {
+            "id": "n5_444",
+            "front": "仕事",
+            "back": "しごと",
+            "meta": {
+                "romaji": "shigoto",
+                "meaning": "công việc",
+                "meaningEn": "work",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_445",
+            "front": "閉まる",
+            "back": "しまる",
+            "meta": {
+                "romaji": "shimaru",
+                "meaning": "đóng",
+                "meaningEn": "to close",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_446",
+            "front": "閉める",
+            "back": "しめる",
+            "meta": {
+                "romaji": "shimeru",
+                "meaning": "đóng",
+                "meaningEn": "to close",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_447",
+            "front": "新聞",
+            "back": "しんぶん",
+            "meta": {
+                "romaji": "shinbun",
+                "meaning": "báo",
+                "meaningEn": "newspaper",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_448",
+            "front": "死ぬ",
+            "back": "しぬ",
+            "meta": {
+                "romaji": "shinu",
+                "meaning": "chết",
+                "meaningEn": "to die",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_449",
+            "front": "塩",
+            "back": "しお",
+            "meta": {
+                "romaji": "shio",
+                "meaning": "muối",
+                "meaningEn": "salt",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_450",
+            "front": "白",
+            "back": "しろ",
+            "meta": {
+                "romaji": "shiro",
+                "meaning": "màu trắng",
+                "meaningEn": "white",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_451",
+            "front": "白い",
+            "back": "しろい",
+            "meta": {
+                "romaji": "shiroi",
+                "meaning": "trắng",
+                "meaningEn": "white",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_452",
+            "front": "知る",
+            "back": "しる",
+            "meta": {
+                "romaji": "shiru",
+                "meaning": "biết",
+                "meaningEn": "to know",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_453",
+            "front": "下",
+            "back": "した",
+            "meta": {
+                "romaji": "shita",
+                "meaning": "bên dưới",
+                "meaningEn": "under, below",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_454",
+            "front": "質問",
+            "back": "しつもん",
+            "meta": {
+                "romaji": "shitsumon",
+                "meaning": "câu hỏi",
+                "meaningEn": "question",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_455",
+            "front": "静か",
+            "back": "しずか",
+            "meta": {
+                "romaji": "shizuka",
+                "meaning": "yên tĩnh",
+                "meaningEn": "quiet",
+                "type": "na-adjective"
+            }
+        },
+        {
+            "id": "n5_456",
+            "front": "食堂",
+            "back": "しょくどう",
+            "meta": {
+                "romaji": "shokudou",
+                "meaning": "nhà ăn",
+                "meaningEn": "cafeteria",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_457",
+            "front": "醬油",
+            "back": "しょうゆ",
+            "meta": {
+                "romaji": "shouyu",
+                "meaning": "nước tương",
+                "meaningEn": "soy sauce",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_458",
+            "front": "宿題",
+            "back": "しゅくだい",
+            "meta": {
+                "romaji": "shukudai",
+                "meaning": "bài tập về nhà",
+                "meaningEn": "homework",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_459",
+            "front": "そば",
+            "back": "そば",
+            "meta": {
+                "romaji": "soba",
+                "meaning": "bên cạnh",
+                "meaningEn": "near, beside",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_460",
+            "front": "そっち",
+            "back": "そっち",
+            "meta": {
+                "romaji": "socchi",
+                "meaning": "bên đó (thân mật)",
+                "meaningEn": "that way (casual)",
+                "type": "pronoun"
+            }
+        },
+        {
+            "id": "n5_461",
+            "front": "そちら",
+            "back": "そちら",
+            "meta": {
+                "romaji": "sochira",
+                "meaning": "bên đó (lịch sự)",
+                "meaningEn": "that way (polite)",
+                "type": "pronoun"
+            }
+        },
+        {
+            "id": "n5_462",
+            "front": "そこ",
+            "back": "そこ",
+            "meta": {
+                "romaji": "soko",
+                "meaning": "đó, chỗ đó",
+                "meaningEn": "that place",
+                "type": "pronoun"
+            }
+        },
+        {
+            "id": "n5_463",
+            "front": "その",
+            "back": "その",
+            "meta": {
+                "romaji": "sono",
+                "meaning": "cái đó",
+                "meaningEn": "that",
+                "type": "pre-noun adjectival"
+            }
+        },
+        {
+            "id": "n5_464",
+            "front": "空",
+            "back": "そら",
+            "meta": {
+                "romaji": "sora",
+                "meaning": "bầu trời",
+                "meaningEn": "sky",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_465",
+            "front": "それ",
+            "back": "それ",
+            "meta": {
+                "romaji": "sore",
+                "meaning": "cái đó",
+                "meaningEn": "that",
+                "type": "pronoun"
+            }
+        },
+        {
+            "id": "n5_466",
+            "front": "それでは",
+            "back": "それでは",
+            "meta": {
+                "romaji": "sore dewa",
+                "meaning": "vậy thì",
+                "meaningEn": "well then",
+                "type": "conjunction"
+            }
+        },
+        {
+            "id": "n5_467",
+            "front": "外",
+            "back": "そと",
+            "meta": {
+                "romaji": "soto",
+                "meaning": "bên ngoài",
+                "meaningEn": "outside",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_468",
+            "front": "掃除",
+            "back": "そうじ",
+            "meta": {
+                "romaji": "souji",
+                "meaning": "dọn dẹp",
+                "meaningEn": "cleaning",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_469",
+            "front": "直ぐに",
+            "back": "すぐに",
+            "meta": {
+                "romaji": "sugu ni",
+                "meaning": "ngay lập tức",
+                "meaningEn": "immediately",
+                "type": "adverb"
+            }
+        },
+        {
+            "id": "n5_470",
+            "front": "水曜日",
+            "back": "すいようび",
+            "meta": {
+                "romaji": "suiyoubi",
+                "meaning": "thứ Tư",
+                "meaningEn": "Wednesday",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_471",
+            "front": "スカート",
+            "back": "スカート",
+            "meta": {
+                "romaji": "sukaato",
+                "meaning": "váy",
+                "meaningEn": "skirt",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_472",
+            "front": "好き",
+            "back": "すき",
+            "meta": {
+                "romaji": "suki",
+                "meaning": "thích",
+                "meaningEn": "like",
+                "type": "na-adjective"
+            }
+        },
+        {
+            "id": "n5_473",
+            "front": "少し",
+            "back": "すこし",
+            "meta": {
+                "romaji": "sukoshi",
+                "meaning": "một chút",
+                "meaningEn": "a little",
+                "type": "adverb"
+            }
+        },
+        {
+            "id": "n5_474",
+            "front": "少ない",
+            "back": "すくない",
+            "meta": {
+                "romaji": "sukunai",
+                "meaning": "ít",
+                "meaningEn": "few",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_475",
+            "front": "住む",
+            "back": "すむ",
+            "meta": {
+                "romaji": "sumu",
+                "meaning": "sống",
+                "meaningEn": "to live",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_476",
+            "front": "スポーツ",
+            "back": "スポーツ",
+            "meta": {
+                "romaji": "supootsu",
+                "meaning": "thể thao",
+                "meaningEn": "sports",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_477",
+            "front": "スプーン",
+            "back": "スプーン",
+            "meta": {
+                "romaji": "supuun",
+                "meaning": "cái thìa",
+                "meaningEn": "spoon",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_478",
+            "front": "スリッパ",
+            "back": "スリッパ",
+            "meta": {
+                "romaji": "surippa",
+                "meaning": "dép đi trong nhà",
+                "meaningEn": "slippers",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_479",
+            "front": "ストーブ",
+            "back": "ストーブ",
+            "meta": {
+                "romaji": "sutoobu",
+                "meaning": "lò sưởi",
+                "meaningEn": "stove, heater",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_480",
+            "front": "吸う",
+            "back": "すう",
+            "meta": {
+                "romaji": "suu",
+                "meaning": "hút (thuốc), hít",
+                "meaningEn": "to smoke, to suck",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_481",
+            "front": "座る",
+            "back": "すわる",
+            "meta": {
+                "romaji": "suwaru",
+                "meaning": "ngồi",
+                "meaningEn": "to sit",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_482",
+            "front": "涼しい",
+            "back": "すずしい",
+            "meta": {
+                "romaji": "suzushii",
+                "meaning": "mát mẻ",
+                "meaningEn": "cool",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_483",
+            "front": "たばこ",
+            "back": "たばこ",
+            "meta": {
+                "romaji": "tabako",
+                "meaning": "thuốc lá",
+                "meaningEn": "tobacco, cigarette",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_484",
+            "front": "食べ物",
+            "back": "たべもの",
+            "meta": {
+                "romaji": "tabemono",
+                "meaning": "đồ ăn",
+                "meaningEn": "food",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_485",
+            "front": "食べる",
+            "back": "たべる",
+            "meta": {
+                "romaji": "taberu",
+                "meaning": "ăn",
+                "meaningEn": "to eat",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_486",
+            "front": "多分",
+            "back": "たぶん",
+            "meta": {
+                "romaji": "tabun",
+                "meaning": "có lẽ",
+                "meaningEn": "probably",
+                "type": "adverb"
+            }
+        },
+        {
+            "id": "n5_487",
+            "front": "大変",
+            "back": "たいへん",
+            "meta": {
+                "romaji": "taihen",
+                "meaning": "vất vả, kinh khủng",
+                "meaningEn": "tough, awful",
+                "type": "na-adjective"
+            }
+        },
+        {
+            "id": "n5_488",
+            "front": "大切",
+            "back": "たいせつ",
+            "meta": {
+                "romaji": "taisetsu",
+                "meaning": "quan trọng",
+                "meaningEn": "important",
+                "type": "na-adjective"
+            }
+        },
+        {
+            "id": "n5_489",
+            "front": "大使館",
+            "back": "たいしかん",
+            "meta": {
+                "romaji": "taishikan",
+                "meaning": "đại sứ quán",
+                "meaningEn": "embassy",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_490",
+            "front": "高い",
+            "back": "たかい",
+            "meta": {
+                "romaji": "takai",
+                "meaning": "cao, đắt",
+                "meaningEn": "high, expensive",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_491",
+            "front": "沢山",
+            "back": "たくさん",
+            "meta": {
+                "romaji": "takusan",
+                "meaning": "nhiều",
+                "meaningEn": "many, a lot",
+                "type": "adverb"
+            }
+        },
+        {
+            "id": "n5_492",
+            "front": "タクシー",
+            "back": "タクシー",
+            "meta": {
+                "romaji": "takushii",
+                "meaning": "xe taxi",
+                "meaningEn": "taxi",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_493",
+            "front": "卵",
+            "back": "たまご",
+            "meta": {
+                "romaji": "tamago",
+                "meaning": "trứng",
+                "meaningEn": "egg",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_494",
+            "front": "誕生日",
+            "back": "たんじょうび",
+            "meta": {
+                "romaji": "tanjoubi",
+                "meaning": "sinh nhật",
+                "meaningEn": "birthday",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_495",
+            "front": "頼む",
+            "back": "たのむ",
+            "meta": {
+                "romaji": "tanomu",
+                "meaning": "nhờ cậy",
+                "meaningEn": "to ask, request",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_496",
+            "front": "楽しい",
+            "back": "たのしい",
+            "meta": {
+                "romaji": "tanoshii",
+                "meaning": "vui vẻ",
+                "meaningEn": "fun",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_497",
+            "front": "縦",
+            "back": "たて",
+            "meta": {
+                "romaji": "tate",
+                "meaning": "chiều dọc",
+                "meaningEn": "vertical",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_498",
+            "front": "建物",
+            "back": "たてもの",
+            "meta": {
+                "romaji": "tatemono",
+                "meaning": "tòa nhà",
+                "meaningEn": "building",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_499",
+            "front": "立つ",
+            "back": "たつ",
+            "meta": {
+                "romaji": "tatsu",
+                "meaning": "đứng",
+                "meaningEn": "to stand",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_500",
+            "front": "手",
+            "back": "て",
+            "meta": {
+                "romaji": "te",
+                "meaning": "tay",
+                "meaningEn": "hand",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_501",
+            "front": "テーブル",
+            "back": "テーブル",
+            "meta": {
+                "romaji": "teeburu",
+                "meaning": "cái bàn",
+                "meaningEn": "table",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_502",
+            "front": "テープ",
+            "back": "テープ",
+            "meta": {
+                "romaji": "teepu",
+                "meaning": "băng",
+                "meaningEn": "tape",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_503",
+            "front": "テープレコーダー",
+            "back": "テープレコーダー",
+            "meta": {
+                "romaji": "teepu rekoodaa",
+                "meaning": "máy ghi âm",
+                "meaningEn": "tape recorder",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_504",
+            "front": "手紙",
+            "back": "てがみ",
+            "meta": {
+                "romaji": "tegami",
+                "meaning": "thư",
+                "meaningEn": "letter",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_505",
+            "front": "天気",
+            "back": "てんき",
+            "meta": {
+                "romaji": "tenki",
+                "meaning": "thời tiết",
+                "meaningEn": "weather",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_506",
+            "front": "テレビ",
+            "back": "テレビ",
+            "meta": {
+                "romaji": "terebi",
+                "meaning": "ti vi",
+                "meaningEn": "TV",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_507",
+            "front": "テスト",
+            "back": "テスト",
+            "meta": {
+                "romaji": "tesuto",
+                "meaning": "bài kiểm tra",
+                "meaningEn": "test",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_508",
+            "front": "戸",
+            "back": "と",
+            "meta": {
+                "romaji": "to",
+                "meaning": "cửa",
+                "meaningEn": "door",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_509",
+            "front": "飛ぶ",
+            "back": "とぶ",
+            "meta": {
+                "romaji": "tobu",
+                "meaning": "bay",
+                "meaningEn": "to fly",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_510",
+            "front": "トイレ",
+            "back": "トイレ",
+            "meta": {
+                "romaji": "toire",
+                "meaning": "nhà vệ sinh",
+                "meaningEn": "toilet",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_511",
+            "front": "時計",
+            "back": "とけい",
+            "meta": {
+                "romaji": "tokei",
+                "meaning": "đồng hồ",
+                "meaningEn": "clock, watch",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_512",
+            "front": "時",
+            "back": "とき",
+            "meta": {
+                "romaji": "toki",
+                "meaning": "khi, thời gian",
+                "meaningEn": "time, when",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_513",
+            "front": "時々",
+            "back": "ときどき",
+            "meta": {
+                "romaji": "tokidoki",
+                "meaning": "thỉnh thoảng",
+                "meaningEn": "sometimes",
+                "type": "adverb"
+            }
+        },
+        {
+            "id": "n5_514",
+            "front": "所",
+            "back": "ところ",
+            "meta": {
+                "romaji": "tokoro",
+                "meaning": "nơi, chỗ",
+                "meaningEn": "place",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_515",
+            "front": "止まる",
+            "back": "とまる",
+            "meta": {
+                "romaji": "tomaru",
+                "meaning": "dừng lại",
+                "meaningEn": "to stop",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_516",
+            "front": "友達",
+            "back": "ともだち",
+            "meta": {
+                "romaji": "tomodachi",
+                "meaning": "bạn bè",
+                "meaningEn": "friend",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_517",
+            "front": "隣",
+            "back": "となり",
+            "meta": {
+                "romaji": "tonari",
+                "meaning": "bên cạnh",
+                "meaningEn": "next to",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_518",
+            "front": "遠い",
+            "back": "とおい",
+            "meta": {
+                "romaji": "tooi",
+                "meaning": "xa",
+                "meaningEn": "far",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_519",
+            "front": "十日",
+            "back": "とおか",
+            "meta": {
+                "romaji": "tooka",
+                "meaning": "ngày 10",
+                "meaningEn": "10th day",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_520",
+            "front": "鳥",
+            "back": "とり",
+            "meta": {
+                "romaji": "tori",
+                "meaning": "chim",
+                "meaningEn": "bird",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_521",
+            "front": "鶏肉",
+            "back": "とりにく",
+            "meta": {
+                "romaji": "toriniku",
+                "meaning": "thịt gà",
+                "meaningEn": "chicken meat",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_522",
+            "front": "取る",
+            "back": "とる",
+            "meta": {
+                "romaji": "toru",
+                "meaning": "lấy",
+                "meaningEn": "to take",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_523",
+            "front": "撮る",
+            "back": "とる",
+            "meta": {
+                "romaji": "toru",
+                "meaning": "chụp (ảnh)",
+                "meaningEn": "to take (photo)",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_524",
+            "front": "年",
+            "back": "とし",
+            "meta": {
+                "romaji": "toshi",
+                "meaning": "năm, tuổi",
+                "meaningEn": "year, age",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_525",
+            "front": "図書館",
+            "back": "としょかん",
+            "meta": {
+                "romaji": "toshokan",
+                "meaning": "thư viện",
+                "meaningEn": "library",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_526",
+            "front": "次",
+            "back": "つぎ",
+            "meta": {
+                "romaji": "tsugi",
+                "meaning": "tiếp theo",
+                "meaningEn": "next",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_527",
+            "front": "一日",
+            "back": "ついたち",
+            "meta": {
+                "romaji": "tsuitachi",
+                "meaning": "ngày 1",
+                "meaningEn": "1st day",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_528",
+            "front": "疲れる",
+            "back": "つかれる",
+            "meta": {
+                "romaji": "tsukareru",
+                "meaning": "mệt",
+                "meaningEn": "to get tired",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_529",
+            "front": "使う",
+            "back": "つかう",
+            "meta": {
+                "romaji": "tsukau",
+                "meaning": "sử dụng",
+                "meaningEn": "to use",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_530",
+            "front": "つける",
+            "back": "つける",
+            "meta": {
+                "romaji": "tsukeru",
+                "meaning": "bật",
+                "meaningEn": "to turn on",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_531",
+            "front": "着く",
+            "back": "つく",
+            "meta": {
+                "romaji": "tsuku",
+                "meaning": "đến nơi",
+                "meaningEn": "to arrive",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_532",
+            "front": "机",
+            "back": "つくえ",
+            "meta": {
+                "romaji": "tsukue",
+                "meaning": "bàn",
+                "meaningEn": "desk",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_533",
+            "front": "作る",
+            "back": "つくる",
+            "meta": {
+                "romaji": "tsukuru",
+                "meaning": "làm, chế tạo",
+                "meaningEn": "to make",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_534",
+            "front": "詰まらない",
+            "back": "つまらない",
+            "meta": {
+                "romaji": "tsumaranai",
+                "meaning": "nhàm chán",
+                "meaningEn": "boring",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_535",
+            "front": "冷たい",
+            "back": "つめたい",
+            "meta": {
+                "romaji": "tsumetai",
+                "meaning": "lạnh (cảm giác)",
+                "meaningEn": "cold (object)",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_536",
+            "front": "勤める",
+            "back": "つとめる",
+            "meta": {
+                "romaji": "tsutomeru",
+                "meaning": "làm việc",
+                "meaningEn": "to work for",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_537",
+            "front": "強い",
+            "back": "つよい",
+            "meta": {
+                "romaji": "tsuyoi",
+                "meaning": "mạnh",
+                "meaningEn": "strong",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_538",
+            "front": "上",
+            "back": "うえ",
+            "meta": {
+                "romaji": "ue",
+                "meaning": "bên trên",
+                "meaningEn": "up, above",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_539",
+            "front": "生まれる",
+            "back": "うまれる",
+            "meta": {
+                "romaji": "umareru",
+                "meaning": "được sinh ra",
+                "meaningEn": "to be born",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_540",
+            "front": "海",
+            "back": "うみ",
+            "meta": {
+                "romaji": "umi",
+                "meaning": "biển",
+                "meaningEn": "sea",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_541",
+            "front": "売る",
+            "back": "うる",
+            "meta": {
+                "romaji": "uru",
+                "meaning": "bán",
+                "meaningEn": "to sell",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_542",
+            "front": "煩い",
+            "back": "うるさい",
+            "meta": {
+                "romaji": "urusai",
+                "meaning": "ồn ào",
+                "meaningEn": "noisy",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_543",
+            "front": "後ろ",
+            "back": "うしろ",
+            "meta": {
+                "romaji": "ushiro",
+                "meaning": "phía sau",
+                "meaningEn": "behind",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_544",
+            "front": "薄い",
+            "back": "うすい",
+            "meta": {
+                "romaji": "usui",
+                "meaning": "mỏng, nhạt",
+                "meaningEn": "thin, weak",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_545",
+            "front": "歌",
+            "back": "うた",
+            "meta": {
+                "romaji": "uta",
+                "meaning": "bài hát",
+                "meaningEn": "song",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_546",
+            "front": "歌う",
+            "back": "うたう",
+            "meta": {
+                "romaji": "utau",
+                "meaning": "hát",
+                "meaningEn": "to sing",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_547",
+            "front": "上着",
+            "back": "うわぎ",
+            "meta": {
+                "romaji": "uwagi",
+                "meaning": "áo khoác",
+                "meaningEn": "coat, jacket",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_548",
+            "front": "ワイシャツ",
+            "back": "ワイシャツ",
+            "meta": {
+                "romaji": "wai shatsu",
+                "meaning": "áo sơ mi trắng",
+                "meaningEn": "dress shirt",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_549",
+            "front": "若い",
+            "back": "わかい",
+            "meta": {
+                "romaji": "wakai",
+                "meaning": "trẻ",
+                "meaningEn": "young",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_550",
+            "front": "分かる",
+            "back": "わかる",
+            "meta": {
+                "romaji": "wakaru",
+                "meaning": "hiểu",
+                "meaningEn": "to understand",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_551",
+            "front": "悪い",
+            "back": "わるい",
+            "meta": {
+                "romaji": "warui",
+                "meaning": "xấu",
+                "meaningEn": "bad",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_552",
+            "front": "忘れる",
+            "back": "わすれる",
+            "meta": {
+                "romaji": "wasureru",
+                "meaning": "quên",
+                "meaningEn": "to forget",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_553",
+            "front": "渡る",
+            "back": "わたる",
+            "meta": {
+                "romaji": "wataru",
+                "meaning": "băng qua",
+                "meaningEn": "to cross",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_554",
+            "front": "私",
+            "back": "わたし",
+            "meta": {
+                "romaji": "watashi",
+                "meaning": "tôi",
+                "meaningEn": "I",
+                "type": "pronoun"
+            }
+        },
+        {
+            "id": "n5_555",
+            "front": "渡す",
+            "back": "わたす",
+            "meta": {
+                "romaji": "watasu",
+                "meaning": "trao",
+                "meaningEn": "to hand over",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_556",
+            "front": "山",
+            "back": "やま",
+            "meta": {
+                "romaji": "yama",
+                "meaning": "núi",
+                "meaningEn": "mountain",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_557",
+            "front": "八百屋",
+            "back": "やおや",
+            "meta": {
+                "romaji": "yaoya",
+                "meaning": "cửa hàng rau",
+                "meaningEn": "vegetable shop",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_558",
+            "front": "やる",
+            "back": "やる",
+            "meta": {
+                "romaji": "yaru",
+                "meaning": "làm",
+                "meaningEn": "to do",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_559",
+            "front": "野菜",
+            "back": "やさい",
+            "meta": {
+                "romaji": "yasai",
+                "meaning": "rau",
+                "meaningEn": "vegetable",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_560",
+            "front": "易しい",
+            "back": "やさしい",
+            "meta": {
+                "romaji": "yasashii",
+                "meaning": "dễ",
+                "meaningEn": "easy",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_561",
+            "front": "安い",
+            "back": "やすい",
+            "meta": {
+                "romaji": "yasui",
+                "meaning": "rẻ",
+                "meaningEn": "cheap",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_562",
+            "front": "休み",
+            "back": "やすみ",
+            "meta": {
+                "romaji": "yasumi",
+                "meaning": "nghỉ ngơi",
+                "meaningEn": "holiday, rest",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_563",
+            "front": "休む",
+            "back": "やすむ",
+            "meta": {
+                "romaji": "yasumu",
+                "meaning": "nghỉ",
+                "meaningEn": "to rest",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_564",
+            "front": "八つ",
+            "back": "やっつ",
+            "meta": {
+                "romaji": "yattsu",
+                "meaning": "tám cái",
+                "meaningEn": "eight",
+                "type": "counter"
+            }
+        },
+        {
+            "id": "n5_565",
+            "front": "呼ぶ",
+            "back": "よぶ",
+            "meta": {
+                "romaji": "yobu",
+                "meaning": "gọi",
+                "meaningEn": "to call",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_566",
+            "front": "良い",
+            "back": "よい",
+            "meta": {
+                "romaji": "yoi",
+                "meaning": "tốt",
+                "meaningEn": "good",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_567",
+            "front": "四日",
+            "back": "よっか",
+            "meta": {
+                "romaji": "yokka",
+                "meaning": "ngày 4",
+                "meaningEn": "4th day",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_568",
+            "front": "横",
+            "back": "よこ",
+            "meta": {
+                "romaji": "yoko",
+                "meaning": "bên cạnh",
+                "meaningEn": "side",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_569",
+            "front": "よく",
+            "back": "よく",
+            "meta": {
+                "romaji": "yoku",
+                "meaning": "thường, tốt",
+                "meaningEn": "often, well",
+                "type": "adverb"
+            }
+        },
+        {
+            "id": "n5_570",
+            "front": "読む",
+            "back": "よむ",
+            "meta": {
+                "romaji": "yomu",
+                "meaning": "đọc",
+                "meaningEn": "to read",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_571",
+            "front": "夜",
+            "back": "よる",
+            "meta": {
+                "romaji": "yoru",
+                "meaning": "ban đêm",
+                "meaningEn": "night",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_572",
+            "front": "四つ",
+            "back": "よつ",
+            "meta": {
+                "romaji": "yotsu",
+                "meaning": "bốn cái",
+                "meaningEn": "four",
+                "type": "counter"
+            }
+        },
+        {
+            "id": "n5_573",
+            "front": "洋服",
+            "back": "ようふく",
+            "meta": {
+                "romaji": "youfuku",
+                "meaning": "âu phục",
+                "meaningEn": "western clothes",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_574",
+            "front": "八日",
+            "back": "ようか",
+            "meta": {
+                "romaji": "youka",
+                "meaning": "ngày 8",
+                "meaningEn": "8th day",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_575",
+            "front": "弱い",
+            "back": "よわい",
+            "meta": {
+                "romaji": "yowai",
+                "meaning": "yếu",
+                "meaningEn": "weak",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_576",
+            "front": "雪",
+            "back": "ゆき",
+            "meta": {
+                "romaji": "yuki",
+                "meaning": "tuyết",
+                "meaningEn": "snow",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_577",
+            "front": "ゆっくり",
+            "back": "ゆっくり",
+            "meta": {
+                "romaji": "yukkuri",
+                "meaning": "chậm rãi",
+                "meaningEn": "slowly",
+                "type": "adverb"
+            }
+        },
+        {
+            "id": "n5_578",
+            "front": "昨夜",
+            "back": "ゆうべ",
+            "meta": {
+                "romaji": "yuube",
+                "meaning": "tối qua",
+                "meaningEn": "last night",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_579",
+            "front": "郵便局",
+            "back": "ゆうびんきょく",
+            "meta": {
+                "romaji": "yuubinkyoku",
+                "meaning": "bưu điện",
+                "meaningEn": "post office",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_580",
+            "front": "夕方",
+            "back": "ゆうがた",
+            "meta": {
+                "romaji": "yuugata",
+                "meaning": "chiều tối",
+                "meaningEn": "evening",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_581",
+            "front": "夕飯",
+            "back": "ゆうはん",
+            "meta": {
+                "romaji": "yuuhan",
+                "meaning": "bữa tối",
+                "meaningEn": "dinner",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_582",
+            "front": "有名",
+            "back": "ゆうめい",
+            "meta": {
+                "romaji": "yuumei",
+                "meaning": "nổi tiếng",
+                "meaningEn": "famous",
+                "type": "na-adjective"
+            }
+        },
+        {
+            "id": "n5_583",
+            "front": "雑誌",
+            "back": "ざっし",
+            "meta": {
+                "romaji": "zasshi",
+                "meaning": "tạp chí",
+                "meaningEn": "magazine",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_584",
+            "front": "全部",
+            "back": "ぜんぶ",
+            "meta": {
+                "romaji": "zenbu",
+                "meaning": "tất cả",
+                "meaningEn": "all",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_585",
+            "front": "ゼロ",
+            "back": "ゼロ",
+            "meta": {
+                "romaji": "zero",
+                "meaning": "số không",
+                "meaningEn": "zero",
+                "type": "number"
+            }
+        },
+        {
+            "id": "n5_586",
+            "front": "ズボン",
+            "back": "ズボン",
+            "meta": {
+                "romaji": "zubon",
+                "meaning": "quần tây",
+                "meaningEn": "trousers",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_587",
+            "front": "アイスクリーム",
+            "back": "アイスクリーム",
+            "meta": {
+                "romaji": "aisukuriimu",
+                "meaning": "kem",
+                "meaningEn": "ice cream",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_588",
+            "front": "間",
+            "back": "あいだ",
+            "meta": {
+                "romaji": "aida",
+                "meaning": "ở giữa",
+                "meaningEn": "between",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_589",
+            "front": "合う",
+            "back": "あう",
+            "meta": {
+                "romaji": "au",
+                "meaning": "hợp",
+                "meaningEn": "to fit",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_590",
+            "front": "上る",
+            "back": "あがる",
+            "meta": {
+                "romaji": "agaru",
+                "meaning": "đi lên",
+                "meaningEn": "to go up",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_591",
+            "front": "赤ん坊",
+            "back": "あかんぼう",
+            "meta": {
+                "romaji": "akanbou",
+                "meaning": "em bé",
+                "meaningEn": "baby",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_592",
+            "front": "空く",
+            "back": "あく",
+            "meta": {
+                "romaji": "aku",
+                "meaning": "trống",
+                "meaningEn": "to be empty",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_593",
+            "front": "アクセサリー",
+            "back": "アクセサリー",
+            "meta": {
+                "romaji": "akusesarii",
+                "meaning": "phụ kiện",
+                "meaningEn": "accessory",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_594",
+            "front": "浅い",
+            "back": "あさい",
+            "meta": {
+                "romaji": "asai",
+                "meaning": "nông",
+                "meaningEn": "shallow",
+                "type": "i-adjective"
+            }
+        },
+        {
+            "id": "n5_595",
+            "front": "味",
+            "back": "あじ",
+            "meta": {
+                "romaji": "aji",
+                "meaning": "vị",
+                "meaningEn": "taste",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_596",
+            "front": "アジア",
+            "back": "アジア",
+            "meta": {
+                "romaji": "ajia",
+                "meaning": "Châu Á",
+                "meaningEn": "Asia",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_597",
+            "front": "明日",
+            "back": "あす",
+            "meta": {
+                "romaji": "asu",
+                "meaning": "ngày mai",
+                "meaningEn": "tomorrow",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_598",
+            "front": "集まる",
+            "back": "あつまる",
+            "meta": {
+                "romaji": "atsumaru",
+                "meaning": "tập hợp",
+                "meaningEn": "to gather",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_599",
+            "front": "集める",
+            "back": "あつめる",
+            "meta": {
+                "romaji": "atsumeru",
+                "meaning": "thu thập",
+                "meaningEn": "to collect",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_600",
+            "front": "謝る",
+            "back": "あやまる",
+            "meta": {
+                "romaji": "ayamaru",
+                "meaning": "xin lỗi",
+                "meaningEn": "to apologize",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_601",
+            "front": "倍",
+            "back": "ばい",
+            "meta": {
+                "romaji": "bai",
+                "meaning": "gấp đôi",
+                "meaningEn": "double",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_602",
+            "front": "番組",
+            "back": "ばんぐみ",
+            "meta": {
+                "romaji": "bangumi",
+                "meaning": "chương trình (TV)",
+                "meaningEn": "program (TV)",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_603",
+            "front": "場所",
+            "back": "ばしょ",
+            "meta": {
+                "romaji": "basho",
+                "meaning": "địa điểm",
+                "meaningEn": "place",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_604",
+            "front": "ベル",
+            "back": "ベル",
+            "meta": {
+                "romaji": "beru",
+                "meaning": "chuông",
+                "meaningEn": "bell",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_605",
+            "front": "美術館",
+            "back": "びじゅつかん",
+            "meta": {
+                "romaji": "bijutsukan",
+                "meaning": "bảo tàng mỹ thuật",
+                "meaningEn": "art museum",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_606",
+            "front": "びっくりする",
+            "back": "びっくりする",
+            "meta": {
+                "romaji": "bikkurisuru",
+                "meaning": "ngạc nhiên",
+                "meaningEn": "to be surprised",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_607",
+            "front": "ビル",
+            "back": "ビル",
+            "meta": {
+                "romaji": "biru",
+                "meaning": "tòa nhà",
+                "meaningEn": "building",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_608",
+            "front": "僕",
+            "back": "ぼく",
+            "meta": {
+                "romaji": "boku",
+                "meaning": "tôi (nam)",
+                "meaningEn": "I (male)",
+                "type": "pronoun"
+            }
+        },
+        {
+            "id": "n5_609",
+            "front": "貿易",
+            "back": "ぼうえき",
+            "meta": {
+                "romaji": "boueki",
+                "meaning": "thương mại",
+                "meaningEn": "trade",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_610",
+            "front": "部長",
+            "back": "ぶちょう",
+            "meta": {
+                "romaji": "buchou",
+                "meaning": "trưởng phòng",
+                "meaningEn": "department manager",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_611",
+            "front": "ぶどう",
+            "back": "ぶどう",
+            "meta": {
+                "romaji": "budou",
+                "meaning": "nho",
+                "meaningEn": "grapes",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_612",
+            "front": "文学",
+            "back": "ぶんがく",
+            "meta": {
+                "romaji": "bungaku",
+                "meaning": "văn học",
+                "meaningEn": "literature",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_613",
+            "front": "文化",
+            "back": "ぶんか",
+            "meta": {
+                "romaji": "bunka",
+                "meaning": "văn hóa",
+                "meaningEn": "culture",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_614",
+            "front": "文法",
+            "back": "ぶんぽう",
+            "meta": {
+                "romaji": "bunpou",
+                "meaning": "ngữ pháp",
+                "meaningEn": "grammar",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_615",
+            "front": "血",
+            "back": "ち",
+            "meta": {
+                "romaji": "chi",
+                "meaning": "máu",
+                "meaningEn": "blood",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_616",
+            "front": "力",
+            "back": "ちから",
+            "meta": {
+                "romaji": "chikara",
+                "meaning": "sức mạnh",
+                "meaningEn": "power",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_617",
+            "front": "チェックする",
+            "back": "チェックする",
+            "meta": {
+                "romaji": "checkusuru",
+                "meaning": "kiểm tra",
+                "meaningEn": "to check",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_618",
+            "front": "注意",
+            "back": "ちゅうい",
+            "meta": {
+                "romaji": "chuui",
+                "meaning": "chú ý",
+                "meaningEn": "caution",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_619",
+            "front": "中学校",
+            "back": "ちゅうがっこう",
+            "meta": {
+                "romaji": "chuugakkou",
+                "meaning": "trường cấp 2",
+                "meaningEn": "junior high school",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_620",
+            "front": "注射",
+            "back": "ちゅうしゃ",
+            "meta": {
+                "romaji": "chuusha",
+                "meaning": "tiêm",
+                "meaningEn": "injection",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_621",
+            "front": "駐車場",
+            "back": "ちゅうしゃじょう",
+            "meta": {
+                "romaji": "chuushajou",
+                "meaning": "bãi đậu xe",
+                "meaningEn": "parking lot",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_622",
+            "front": "暖房",
+            "back": "だんぼう",
+            "meta": {
+                "romaji": "danbou",
+                "meaning": "lò sưởi",
+                "meaningEn": "heating",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_623",
+            "front": "男性",
+            "back": "だんせい",
+            "meta": {
+                "romaji": "dansei",
+                "meaning": "nam giới",
+                "meaningEn": "man",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_624",
+            "front": "電報",
+            "back": "でんぽう",
+            "meta": {
+                "romaji": "denpou",
+                "meaning": "điện báo",
+                "meaningEn": "telegram",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_625",
+            "front": "展覧会",
+            "back": "てんらんかい",
+            "meta": {
+                "romaji": "tenrankai",
+                "meaning": "triển lãm",
+                "meaningEn": "exhibition",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_626",
+            "front": "道具",
+            "back": "どうぐ",
+            "meta": {
+                "romaji": "dougu",
+                "meaning": "dụng cụ",
+                "meaningEn": "tool",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_627",
+            "front": "泥棒",
+            "back": "どろぼう",
+            "meta": {
+                "romaji": "dorobou",
+                "meaning": "kẻ trộm",
+                "meaningEn": "thief",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_628",
+            "front": "動物園",
+            "back": "どうぶつえん",
+            "meta": {
+                "romaji": "doubutsuen",
+                "meaning": "sở thú",
+                "meaningEn": "zoo",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_629",
+            "front": "選ぶ",
+            "back": "えらぶ",
+            "meta": {
+                "romaji": "erabu",
+                "meaning": "chọn",
+                "meaningEn": "to choose",
+                "type": "verb"
+            }
+        },
+        {
+            "id": "n5_630",
+            "front": "遠慮",
+            "back": "えんりょ",
+            "meta": {
+                "romaji": "enryo",
+                "meaning": "ngại ngùng",
+                "meaningEn": "restraint, hold back",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_631",
+            "front": "エスカレーター",
+            "back": "エスカレーター",
+            "meta": {
+                "romaji": "esukareetaa",
+                "meaning": "thang cuốn",
+                "meaningEn": "escalator",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_632",
+            "front": "復習",
+            "back": "ふくしゅう",
+            "meta": {
+                "romaji": "fukushuu",
+                "meaning": "ôn tập",
+                "meaningEn": "review",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_633",
+            "front": "不便",
+            "back": "ふべん",
+            "meta": {
+                "romaji": "fuben",
+                "meaning": "bất tiện",
+                "meaningEn": "inconvenience",
+                "type": "na-adjective"
+            }
+        },
+        {
+            "id": "n5_634",
+            "front": "深く",
+            "back": "ふかく",
+            "meta": {
+                "romaji": "fukaku",
+                "meaning": "sâu",
+                "meaningEn": "deeply",
+                "type": "adverb"
+            }
+        },
+        {
+            "id": "n5_635",
+            "front": "布団",
+            "back": "ふとん",
+            "meta": {
+                "romaji": "futon",
+                "meaning": "chăn nệm",
+                "meaningEn": "Japanese bedding",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_636",
+            "front": "普通",
+            "back": "ふつう",
+            "meta": {
+                "romaji": "futsuu",
+                "meaning": "bình thường",
+                "meaningEn": "ordinary",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_637",
+            "front": "ガラス",
+            "back": "ガラス",
+            "meta": {
+                "romaji": "garasu",
+                "meaning": "kính",
+                "meaningEn": "glass (material)",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_638",
+            "front": "ガソリン",
+            "back": "ガソリン",
+            "meta": {
+                "romaji": "gasorin",
+                "meaning": "xăng",
+                "meaningEn": "gasoline",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_639",
+            "front": "ガソリンスタンド",
+            "back": "ガソリンスタンド",
+            "meta": {
+                "romaji": "gasorinsutando",
+                "meaning": "trạm xăng",
+                "meaningEn": "gas station",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_640",
+            "front": "原因",
+            "back": "げんいん",
+            "meta": {
+                "romaji": "genin",
+                "meaning": "nguyên nhân",
+                "meaningEn": "cause",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_641",
+            "front": "下宿",
+            "back": "げしゅく",
+            "meta": {
+                "romaji": "geshuku",
+                "meaning": "nhà trọ",
+                "meaningEn": "lodging",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_642",
+            "front": "技術",
+            "back": "ぎじゅつ",
+            "meta": {
+                "romaji": "gijutsu",
+                "meaning": "kỹ thuật",
+                "meaningEn": "technology, skill",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_643",
+            "front": "ご馳走",
+            "back": "ごちそう",
+            "meta": {
+                "romaji": "gochisou",
+                "meaning": "bữa ăn ngon",
+                "meaningEn": "feast",
+                "type": "noun"
+            }
+        },
+        {
+            "id": "n5_644",
+            "front": "ゴミ",
+            "back": "ゴミ",
+            "meta": {
+                "romaji": "gomi",
+                "meaning": "rác",
+                "meaningEn": "trash",
+                "type": "noun"
+            }
+        }
+    ]
+}
