@@ -4,6 +4,7 @@ import manifest from './src/manifest.json';
 
 export default defineConfig({
     root: 'src',
+    envDir: '../',
     plugins: [crx({ manifest })],
     build: {
         outDir: '../dist',

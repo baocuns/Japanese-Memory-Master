@@ -1,3 +1,5 @@
+import { escapeHtml } from "./utils/html";
+
 // Popup logic
 
 async function bgSend(message: any): Promise<any> {
@@ -86,11 +88,3 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 });
 
-function escapeHtml(str: string): string {
-  return String(str)
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#039;");
-}

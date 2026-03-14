@@ -1,4 +1,5 @@
 import { VocabItem } from "./types";
+import { escapeHtml, escapeHtmlAttr } from "./utils/html";
 
 const DEFAULT_SETTINGS = { quizInterval: 10 };
 
@@ -536,16 +537,3 @@ document.addEventListener("DOMContentLoaded", async () => {
     await refreshEntitlementUI();
   }
 });
-
-function escapeHtml(str: string): string {
-  return String(str)
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#039;");
-}
-
-function escapeHtmlAttr(str: string): string {
-  return escapeHtml(str).replaceAll("`", "&#096;");
-}

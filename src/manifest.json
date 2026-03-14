@@ -18,7 +18,7 @@
     "https://oauth2.googleapis.com/*"
   ],
   "oauth2": {
-    "client_id": "209267074091-cequ99vd3s2t6mgj97717j5iu41o69p9.apps.googleusercontent.com",
+    "client_id": "209267074091-hghhkpbqhe8c3530spfqqdn4db2enl9d.apps.googleusercontent.com",
     "scopes": [
       "openid",
       "email",
@@ -30,7 +30,7 @@
     "default_title": "Xem từ vựng nhanh"
   },
   "background": {
-    "service_worker": "./background.ts",
+    "service_worker": "./background/index.ts",
     "type": "module"
   },
   "content_scripts": [

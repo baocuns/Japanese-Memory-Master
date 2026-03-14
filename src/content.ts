@@ -1,4 +1,5 @@
 import { VocabItem } from "./types";
+import { escapeHtml, escapeHtmlAttr } from "./utils/html";
 
 chrome.runtime.onMessage.addListener((request) => {
   if (request.action === "OPEN_ADD_MODAL") {
@@ -216,18 +217,4 @@ function createQuizModal(wordData: VocabItem & { listId?: string, isSystem?: boo
       }).catch((e) => console.log("Lỗi cập nhật:", e));
     };
   });
-}
-
-// helpers
-function escapeHtml(str: string): string {
-  return String(str)
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#039;");
-}
-
-function escapeHtmlAttr(str: string): string {
-  return escapeHtml(str).replaceAll("`", "&#096;");
 }
