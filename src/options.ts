@@ -161,19 +161,39 @@ async function loadWords() {
     const div = document.createElement("div");
     div.className = "word-item";
     const isSystem = !!(item as any).isSystem;
+    const m = item.meta || {};
+
+    // Build meta detail lines
+    const metaLines: string[] = [];
+    if (m.reading) metaLines.push(`<span style="color:#94a3b8;">📖 <span style="color:#a78bfa;">${escapeHtml(m.reading)}</span></span>`);
+    if (m.romaji) metaLines.push(`<span style="color:#94a3b8;">🔤 ${escapeHtml(m.romaji)}</span>`);
+    if (m.meaningVi) metaLines.push(`<span style="color:#94a3b8;">🇻🇳 ${escapeHtml(m.meaningVi)}</span>`);
+    if (m.meaning && m.meaning !== item.back) metaLines.push(`<span style="color:#94a3b8;">💬 ${escapeHtml(m.meaning)}</span>`);
+    if (m.meaningEn) metaLines.push(`<span style="color:#94a3b8;">🇬🇧 ${escapeHtml(m.meaningEn)}</span>`);
+    if (m.example) metaLines.push(`<span style="color:#64748b; font-style:italic;">📝 ${escapeHtml(m.example)}</span>`);
+
     div.innerHTML = `
-      <div style="display:flex; justify-content:space-between; width: 100%; align-items:center; padding: 12px; border-bottom: 1px solid #eee;">
-        <div style="display: flex; flex-direction: column; gap: 4px;">
-          <div style="display: flex; align-items: center; gap: 8px;">
-            <b style="font-size: 16px;">${escapeHtml(item.front)}</b>
+      <div style="display:flex; justify-content:space-between; width: 100%; align-items:flex-start; gap: 12px;">
+        <div style="display: flex; flex-direction: column; gap: 4px; flex: 1; min-width: 0;">
+          <div style="display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap;">
+            <b style="font-size: 16px; color: #f1f5f9;">${escapeHtml(item.front)}</b>
+            ${m.reading ? `<span style="font-size: 12px; color: #a78bfa;">[${escapeHtml(m.reading)}]</span>` : ''}
           </div>
-          <div style="font-size: 14px; color: #444;">${escapeHtml(item.back)}</div>
-          <div style="display: flex; align-items: center; gap: 10px; margin-top: 2px;">
-            <span class="muted" style="font-size:11px; color: #4caf50; font-weight: bold;">⭐ Điểm: ${escapeHtml(String(item.score ?? 0))}</span>
-            ${item.meta?.meaning && item.meta.meaning !== item.back ? `<span class="muted" style="font-size:11px;">• Nghĩa khác: ${escapeHtml(item.meta.meaning)}</span>` : ''}
+          <div style="font-size: 13px; color: #e2e8f0;">${escapeHtml(item.back)}</div>
+          ${metaLines.length > 0 ? `
+            <div style="display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 4px; font-size: 11px;">
+              ${metaLines.join('')}
+            </div>
+          ` : ''}
+          ${m.example ? `<div style="font-size: 11px; color: #64748b; font-style: italic; margin-top: 4px; padding: 6px 10px; background: rgba(15,23,42,0.5); border-radius: 6px; border-left: 2px solid #334155;">📝 ${escapeHtml(m.example)}</div>` : ''}
+          <div style="display: flex; align-items: center; gap: 10px; margin-top: 4px;">
+            <span style="font-size:11px; color: #4ade80; font-weight: 600;">⭐ Điểm: ${escapeHtml(String(item.score ?? 0))}</span>
+            ${item.lastReviewed ? `<span style="font-size:10px; color: #475569;">Ôn: ${new Date(item.lastReviewed).toLocaleDateString('vi-VN')}</span>` : ''}
           </div>
         </div>
-        ${!isSystem ? `<button class="delete-btn" data-id="${escapeHtmlAttr(item.id)}" style="background:#ff4444; color:white; border:none; padding:6px 12px; border-radius:4px; cursor:pointer; font-size: 12px;">Xóa</button>` : '<span style="font-size: 11px; color: #999; font-style: italic;">Hệ thống</span>'}
+        <div style="flex-shrink: 0;">
+          ${!isSystem ? `<button class="delete-btn" data-id="${escapeHtmlAttr(item.id)}">Xóa</button>` : '<span style="font-size: 11px; color: #475569; font-style: italic;">Hệ thống</span>'}
+        </div>
       </div>
     `;
     container.appendChild(div);
@@ -336,9 +356,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       if (!current) {
         timelineEl.innerHTML = `
-          <div style="padding: 10px; background: #f0f0f0; border-radius: 6px;">
-            <div><b>Gói hiện tại:</b> Miễn phí</div>
-            <div class="muted" style="margin-top: 5px;">Chỉ có quyền truy cập N5</div>
+          <div style="padding: 16px; background: #0f172a; border-radius: 10px; border: 1px solid #334155;">
+            <div style="color: #f1f5f9;"><b>Gói hiện tại:</b> <span style="color: #94a3b8;">Miễn phí</span></div>
+            <div style="margin-top: 6px; font-size: 12px; color: #64748b;">Chỉ có quyền truy cập N5</div>
           </div>
         `;
       } else {
@@ -346,13 +366,13 @@ document.addEventListener("DOMContentLoaded", async () => {
         const endDate = new Date(current.end).toLocaleDateString('vi-VN');
 
         timelineEl.innerHTML = `
-          <div style="padding: 10px; background: #e3f2fd; border-radius: 6px; border: 2px solid #2196F3;">
-            <div><b>Gói hiện tại:</b> ${escapeHtml(current.name)}</div>
-            <div class="muted" style="margin-top: 5px;">
-              Từ ${startDate} đến ${endDate}
+          <div style="padding: 16px; background: linear-gradient(135deg, rgba(59,130,246,0.1), rgba(139,92,246,0.08)); border-radius: 10px; border: 1px solid rgba(59,130,246,0.3);">
+            <div style="color: #f1f5f9;"><b>Gói hiện tại:</b> <span style="color: #60a5fa;">${escapeHtml(current.name)}</span></div>
+            <div style="margin-top: 6px; font-size: 12px; color: #94a3b8;">
+              📅 Từ ${startDate} đến ${endDate}
             </div>
-            <div class="muted" style="margin-top: 5px;">
-              <b>Tính năng:</b> ${features.join(', ')}
+            <div style="margin-top: 6px; font-size: 12px; color: #94a3b8;">
+              ✨ <b style="color:#e2e8f0;">Tính năng:</b> ${features.join(', ')}
             </div>
           </div>
         `;
@@ -361,13 +381,13 @@ document.addEventListener("DOMContentLoaded", async () => {
         if (queue && queue.length > 1) {
           const futureItems = queue.filter((item: any) => item.start > Date.now());
           if (futureItems.length > 0) {
-            timelineEl.innerHTML += '<div style="margin-top: 10px;"><b>Quyền lợi sắp tới:</b></div>';
+            timelineEl.innerHTML += '<div style="margin-top: 14px; color: #f1f5f9; font-weight: 600;">Quyền lợi sắp tới:</div>';
             for (const item of futureItems) {
               const start = new Date(item.start).toLocaleDateString('vi-VN');
               const end = new Date(item.end).toLocaleDateString('vi-VN');
               timelineEl.innerHTML += `
-                <div style="padding: 8px; background: #f9f9f9; border-radius: 6px; margin-top: 5px;">
-                  <div>${escapeHtml(item.id)}: ${start} - ${end}</div>
+                <div style="padding: 12px; background: #0f172a; border: 1px solid #334155; border-radius: 8px; margin-top: 6px; font-size: 12px; color: #94a3b8;">
+                  <span style="color: #e2e8f0; font-weight: 500;">${escapeHtml(item.id)}</span>: ${start} - ${end}
                 </div>
               `;
             }
@@ -408,39 +428,35 @@ document.addEventListener("DOMContentLoaded", async () => {
       const isLocked = lib.requiredFeature && !userFeatures.includes(lib.requiredFeature);
 
       const row = document.createElement("div");
-      row.className = "row";
-      row.style.justifyContent = "space-between";
-      row.style.padding = "8px 0";
-      row.style.borderBottom = "1px solid #eee";
+      row.className = "sub-row";
 
       let statusHtml = "";
       if (isLocked) {
         statusHtml = `
-          <div style="display:flex; align-items:center; gap:6px;">
-            <span style="font-size: 12px; color: #ff9800; font-weight: bold; background: #fff3e0; padding: 2px 6px; border-radius: 4px;">👑 Premium</span>
-            <input type="checkbox" disabled>
+          <div style="display:flex; align-items:center; gap:8px;">
+            <span style="font-size: 11px; color: #fbbf24; font-weight: 600; background: rgba(245,158,11,0.12); padding: 4px 10px; border-radius: 20px; border: 1px solid rgba(245,158,11,0.2);">👑 Premium</span>
           </div>
         `;
       } else {
         statusHtml = `
-          <label style="display: flex; align-items: center; cursor: pointer; gap: 8px;">
+          <label class="toggle-label">
+            <span class="toggle-text">${isChecked ? "Đang học" : "Tắt"}</span>
             <input type="checkbox" class="sub-checkbox" data-id="${escapeHtmlAttr(lib.id)}" ${isChecked ? "checked" : ""}>
-            <span style="font-size: 14px; user-select: none;">${isChecked ? "Đang học" : "Tắt"}</span>
           </label>
         `;
       }
 
       row.innerHTML = `
         <div>
-          <b>${escapeHtml(lib.name)}</b>
-          <div class="muted">${escapeHtml(lib.desc)}</div>
+          <div style="font-weight: 600; color: #f1f5f9; font-size: 13px;">${escapeHtml(lib.name)}</div>
+          <div style="font-size: 11px; color: #64748b; margin-top: 3px;">${escapeHtml(lib.desc)}</div>
         </div>
         ${statusHtml}
       `;
 
       if (isLocked) {
-        // Click event for locked row to show upsell/alert
         row.style.cursor = "not-allowed";
+        row.style.opacity = "0.6";
         row.onclick = () => alert("Tính năng này chỉ dành cho tài khoản Premium! Vui lòng kích hoạt license key.");
       }
 
@@ -494,6 +510,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     btnAddWord.addEventListener("click", async () => {
       const wordInput = document.getElementById("new-word") as HTMLInputElement;
       const meaningInput = document.getElementById("new-meaning") as HTMLInputElement;
+      const readingInput = document.getElementById("new-reading") as HTMLInputElement;
+      const romajiInput = document.getElementById("new-romaji") as HTMLInputElement;
+      const meaningViInput = document.getElementById("new-meaning-vi") as HTMLInputElement;
+      const meaningEnInput = document.getElementById("new-meaning-en") as HTMLInputElement;
+      const exampleInput = document.getElementById("new-example") as HTMLInputElement;
       const msgEl = document.getElementById("add-word-msg");
 
       if (!wordInput || !meaningInput || !msgEl) return;
@@ -502,30 +523,62 @@ document.addEventListener("DOMContentLoaded", async () => {
       const back = meaningInput.value.trim();
 
       if (!front || !back) {
-        msgEl.style.color = "#c00";
-        msgEl.textContent = "Vui lòng nhập đầy đủ từ và nghĩa!";
+        msgEl.style.color = "#f87171";
+        msgEl.textContent = "Vui lòng nhập đầy đủ từ vựng và nghĩa chính!";
         return;
       }
 
+      // Collect optional meta fields
+      const meta: Record<string, string> = { meaning: back };
+      if (readingInput?.value.trim()) meta.reading = readingInput.value.trim();
+      if (romajiInput?.value.trim()) meta.romaji = romajiInput.value.trim();
+      if (meaningViInput?.value.trim()) meta.meaningVi = meaningViInput.value.trim();
+      if (meaningEnInput?.value.trim()) meta.meaningEn = meaningEnInput.value.trim();
+      if (exampleInput?.value.trim()) meta.example = exampleInput.value.trim();
+
       try {
-        msgEl.style.color = "#666";
+        msgEl.style.color = "#94a3b8";
         msgEl.textContent = "Đang thêm...";
 
-        const resp = await bgSend({ action: "ADD_VOCAB", front, back });
+        const resp = await bgSend({ action: "ADD_VOCAB", front, back, meta });
         if (!resp?.ok) throw new Error(resp?.error || "ADD_VOCAB failed");
 
-        msgEl.style.color = "#4CAF50";
-        msgEl.textContent = `Đã thêm: ${front}`;
+        msgEl.style.color = "#4ade80";
+        msgEl.textContent = `✅ Đã thêm: ${front}`;
         wordInput.value = "";
         meaningInput.value = "";
+        if (readingInput) readingInput.value = "";
+        if (romajiInput) romajiInput.value = "";
+        if (meaningViInput) meaningViInput.value = "";
+        if (meaningEnInput) meaningEnInput.value = "";
+        if (exampleInput) exampleInput.value = "";
 
         await loadWords();
       } catch (e: any) {
-        msgEl.style.color = "#c00";
+        msgEl.style.color = "#f87171";
         msgEl.textContent = "Lỗi: " + (e?.message || String(e));
       }
     });
   }
+
+  // Sidebar navigation
+  const navItems = document.querySelectorAll<HTMLElement>('.nav-item[data-target]');
+  const sections = document.querySelectorAll<HTMLElement>('.content-section');
+
+  navItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const targetId = item.getAttribute('data-target');
+
+      navItems.forEach(n => n.classList.remove('active'));
+      item.classList.add('active');
+
+      sections.forEach(s => s.classList.remove('active'));
+      const target = targetId ? document.getElementById(targetId) : null;
+      if (target) {
+        target.classList.add('active');
+      }
+    });
+  });
 
   await refreshAuthUI();
 

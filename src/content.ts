@@ -23,17 +23,48 @@ function createAddModal(selectedText: string) {
   // Use a simple styling that works on most pages
   div.style.all = "initial";
   div.innerHTML = `
-    <div style="position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); width:320px; background:white; border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,0.3); z-index:999999; font-family:sans-serif; padding:20px;">
+    <div style="position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); width:400px; background:white; border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,0.3); z-index:999999; font-family:sans-serif; padding:20px; max-height:90vh; overflow-y:auto;">
       <h3 style="margin-top:0; color:#2196F3;">Thêm từ vựng</h3>
-      <div style="margin-bottom:12px;">
-        <label style="display:block; font-size:12px; color:#666; margin-bottom:4px;">Từ / Kanji</label>
-        <input type="text" id="jp-word" style="width:100%; box-sizing:border-box; padding:8px; border:1px solid #ddd; border-radius:6px;" value="${escapeHtml(selectedText)}">
+
+      <div style="display:flex; gap:10px; margin-bottom:10px;">
+        <div style="flex:1;">
+          <label style="display:block; font-size:11px; color:#666; margin-bottom:3px; font-weight:600;">Từ / Kanji *</label>
+          <input type="text" id="jp-word" style="width:100%; box-sizing:border-box; padding:8px; border:1px solid #ddd; border-radius:6px; font-size:14px;" value="${escapeHtmlAttr(selectedText)}">
+        </div>
+        <div style="flex:1;">
+          <label style="display:block; font-size:11px; color:#666; margin-bottom:3px; font-weight:600;">Nghĩa chính *</label>
+          <input type="text" id="jp-meaning" style="width:100%; box-sizing:border-box; padding:8px; border:1px solid #ddd; border-radius:6px;" placeholder="Nghĩa tiếng Việt...">
+        </div>
       </div>
-      <div style="margin-bottom:12px;">
-        <label style="display:block; font-size:12px; color:#666; margin-bottom:4px;">Nghĩa / Đáp án</label>
-        <input type="text" id="jp-meaning" style="width:100%; box-sizing:border-box; padding:8px; border:1px solid #ddd; border-radius:6px;" placeholder="Nhập nghĩa tiếng Việt...">
+
+      <div style="display:flex; gap:10px; margin-bottom:10px;">
+        <div style="flex:1;">
+          <label style="display:block; font-size:11px; color:#666; margin-bottom:3px;">📖 Cách đọc</label>
+          <input type="text" id="jp-reading" style="width:100%; box-sizing:border-box; padding:8px; border:1px solid #ddd; border-radius:6px;" placeholder="ひらがな...">
+        </div>
+        <div style="flex:1;">
+          <label style="display:block; font-size:11px; color:#666; margin-bottom:3px;">🔤 Romaji</label>
+          <input type="text" id="jp-romaji" style="width:100%; box-sizing:border-box; padding:8px; border:1px solid #ddd; border-radius:6px;" placeholder="romaji...">
+        </div>
       </div>
-      <div style="display:flex; gap:10px; justify-content:flex-end; margin-top:20px;">
+
+      <div style="display:flex; gap:10px; margin-bottom:10px;">
+        <div style="flex:1;">
+          <label style="display:block; font-size:11px; color:#666; margin-bottom:3px;">🇻🇳 Nghĩa TV</label>
+          <input type="text" id="jp-meaning-vi" style="width:100%; box-sizing:border-box; padding:8px; border:1px solid #ddd; border-radius:6px;" placeholder="Chi tiết...">
+        </div>
+        <div style="flex:1;">
+          <label style="display:block; font-size:11px; color:#666; margin-bottom:3px;">🇬🇧 Nghĩa TA</label>
+          <input type="text" id="jp-meaning-en" style="width:100%; box-sizing:border-box; padding:8px; border:1px solid #ddd; border-radius:6px;" placeholder="English...">
+        </div>
+      </div>
+
+      <div style="margin-bottom:12px;">
+        <label style="display:block; font-size:11px; color:#666; margin-bottom:3px;">📝 Câu ví dụ</label>
+        <input type="text" id="jp-example" style="width:100%; box-sizing:border-box; padding:8px; border:1px solid #ddd; border-radius:6px;" placeholder="例文...">
+      </div>
+
+      <div style="display:flex; gap:10px; justify-content:flex-end; margin-top:16px; padding-top:12px; border-top:1px solid #eee;">
         <button id="jp-btn-cancel" style="background:#eee; border:none; padding:8px 16px; border-radius:6px; cursor:pointer;">Hủy</button>
         <button id="jp-btn-save" style="background:#2196F3; color:white; border:none; padding:8px 16px; border-radius:6px; cursor:pointer; font-weight:bold;">Lưu</button>
       </div>
@@ -50,17 +81,31 @@ function createAddModal(selectedText: string) {
     saveBtn.onclick = async () => {
       const wordInput = document.getElementById("jp-word") as HTMLInputElement;
       const meaningInput = document.getElementById("jp-meaning") as HTMLInputElement;
+      const readingInput = document.getElementById("jp-reading") as HTMLInputElement;
+      const romajiInput = document.getElementById("jp-romaji") as HTMLInputElement;
+      const meaningViInput = document.getElementById("jp-meaning-vi") as HTMLInputElement;
+      const meaningEnInput = document.getElementById("jp-meaning-en") as HTMLInputElement;
+      const exampleInput = document.getElementById("jp-example") as HTMLInputElement;
 
       const front = wordInput.value.trim();
       const back = meaningInput.value.trim();
 
       if (!front || !back) return;
 
+      // Collect optional meta fields
+      const meta: Record<string, string> = { meaning: back };
+      if (readingInput?.value.trim()) meta.reading = readingInput.value.trim();
+      if (romajiInput?.value.trim()) meta.romaji = romajiInput.value.trim();
+      if (meaningViInput?.value.trim()) meta.meaningVi = meaningViInput.value.trim();
+      if (meaningEnInput?.value.trim()) meta.meaningEn = meaningEnInput.value.trim();
+      if (exampleInput?.value.trim()) meta.example = exampleInput.value.trim();
+
       try {
         const resp = await chrome.runtime.sendMessage({
           action: "ADD_VOCAB",
           front,
-          back
+          back,
+          meta
         });
         if (!resp?.ok) throw new Error(resp?.error || "ADD_VOCAB failed");
         alert(`Đã lưu: ${front}`);

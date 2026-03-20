@@ -1,257 +1,1020 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 
 <head>
   <meta charset="UTF-8" />
-  <title>Quản lý từ vựng</title>
+  <title>Japanese Memory Master — Quản lý</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
+    /* ===== RESET & BASE ===== */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 14px;
+    }
+
     body {
-      font-family: sans-serif;
-      padding: 20px;
-      max-width: 720px;
-      margin: 0 auto;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      display: flex;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* ===== SCROLLBAR ===== */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #334155;
+      border-radius: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #475569;
+    }
+
+    /* ===== SIDEBAR ===== */
+    .sidebar {
+      width: 240px;
+      min-height: 100vh;
+      background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+      border-right: 1px solid #1e3a5f;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+    }
+
+    .sidebar-header {
+      padding: 24px 20px;
+      border-bottom: 1px solid #1e3a5f;
+    }
+
+    .sidebar-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .sidebar-logo img {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+    }
+
+    .sidebar-logo-text {
+      font-size: 16px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #60a5fa, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .sidebar-logo-sub {
+      font-size: 11px;
+      color: #64748b;
+      font-weight: 400;
+    }
+
+    .sidebar-nav {
+      flex: 1;
+      padding: 12px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .nav-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 14px;
+      border-radius: 10px;
+      cursor: pointer;
+      color: #94a3b8;
+      font-size: 13px;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      border: 1px solid transparent;
+      user-select: none;
+    }
+
+    .nav-item:hover {
+      background: rgba(59, 130, 246, 0.08);
+      color: #cbd5e1;
+    }
+
+    .nav-item.active {
+      background: rgba(59, 130, 246, 0.15);
+      color: #60a5fa;
+      border-color: rgba(59, 130, 246, 0.2);
+    }
+
+    .nav-icon {
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .nav-divider {
+      height: 1px;
+      background: #1e3a5f;
+      margin: 8px 14px;
+    }
+
+    .sidebar-footer {
+      padding: 16px 20px;
+      border-top: 1px solid #1e3a5f;
+      font-size: 11px;
+      color: #475569;
+    }
+
+    /* ===== MAIN CONTENT ===== */
+    .main-content {
+      flex: 1;
+      margin-left: 240px;
+      padding: 32px 40px;
+      min-height: 100vh;
+      background: #0f172a;
+    }
+
+    .page-header {
+      margin-bottom: 28px;
+    }
+
+    .page-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #f1f5f9;
+      margin-bottom: 4px;
+    }
+
+    .page-subtitle {
+      font-size: 13px;
+      color: #64748b;
+    }
+
+    /* ===== SECTIONS ===== */
+    .content-section {
+      display: none;
+      animation: fadeIn 0.3s ease;
+    }
+
+    .content-section.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ===== CARDS ===== */
+    .card {
+      background: #1e293b;
+      border: 1px solid #2d3f56;
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 20px;
+      transition: border-color 0.2s ease;
+    }
+
+    .card:hover {
+      border-color: #3b5278;
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .card-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: #f1f5f9;
+    }
+
+    .card-desc {
+      font-size: 12px;
+      color: #64748b;
+      margin-top: 4px;
+    }
+
+    /* ===== STATUS BADGES ===== */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .badge-success {
+      background: rgba(34, 197, 94, 0.12);
+      color: #4ade80;
+      border: 1px solid rgba(34, 197, 94, 0.2);
+    }
+
+    .badge-warning {
+      background: rgba(245, 158, 11, 0.12);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.2);
+    }
+
+    .badge-error {
+      background: rgba(239, 68, 68, 0.12);
+      color: #f87171;
+      border: 1px solid rgba(239, 68, 68, 0.2);
+    }
+
+    .badge-premium {
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(217, 119, 6, 0.15));
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+    }
+
+    /* ===== FORM ELEMENTS ===== */
+    .form-group {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 0;
+      border-bottom: 1px solid #2d3f56;
+    }
+
+    .form-group:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .form-group:first-child {
+      padding-top: 0;
+    }
+
+    .form-label {
+      font-size: 13px;
+      font-weight: 500;
+      color: #e2e8f0;
+    }
+
+    .form-hint {
+      font-size: 11px;
+      color: #64748b;
+      margin-top: 3px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"] {
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 10px 14px;
+      color: #e2e8f0;
+      font-family: inherit;
+      font-size: 13px;
+      outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    input:focus {
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+    }
+
+    input::placeholder {
+      color: #475569;
+    }
+
+    select {
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 10px 14px;
+      color: #e2e8f0;
+      font-family: inherit;
+      font-size: 13px;
+      outline: none;
+      cursor: pointer;
+      transition: border-color 0.2s ease;
+      appearance: none;
+      -webkit-appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+      padding-right: 36px;
+    }
+
+    select:focus {
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+    }
+
+    /* ===== BUTTONS ===== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #3b82f6, #2563eb);
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #60a5fa, #3b82f6);
+      box-shadow: 0 4px 16px rgba(59, 130, 246, 0.4);
+      transform: translateY(-1px);
+    }
+
+    .btn-danger {
+      background: linear-gradient(135deg, #ef4444, #dc2626);
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(239, 68, 68, 0.3);
+    }
+
+    .btn-danger:hover {
+      background: linear-gradient(135deg, #f87171, #ef4444);
+      box-shadow: 0 4px 16px rgba(239, 68, 68, 0.4);
+      transform: translateY(-1px);
+    }
+
+    .btn-ghost {
+      background: #1e293b;
+      color: #94a3b8;
+      border: 1px solid #334155;
+    }
+
+    .btn-ghost:hover {
+      background: #334155;
+      color: #e2e8f0;
+    }
+
+    .btn-google {
+      background: linear-gradient(135deg, #4285f4, #3367d6);
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(66, 133, 244, 0.3);
+      width: 100%;
+      padding: 12px;
+      font-size: 14px;
+    }
+
+    .btn-google:hover {
+      background: linear-gradient(135deg, #5a95f5, #4285f4);
+      box-shadow: 0 4px 16px rgba(66, 133, 244, 0.4);
+      transform: translateY(-1px);
+    }
+
+    .btn-premium {
+      background: linear-gradient(135deg, #f59e0b, #d97706);
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
+    }
+
+    .btn-premium:hover {
+      background: linear-gradient(135deg, #fbbf24, #f59e0b);
+      box-shadow: 0 4px 16px rgba(245, 158, 11, 0.4);
+      transform: translateY(-1px);
+    }
+
+    .btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none !important;
+    }
+
+    /* ===== AUTH SECTION ===== */
+    .auth-status-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      background: #0f172a;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .login-divider {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 16px 0;
+      color: #475569;
+      font-size: 12px;
+    }
+
+    .login-divider::before,
+    .login-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: #334155;
+    }
+
+    .email-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .email-form .btn-row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .email-form .btn-row .btn {
+      flex: 1;
+    }
+
+    /* ===== PREMIUM SECTION ===== */
+    .premium-input-row {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .premium-input-row input {
+      flex: 1;
+    }
+
+    /* ===== SUBSCRIPTION LIST ===== */
+    .sub-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0;
+      border-bottom: 1px solid #2d3f56;
+    }
+
+    .sub-row:last-child {
+      border-bottom: none;
+    }
+
+    /* ===== TOGGLE SWITCH ===== */
+    .toggle-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+
+    .toggle-label input[type="checkbox"] {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 40px;
+      height: 22px;
+      background: #334155;
+      border-radius: 11px;
+      position: relative;
+      cursor: pointer;
+      transition: background 0.2s ease;
+      border: none;
+      padding: 0;
+    }
+
+    .toggle-label input[type="checkbox"]::before {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 16px;
+      height: 16px;
+      background: #94a3b8;
+      border-radius: 50%;
+      transition: all 0.2s ease;
+    }
+
+    .toggle-label input[type="checkbox"]:checked {
+      background: #3b82f6;
+    }
+
+    .toggle-label input[type="checkbox"]:checked::before {
+      left: 21px;
+      background: #fff;
+    }
+
+    .toggle-label input[type="checkbox"]:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    .toggle-text {
+      font-size: 12px;
+      color: #94a3b8;
+    }
+
+    /* ===== VOCABULARY LIST ===== */
+    .vocab-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 16px;
+      padding: 4px;
+      background: #0f172a;
+      border-radius: 10px;
+      overflow-x: auto;
+    }
+
+    .tab-btn {
+      padding: 8px 16px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      color: #64748b;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 600;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .tab-btn:hover {
+      color: #94a3b8;
+      background: rgba(59, 130, 246, 0.06);
+    }
+
+    .tab-btn.active {
+      color: #60a5fa;
+      background: rgba(59, 130, 246, 0.12);
+    }
+
+    #word-list {
+      max-height: 500px;
+      overflow-y: auto;
+      border-radius: 10px;
+    }
+
+    .word-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 16px;
+      border-bottom: 1px solid #2d3f56;
+      transition: background 0.15s ease;
+    }
+
+    .word-item:hover {
+      background: rgba(59, 130, 246, 0.04);
+    }
+
+    .word-item:last-child {
+      border-bottom: none;
+    }
+
+    .delete-btn {
+      background: rgba(239, 68, 68, 0.12);
+      color: #f87171;
+      border: 1px solid rgba(239, 68, 68, 0.2);
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 11px;
+      font-weight: 600;
+      font-family: inherit;
+      transition: all 0.2s ease;
+    }
+
+    .delete-btn:hover {
+      background: rgba(239, 68, 68, 0.2);
+      border-color: rgba(239, 68, 68, 0.4);
+    }
+
+    /* ===== HELPER ===== */
+    .muted {
+      color: #64748b;
+      font-size: 12px;
     }
 
     .row {
       display: flex;
       gap: 10px;
       align-items: center;
-      flex-wrap: wrap;
     }
 
-    .card {
-      background: #f9f9f9;
-      padding: 15px;
-      border-radius: 8px;
-      border: 1px solid #ddd;
-      margin-bottom: 15px;
+    .text-success {
+      color: #4ade80;
     }
 
-    .btn {
-      border: none;
-      padding: 10px 14px;
-      border-radius: 6px;
-      cursor: pointer;
+    .text-error {
+      color: #f87171;
     }
 
-    .btn-primary {
-      background: #2196F3;
-      color: #fff;
+    .text-premium {
+      color: #fbbf24;
     }
 
-    .btn-danger {
-      background: #ff4444;
-      color: #fff;
+    /* ===== POLICY LINK ===== */
+    a {
+      color: #60a5fa;
+      text-decoration: none;
+      transition: color 0.2s;
     }
 
-    .btn-ghost {
-      background: #eee;
+    a:hover {
+      color: #93c5fd;
+      text-decoration: underline;
     }
 
-    .muted {
-      color: #666;
-      font-size: 12px;
-    }
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 60px;
+      }
 
-    .word-item {
-      border-bottom: 1px solid #eee;
-      padding: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+      .sidebar-header,
+      .nav-text,
+      .sidebar-logo-text,
+      .sidebar-logo-sub,
+      .sidebar-footer {
+        display: none;
+      }
 
-    .delete-btn {
-      background: #ff4444;
-      color: #fff;
-      border: none;
-      padding: 6px 10px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 12px;
-    }
+      .sidebar-logo img {
+        margin: 16px auto;
+      }
 
-    input {
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
+      .nav-item {
+        justify-content: center;
+        padding: 12px;
+      }
 
-    #word-list {
-      margin-top: 10px;
-      max-height: 400px;
-      overflow-y: auto;
-    }
+      .nav-icon {
+        font-size: 18px;
+      }
 
-    /* Tab Styles */
-    .tabs {
-      display: flex;
-      gap: 5px;
-      margin-bottom: 10px;
-      border-bottom: 1px solid #ddd;
-    }
-
-    .tab-btn {
-      padding: 8px 16px;
-      border: 1px solid transparent;
-      border-bottom: none;
-      background: none;
-      cursor: pointer;
-      color: #666;
-      border-radius: 6px 6px 0 0;
-      font-weight: 500;
-    }
-
-    .tab-btn:hover {
-      background: #f0f0f0;
-    }
-
-    .tab-btn.active {
-      color: #2196F3;
-      border-color: #ddd;
-      border-bottom-color: #fff;
-      background: #fff;
-      margin-bottom: -1px;
-      font-weight: bold;
+      .main-content {
+        margin-left: 60px;
+        padding: 20px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <h1>Cài đặt hệ thống</h1>
-
-  <div class="card">
-    <div class="row" style="justify-content:space-between; margin-bottom: 15px;">
-      <div>
-        <div><b>Trạng thái đăng nhập:</b> <span id="auth-status">...</span></div>
-        <div class="muted" id="auth-detail"></div>
-      </div>
-      <div>
-        <button id="btn-logout" class="btn btn-danger" style="display:none;">Đăng xuất</button>
-      </div>
-    </div>
-
-    <!-- Login Container -->
-    <div id="login-container">
-      <div style="display: flex; flex-direction: column; gap: 10px;">
-        <button id="btn-login-google" class="btn btn-primary" style="background: #4285F4;">
-          Đăng nhập với Google
-        </button>
-
-        <div style="text-align: center; color: #888; font-size: 12px; margin: 5px 0;">HOẶC</div>
-
-        <div id="email-login-box"
-          style="display: flex; flex-direction: column; gap: 8px; border-top: 1px solid #eee; padding-top: 10px;">
-          <input type="email" id="login-email" placeholder="Email" />
-          <input type="password" id="login-password" placeholder="Mật khẩu" />
-          <div class="row">
-            <button id="btn-login-email" class="btn btn-ghost" style="flex: 1;">Đăng nhập</button>
-            <button id="btn-signup-email" class="btn btn-ghost" style="flex: 1;">Đăng ký</button>
-          </div>
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-logo">
+        <img src="logo.png" alt="Logo" />
+        <div>
+          <div class="sidebar-logo-text">JP Study</div>
+          <div class="sidebar-logo-sub">Memory Master</div>
         </div>
       </div>
     </div>
 
-    <div class="muted" style="margin-top:12px;">
-      Dữ liệu được đồng bộ hóa với tài khoản giúp bạn không mất dữ liệu khi gỡ/cài lại extension.
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="row">
-      <div style="flex:1;">
-        <div><b>Chế độ Quiz mặc định</b></div>
-        <div class="muted">Cách bạn muốn ôn tập từ vựng.</div>
+    <nav class="sidebar-nav">
+      <div class="nav-item active" data-target="section-account">
+        <span class="nav-icon">🔐</span>
+        <span class="nav-text">Tài khoản</span>
       </div>
-      <select id="quiz-mode" style="padding:8px; border-radius:6px; border:1px solid #ccc;">
-        <option value="vocab_to_meaning">Từ vựng -> Nghĩa</option>
-        <option value="meaning_to_vocab">Nghĩa -> Từ vựng</option>
-        <option value="kanji_to_reading">Hán tự -> Cách đọc</option>
-        <option value="reading_to_kanji">Cách đọc -> Hán tự</option>
-        <option value="shuffled">Ngẫu nhiên giữa các chế độ</option>
-      </select>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="row">
-      <div style="flex:1;">
-        <div><b>Số từ mới tối đa đang học</b></div>
-        <div class="muted">Giới hạn số lượng từ mới (điểm 0) được nạp vào Quiz.</div>
+      <div class="nav-item" data-target="section-settings">
+        <span class="nav-icon">⚙️</span>
+        <span class="nav-text">Cài đặt</span>
       </div>
-      <input type="number" id="active-limit" min="1" step="1" value="10" style="width: 60px;" />
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="row">
-      <div style="flex:1;">
-        <div><b>Thời gian nhắc bài (phút)</b></div>
-        <div class="muted">Quiz sẽ chỉ chạy sau khi bạn đăng nhập.</div>
+      <div class="nav-item" data-target="section-premium">
+        <span class="nav-icon">👑</span>
+        <span class="nav-text">Premium</span>
       </div>
-      <input type="number" id="quiz-interval" min="0.1" step="0.1" value="10" style="width: 60px;" />
-    </div>
-  </div>
 
-  <button id="save-config" class="btn btn-primary">Lưu cài đặt</button>
+      <div class="nav-divider"></div>
 
-  <h2>🔑 Kích hoạt Premium</h2>
-  <div class="card">
-    <div style="margin-bottom: 15px;">
-      <div><b>Nhập License Key</b></div>
-      <div class="muted">Nhập key để kích hoạt các tính năng premium (N4, N3, N2, N1...)</div>
-    </div>
-    <div class="row">
-      <input type="text" id="license-key-input" placeholder="Nhập license key..." style="flex:1;" />
-      <button id="btn-redeem-key" class="btn btn-primary">Kích hoạt</button>
-    </div>
-    <div id="redeem-msg" class="muted" style="margin-top:8px;"></div>
-
-    <div style="margin-top: 20px;">
-      <div><b>Quyền lợi hiện tại</b></div>
-      <div id="entitlement-timeline" style="margin-top: 10px;">
-        <div class="muted">Đang tải...</div>
+      <div class="nav-item" data-target="section-add-word">
+        <span class="nav-icon">➕</span>
+        <span class="nav-text">Thêm từ mới</span>
       </div>
+      <div class="nav-item" data-target="section-library">
+        <span class="nav-icon">📚</span>
+        <span class="nav-text">Kho từ vựng</span>
+      </div>
+      <div class="nav-item" data-target="section-vocab-list">
+        <span class="nav-icon">📖</span>
+        <span class="nav-text">Đang học</span>
+      </div>
+
+      <div class="nav-divider"></div>
+
+      <div class="nav-item" data-target="section-policy">
+        <span class="nav-icon">📄</span>
+        <span class="nav-text">Chính sách</span>
+      </div>
+    </nav>
+
+    <div class="sidebar-footer">
+      v1.2.1 · Japanese Memory Master
     </div>
-  </div>
+  </aside>
 
-  <h2>Chính sách và quyền riêng tư</h2>
-  <div>
-    <a href="privacy.html">Xem tại đây</a>
-  </div>
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="main-content">
 
-  <h2>Thêm từ vựng mới</h2>
-  <div class="card">
-    <div class="row">
-      <input type="text" id="new-word" placeholder="Từ tiếng Nhật..." style="flex:1;" />
-      <input type="text" id="new-meaning" placeholder="Nghĩa tiếng Việt..." style="flex:1;" />
-      <button id="btn-add-word" class="btn btn-primary">Thêm từ</button>
-    </div>
-    <div id="add-word-msg" class="muted" style="margin-top:8px;"></div>
-  </div>
+    <!-- ====== SECTION: ACCOUNT ====== -->
+    <section id="section-account" class="content-section active">
+      <div class="page-header">
+        <div class="page-title">Tài khoản</div>
+        <div class="page-subtitle">Quản lý đăng nhập và đồng bộ dữ liệu</div>
+      </div>
 
-  <h2>Kho từ vựng hệ thống</h2>
-  <div class="card">
-    <div id="subscription-list" style="display: flex; flex-direction: column; gap: 10px;">
-      <!-- Dynamic list loaded by JS -->
-      <div class="muted">Đang tải danh sách...</div>
-    </div>
-    <div id="import-msg" class="muted" style="margin-top:8px;"></div>
-  </div>
+      <div class="card">
+        <div class="auth-status-bar">
+          <div>
+            <div style="font-size: 13px; font-weight: 600; color: #f1f5f9;">
+              Trạng thái: <span id="auth-status" style="color: #94a3b8;">...</span>
+            </div>
+            <div id="auth-detail" class="muted" style="margin-top: 4px;"></div>
+          </div>
+          <button id="btn-logout" class="btn btn-danger" style="display:none;">Đăng xuất</button>
+        </div>
 
-  <div class="row" style="align-items: center; margin-bottom: 5px;">
-    <h2 style="flex:1; margin:0;">Danh sách từ vựng đang học</h2>
-    <button id="refresh" class="btn btn-ghost">Làm mới danh sách</button>
-  </div>
+        <!-- Login Container -->
+        <div id="login-container">
+          <button id="btn-login-google" class="btn btn-google">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
+              <path
+                d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" />
+              <path
+                d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+              <path
+                d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
+              <path
+                d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
+            </svg>
+            Đăng nhập với Google
+          </button>
 
-  <div class="tabs" id="tabs-container">
-    <!-- Tab buttons will be injected here -->
-  </div>
+          <div class="login-divider">HOẶC</div>
 
-  <div style="height: 400px;">
-    <div id="word-list"></div>
-  </div>
+          <div class="email-form">
+            <input type="email" id="login-email" placeholder="Email" />
+            <input type="password" id="login-password" placeholder="Mật khẩu" />
+            <div class="btn-row">
+              <button id="btn-login-email" class="btn btn-ghost">Đăng nhập</button>
+              <button id="btn-signup-email" class="btn btn-ghost">Đăng ký</button>
+            </div>
+          </div>
+        </div>
 
+        <div class="muted" style="margin-top: 16px; padding: 12px; background: #0f172a; border-radius: 8px;">
+          💡 Dữ liệu được đồng bộ hóa với tài khoản giúp bạn không mất dữ liệu khi gỡ/cài lại extension.
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== SECTION: SETTINGS ====== -->
+    <section id="section-settings" class="content-section">
+      <div class="page-header">
+        <div class="page-title">Cài đặt</div>
+        <div class="page-subtitle">Tùy chỉnh chế độ học và thời gian ôn tập</div>
+      </div>
+
+      <div class="card">
+        <div class="form-group">
+          <div>
+            <div class="form-label">Chế độ Quiz mặc định</div>
+            <div class="form-hint">Cách bạn muốn ôn tập từ vựng.</div>
+          </div>
+          <select id="quiz-mode">
+            <option value="vocab_to_meaning">Từ vựng → Nghĩa</option>
+            <option value="meaning_to_vocab">Nghĩa → Từ vựng</option>
+            <option value="kanji_to_reading">Hán tự → Cách đọc</option>
+            <option value="reading_to_kanji">Cách đọc → Hán tự</option>
+            <option value="shuffled">Ngẫu nhiên</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <div>
+            <div class="form-label">Số từ mới tối đa đang học</div>
+            <div class="form-hint">Giới hạn số lượng từ mới (điểm 0) được nạp vào Quiz.</div>
+          </div>
+          <input type="number" id="active-limit" min="1" step="1" value="10" style="width: 80px;" />
+        </div>
+
+        <div class="form-group">
+          <div>
+            <div class="form-label">Thời gian nhắc bài (phút)</div>
+            <div class="form-hint">Quiz sẽ chỉ chạy sau khi bạn đăng nhập.</div>
+          </div>
+          <input type="number" id="quiz-interval" min="0.1" step="0.1" value="10" style="width: 80px;" />
+        </div>
+      </div>
+
+      <button id="save-config" class="btn btn-primary">
+        💾 Lưu cài đặt
+      </button>
+    </section>
+
+    <!-- ====== SECTION: PREMIUM ====== -->
+    <section id="section-premium" class="content-section">
+      <div class="page-header">
+        <div class="page-title">👑 Kích hoạt Premium</div>
+        <div class="page-subtitle">Mở khóa các bộ từ vựng N4, N3, N2, N1</div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <div class="card-title">Nhập License Key</div>
+            <div class="card-desc">Nhập key để kích hoạt các tính năng premium</div>
+          </div>
+        </div>
+
+        <div class="premium-input-row">
+          <input type="text" id="license-key-input" placeholder="XXXX-XXXX-XXXX-XXXX" style="flex:1;" />
+          <button id="btn-redeem-key" class="btn btn-premium">🔑 Kích hoạt</button>
+        </div>
+        <div id="redeem-msg" class="muted" style="margin-top: 10px;"></div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <div class="card-title">Quyền lợi hiện tại</div>
+            <div class="card-desc">Xem gói đang sử dụng và các tính năng đã mở khóa</div>
+          </div>
+        </div>
+        <div id="entitlement-timeline">
+          <div class="muted">Đang tải...</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== SECTION: ADD WORD ====== -->
+    <section id="section-add-word" class="content-section">
+      <div class="page-header">
+        <div class="page-title">Thêm từ mới</div>
+        <div class="page-subtitle">Thêm từ vựng cá nhân vào kho của bạn</div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <div class="card-title">Thông tin từ vựng</div>
+            <div class="card-desc">Các trường có dấu * là bắt buộc</div>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <!-- Row 1: front + back (required) -->
+          <div style="display: flex; gap: 12px;">
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 4px;">
+              <label style="font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Từ vựng (front) *</label>
+              <input type="text" id="new-word" placeholder="例: 食べる" />
+            </div>
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 4px;">
+              <label style="font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Nghĩa chính (back) *</label>
+              <input type="text" id="new-meaning" placeholder="例: Ăn" />
+            </div>
+          </div>
+
+          <!-- Row 2: reading + romaji -->
+          <div style="display: flex; gap: 12px;">
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 4px;">
+              <label style="font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">📖 Cách đọc (reading)</label>
+              <input type="text" id="new-reading" placeholder="例: たべる" />
+            </div>
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 4px;">
+              <label style="font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">🔤 Romaji</label>
+              <input type="text" id="new-romaji" placeholder="例: taberu" />
+            </div>
+          </div>
+
+          <!-- Row 3: meaningVi + meaningEn -->
+          <div style="display: flex; gap: 12px;">
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 4px;">
+              <label style="font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">🇻🇳 Nghĩa tiếng Việt</label>
+              <input type="text" id="new-meaning-vi" placeholder="例: Ăn, dùng bữa" />
+            </div>
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 4px;">
+              <label style="font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">🇬🇧 Nghĩa tiếng Anh</label>
+              <input type="text" id="new-meaning-en" placeholder="例: To eat" />
+            </div>
+          </div>
+
+          <!-- Row 4: example (full width) -->
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <label style="font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">📝 Câu ví dụ</label>
+            <input type="text" id="new-example" placeholder="例: 毎日ご飯を食べます。" />
+          </div>
+
+          <!-- Action row -->
+          <div style="display: flex; gap: 12px; align-items: center; padding-top: 4px; border-top: 1px solid #2d3f56;">
+            <button id="btn-add-word" class="btn btn-primary">➕ Thêm từ</button>
+            <span id="add-word-msg" class="muted"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== SECTION: LIBRARY ====== -->
+    <section id="section-library" class="content-section">
+      <div class="page-header">
+        <div class="page-title">Kho từ vựng hệ thống</div>
+        <div class="page-subtitle">Bật/tắt các bộ từ vựng JLPT để học</div>
+      </div>
+
+      <div class="card">
+        <div id="subscription-list">
+          <div class="muted">Đang tải danh sách...</div>
+        </div>
+        <div id="import-msg" class="muted" style="margin-top: 12px;"></div>
+      </div>
+    </section>
+
+    <!-- ====== SECTION: VOCAB LIST ====== -->
+    <section id="section-vocab-list" class="content-section">
+      <div class="page-header">
+        <div class="vocab-header">
+          <div>
+            <div class="page-title">Danh sách từ vựng đang học</div>
+            <div class="page-subtitle">Xem và quản lý từ vựng theo nhóm</div>
+          </div>
+          <button id="refresh" class="btn btn-ghost">🔄 Làm mới</button>
+        </div>
+      </div>
+
+      <div class="tabs" id="tabs-container">
+        <!-- Tab buttons will be injected here -->
+      </div>
+
+      <div class="card" style="padding: 0; overflow: hidden;">
+        <div id="word-list"></div>
+      </div>
+    </section>
+
+    <!-- ====== SECTION: POLICY ====== -->
+    <section id="section-policy" class="content-section">
+      <div class="page-header">
+        <div class="page-title">Chính sách và Quyền riêng tư</div>
+        <div class="page-subtitle">Thông tin về cách chúng tôi bảo vệ dữ liệu của bạn</div>
+      </div>
+
+      <div class="card">
+        <p style="margin-bottom: 16px; color: #94a3b8; line-height: 1.6;">
+          Chúng tôi cam kết bảo vệ quyền riêng tư và dữ liệu cá nhân của bạn. Mọi thông tin được mã hóa và
+          lưu trữ an toàn trên Firebase.
+        </p>
+        <a href="privacy.html"
+          style="display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; background: #1e293b; border: 1px solid #334155; border-radius: 10px; font-weight: 600; font-size: 13px;">
+          📄 Xem chính sách đầy đủ →
+        </a>
+      </div>
+    </section>
+
+  </main>
 
   <script type="module" src="options.ts"></script>
 </body>

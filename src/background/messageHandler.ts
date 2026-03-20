@@ -196,10 +196,13 @@ export function registerMessageHandler() {
                             sendResponse({ ok: false, error: "Thiếu thông tin" });
                             break;
                         }
+                        const meta = request.meta && typeof request.meta === 'object'
+                            ? { meaning: back, ...request.meta }
+                            : { meaning: back };
                         const created = await addVocab({
                             front,
                             back,
-                            meta: { meaning: back },
+                            meta,
                             quizMode: (request.quizMode as QuizMode) || 'vocab_to_meaning'
                         });
 

@@ -115,47 +115,94 @@ export async function runQuizLogic() {
 
         if (allCandidates.length === 0) return;
 
-        // --- LOGIC CHỌN TỪ THÔNG MINH (Learning / New / Mastered) ---
+        // --- LOGIC CHỌN TỪ THÔNG MINH (Fixed Active Set) ---
         const userSettings = await getUserSettings();
         const activeLimit = userSettings?.activeWordLimit || 10;
 
         // Phân loại từ
-        const learning = allCandidates.filter(w => (w.score || 0) > 0 && (w.score || 0) < 5);
-        const newWords = allCandidates.filter(w => (w.score || 0) === 0);
         const mastered = allCandidates.filter(w => (w.score || 0) >= 5);
+        const nonMastered = allCandidates.filter(w => (w.score || 0) < 5);
 
         let finalPool: (VocabItem | any)[] = [];
 
-        // Kịch bản 1: "Ôn tập cũ" (Mastered) - 10% cơ hội (nếu có từ mastered)
-        // Hoặc nếu không có từ nào để học (hết từ mới, chưa có từ đang học)
-        const shouldReviewMastered = (mastered.length > 0) && (Math.random() < 0.1 || (learning.length === 0 && newWords.length === 0));
+        // Kịch bản 1: "Ôn tập cũ" (Mastered) - 10% cơ hội
+        // Hoặc nếu không còn từ nào chưa mastered
+        const shouldReviewMastered = (mastered.length > 0) && (Math.random() < 0.1 || nonMastered.length === 0);
 
         if (shouldReviewMastered) {
             finalPool = mastered;
         } else {
-            // Kịch bản 2: "Học từ đang học" (Learning) + "Nạp từ mới" (New)
-            finalPool = [...learning];
+            // Kịch bản 2: Fixed Active Set
+            // Load active set từ storage
+            const ACTIVE_SET_KEY = "active_word_set";
+            const stored = await chrome.storage.local.get(ACTIVE_SET_KEY);
+            const activeData = stored[ACTIVE_SET_KEY] as { ids: string[]; updatedAt: number } | undefined;
+            let activeIds: string[] = activeData?.ids || [];
 
-            // Nếu số từ đang học < Limit -> Nạp thêm từ mới
-            if (learning.length < activeLimit && newWords.length > 0) {
-                // Shuffle newWords để lấy ngẫu nhiên
-                const shuffledNew = newWords.sort(() => 0.5 - Math.random());
-                const slotsAvailable = activeLimit - learning.length;
-                const toAdd = shuffledNew.slice(0, slotsAvailable);
-                finalPool = finalPool.concat(toAdd);
+            // Lọc bỏ từ đã mastered hoặc không còn trong allCandidates
+            const candidateIds = new Set(allCandidates.map(w => w.id));
+            activeIds = activeIds.filter(id => {
+                if (!candidateIds.has(id)) return false;
+                const word = allCandidates.find(w => w.id === id);
+                return word && (word.score || 0) < 5;
+            });
+
+            // Nạp thêm từ mới nếu active set chưa đầy
+            if (activeIds.length < activeLimit) {
+                const activeIdSet = new Set(activeIds);
+                // Lấy từ chưa mastered và chưa có trong active set
+                const candidates = nonMastered.filter(w => !activeIdSet.has(w.id));
+
+                // Sắp xếp ưu tiên: từ chưa bao giờ xuất hiện (không có lastReviewed) trước,
+                // sau đó đến từ có lastReviewed cũ nhất
+                candidates.sort((a, b) => {
+                    const aReviewed = a.lastReviewed || "";
+                    const bReviewed = b.lastReviewed || "";
+                    // Từ chưa review (empty string) lên đầu
+                    if (!aReviewed && bReviewed) return -1;
+                    if (aReviewed && !bReviewed) return 1;
+                    // Cả hai đều chưa review -> giữ thứ tự gốc
+                    if (!aReviewed && !bReviewed) return 0;
+                    // Cả hai đều đã review -> cũ hơn lên trước
+                    return aReviewed.localeCompare(bReviewed);
+                });
+
+                const slotsAvailable = activeLimit - activeIds.length;
+                const toAdd = candidates.slice(0, slotsAvailable);
+                activeIds = activeIds.concat(toAdd.map(w => w.id));
             }
 
-            // Nếu sau khi nạp mà vẫn rỗng (ví dụ: mới dùng app, chưa học gì) -> Lấy đại vài từ mới
-            if (finalPool.length === 0 && newWords.length > 0) {
-                finalPool = newWords.slice(0, 5);
+            // Lưu active set vào storage
+            await chrome.storage.local.set({
+                [ACTIVE_SET_KEY]: { ids: activeIds, updatedAt: Date.now() }
+            });
+
+            // Build final pool từ active set
+            const activeIdSet = new Set(activeIds);
+            finalPool = allCandidates.filter(w => activeIdSet.has(w.id));
+
+            // Fallback: nếu active set rỗng (mới dùng app)
+            if (finalPool.length === 0 && nonMastered.length > 0) {
+                finalPool = nonMastered.slice(0, 5);
             }
         }
 
-        // Nếu vẫn rỗng (không có từ nào cả) -> Fallback lấy tất cả
+        // Nếu vẫn rỗng -> Fallback lấy tất cả
         if (finalPool.length === 0) finalPool = allCandidates.slice(0, 20);
 
-        // Chọn 1 từ từ finalPool
-        const wordToQuiz = finalPool[Math.floor(Math.random() * finalPool.length)];
+        // Chọn từ quiz bằng Weighted Random (ưu tiên score thấp)
+        // Weight = 1 / (score + 1): score 0 → weight 1.0, score 4 → weight 0.2
+        const weights = finalPool.map(w => 1 / ((w.score || 0) + 1));
+        const totalWeight = weights.reduce((sum, w) => sum + w, 0);
+        let rand = Math.random() * totalWeight;
+        let wordToQuiz = finalPool[0];
+        for (let i = 0; i < finalPool.length; i++) {
+            rand -= weights[i];
+            if (rand <= 0) {
+                wordToQuiz = finalPool[i];
+                break;
+            }
+        }
 
         // Xác định Câu hỏi và Đáp án dựa trên QuizMode
         let question = wordToQuiz.front;
